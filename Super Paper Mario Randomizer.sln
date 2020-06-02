@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Super Paper Mario Randomizer", "Super Paper Mario Randomizer\Super Paper Mario Randomizer.csproj", "{C92553B1-C28F-45B8-B0AE-CF7ACBFDF8D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C92553B1-C28F-45B8-B0AE-CF7ACBFDF8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92553B1-C28F-45B8-B0AE-CF7ACBFDF8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92553B1-C28F-45B8-B0AE-CF7ACBFDF8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92553B1-C28F-45B8-B0AE-CF7ACBFDF8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD0CAA8A-08B8-4A4C-9EC8-F4A043E6ED0E}
+	EndGlobalSection
+EndGlobal
