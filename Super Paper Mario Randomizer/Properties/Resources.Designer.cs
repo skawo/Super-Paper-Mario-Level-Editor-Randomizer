@@ -61,7 +61,7 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to done.
+        ///   Looks up a localized string similar to Done.
         /// </summary>
         internal static string done {
             get {
@@ -102,6 +102,15 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         internal static string isoselect_filter {
             get {
                 return ResourceManager.GetString("isoselect_filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading stages....
+        /// </summary>
+        internal static string loading_stages {
+            get {
+                return ResourceManager.GetString("loading_stages", resourceCulture);
             }
         }
         

@@ -1,27 +1,41 @@
-﻿using System;
+﻿using Super_Paper_Mario_Randomizer.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO;
 using System.Threading;
-using Super_Paper_Mario_Randomizer.Properties;
+using System.Windows.Forms;
 
 namespace Super_Paper_Mario_Randomizer
 {
     public partial class Form1 : Form
     {
-        List<LevelSetupEntry> LevelSetups = new List<LevelSetupEntry>();
-        
 
         public Form1()
         {
             InitializeComponent();
+
+            if (File.Exists(Globals.EnemyJsonPath))
+            {
+                Globals.EnemyList = (List<Enemy>)Helpers.DeserializeJsonFromFile(Globals.EnemyJsonPath, typeof(List<Enemy>));
+
+                foreach (Enemy e in Globals.EnemyList)
+                    combo_Actor.Items.Add(e);
+
+                int last = -1;
+
+                foreach (Enemy e in Globals.EnemyList)
+                {
+                    if (e.ID != last + 1)
+                        MessageBox.Show(e.Name + e.ID);
+
+
+                    else
+                        last = e.ID;
+                }
+            }
         }
 
         #region Extract ISO Option
@@ -78,24 +92,14 @@ namespace Super_Paper_Mario_Randomizer
                                 BackgroundWorker WkrCheckExtractProgress = new BackgroundWorker();
                                 WkrCheckExtractProgress.WorkerReportsProgress = true;
                                 WkrCheckExtractProgress.DoWork += WkrCheckExtractProgress_DoWork;
-                                WkrCheckExtractProgress.ProgressChanged += WkrCheckExtractProgress_ProgressChanged; ;
-                                WkrCheckExtractProgress.RunWorkerCompleted += WkrCheckExtractProgress_RunWorkerCompleted;
+                                WkrCheckExtractProgress.ProgressChanged += Workers_ProgressChanged;
+                                WkrCheckExtractProgress.RunWorkerCompleted += Workers_Complete;
                                 WkrCheckExtractProgress.RunWorkerAsync(10000);
                             }
                         }
                     }
                 }
             }
-        }
-
-        private void WkrCheckExtractProgress_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            SetProgress(Resources.done, 100);
-        }
-
-        private void WkrCheckExtractProgress_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            SetProgressVal(e.ProgressPercentage);
         }
 
         private void WkrCheckExtractProgress_DoWork(object sender, DoWorkEventArgs e)
@@ -152,59 +156,130 @@ namespace Super_Paper_Mario_Randomizer
             pb_Progress.Update();
         }
 
+        private void Workers_Complete(object sender, RunWorkerCompletedEventArgs e)
+        {
+            SetProgress(Resources.done, 100);
+        }
+
+        private void Workers_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            SetProgressVal(e.ProgressPercentage);
+        }
+
         #endregion
 
         private void openSetupFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (FolderBrowserDialog fb = new FolderBrowserDialog())
+            try
             {
-                fb.ShowNewFolderButton = false;
-                fb.Description = Resources.select_setup_folder;
-                DialogResult dr = fb.ShowDialog();
-
-                if (dr == DialogResult.OK)
+                using (FolderBrowserDialog fb = new FolderBrowserDialog())
                 {
-                    string[] Files = Directory.GetFiles(fb.SelectedPath);
+                    fb.ShowNewFolderButton = false;
+                    fb.Description = Resources.select_setup_folder;
+                    DialogResult dr = fb.ShowDialog();
 
-                    checkedlistbox_Stages.Items.Clear();
-                    LevelSetups.Clear();
-                
-                    foreach (string File in Files)
-                            LevelSetups.Add(new LevelSetupEntry(File));
+                    if (dr == DialogResult.OK)
+                    {
+                        SetProgress(Resources.loading_stages, 0);
 
-                    foreach (LevelSetupEntry Setup in LevelSetups)
-                        checkedlistbox_Stages.Items.Add(Setup, true);
+                        BackgroundWorker WkrLoadStagesProgress = new BackgroundWorker();
+                        WkrLoadStagesProgress.WorkerReportsProgress = true;
+                        WkrLoadStagesProgress.DoWork += WkrLoadStagesProgress_DoWork;
+                        WkrLoadStagesProgress.ProgressChanged += Workers_ProgressChanged;
+                        WkrLoadStagesProgress.RunWorkerCompleted += WkrLoadStagesProgress_RunWorkerCompleted; ;
+                        WkrLoadStagesProgress.RunWorkerAsync(fb.SelectedPath);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+
+        private void WkrLoadStagesProgress_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            checkedlistbox_Stages.Items.Clear();
+
+            foreach (LevelSetupEntry Setup in Globals.LevelSetups)
+                checkedlistbox_Stages.Items.Add(Setup, true);
+
+            SetProgress(Resources.done, 100);
+        }
+
+        private void WkrLoadStagesProgress_DoWork(object sender, DoWorkEventArgs e)
+        {
+            try
+            {
+                Globals.LevelSetups.Clear();
+
+                string[] Files = Directory.GetFiles((string)e.Argument);
+
+                int i = 0;
+
+                foreach (string File in Files)
+                {
+                    Globals.LevelSetups.Add(new LevelSetupEntry(File));
+
+                    i++;
+                    int Percent = (int)(((decimal)i / (decimal)(Files.Count())) * 100);
+                    (sender as BackgroundWorker).ReportProgress(Percent);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
             }
         }
 
         private void checkedlistbox_Stages_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LevelSetupEntry Setup = (LevelSetupEntry)checkedlistbox_Stages.Items[checkedlistbox_Stages.SelectedIndex];
+            try
+            {
+                if (checkedlistbox_Stages.SelectedIndex < 0 || checkedlistbox_Stages.SelectedIndex > checkedlistbox_Stages.Items.Count)
+                    return;
 
-            lst_EnemyEntries.Items.Clear();
+                LevelSetupEntry Setup = (LevelSetupEntry)checkedlistbox_Stages.Items[checkedlistbox_Stages.SelectedIndex];
 
-            foreach (LevelSetupEntryEntry Entry in Setup.Entries)
-                lst_EnemyEntries.Items.Add(Entry);
+                lst_EnemyEntries.Items.Clear();
 
-            tx_Setupheader.Text = BitConverter.ToString(Setup.Header, 0).Replace("-", string.Empty);
+                foreach (LevelSetupEntryEntry Entry in Setup.Entries)
+                    lst_EnemyEntries.Items.Add(Entry);
+
+                tx_Setupheader.Text = ByteOps.GetFormattedByteString(Setup.Header);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
         }
 
         private void lst_EnemyEntries_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (lst_EnemyEntries.SelectedIndex == -1)
+            try
+            {
+                if (lst_EnemyEntries.SelectedIndex < 0 || lst_EnemyEntries.SelectedIndex > lst_EnemyEntries.Items.Count)
+                    return;
+
+                LevelSetupEntryEntry Setup = (LevelSetupEntryEntry)lst_EnemyEntries.Items[lst_EnemyEntries.SelectedIndex];
+
+                tx_PosX.Text = Setup.PosX.ToString();
+                tx_PosY.Text = Setup.PosY.ToString();
+                tx_PosZ.Text = Setup.PosZ.ToString();
+
+                tx_Unk.Text = ByteOps.GetFormattedByteString(Setup.Unk);
+                tx_UnknownData.Text = ByteOps.GetFormattedByteString(Setup.Unknown);
+
+                combo_Actor.SelectedIndex = (int)Setup.ID - 1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
                 return;
-
-            LevelSetupEntryEntry Setup = (LevelSetupEntryEntry)lst_EnemyEntries.Items[lst_EnemyEntries.SelectedIndex];
-
-            tx_PosX.Text = Setup.PosX.ToString();
-            tx_PosY.Text = Setup.PosY.ToString();
-            tx_PosZ.Text = Setup.PosZ.ToString();
-            tx_Unk.Text = Setup.Unk.ToString();
-
-            tx_UnknownData.Text = BitConverter.ToString(Setup.Unknown, 0).Replace("-", string.Empty);
-
-            //combo_Actor.SelectedIndex = Setup.ActorID;
+            }
         }
     }
 }

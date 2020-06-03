@@ -1,0 +1,3899 @@
+[
+  {
+    "ID": 0,
+    "Name": "Nothing",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 1,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 2,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 3,
+    "Name": "Spiked Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 4,
+    "Name": "Paragoomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 5,
+    "Name": "Flip Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 6,
+    "Name": "Spiked Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 7,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 8,
+    "Name": "Green Koopa Troopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 9,
+    "Name": "Red Koopa Troopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 10,
+    "Name": "(Unused) Shady Koopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 11,
+    "Name": "Koopatrol",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 12,
+    "Name": "Flip Red Koopa Troopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 13,
+    "Name": "(Unused) Flip Shady Koopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 14,
+    "Name": "Green Paratroopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 15,
+    "Name": "Red Paratroopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 16,
+    "Name": "(Unused) Shady Paratroopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 17,
+    "Name": "Flip Red Paratroopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 18,
+    "Name": "(Unused) Flip Shady Paratroopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 19,
+    "Name": "Clubba",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 20,
+    "Name": "PatrolMeow",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 21,
+    "Name": "AirMeow",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 22,
+    "Name": "SurpriseMeow",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 23,
+    "Name": "MeowBomb",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 24,
+    "Name": "Hammer Bro.",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 25,
+    "Name": "Green Cheep Cheep",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 26,
+    "Name": "Blooper",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 27,
+    "Name": "Thwomp",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 28,
+    "Name": "Lava Bubble",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 29,
+    "Name": "Spiny Tromp",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 30,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 31,
+    "Name": "Piranha Plant",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 32,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 33,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 34,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 35,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 36,
+    "Name": "Dry Bones",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 37,
+    "Name": "Rubee",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 38,
+    "Name": "Dull Bones",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 39,
+    "Name": "Boomerang Bro",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 40,
+    "Name": "Fire Bro",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 41,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 42,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 43,
+    "Name": "Fracktail",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 44,
+    "Name": "Wracktail",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 45,
+    "Name": "Flip Blooper",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 46,
+    "Name": "Flip Hammer Bro.",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 47,
+    "Name": "Small Spiky Tromp",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 48,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 49,
+    "Name": "Putrid Piranha",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 50,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 51,
+    "Name": "Frost Piranha",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 52,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 53,
+    "Name": "Buzzy Beetle",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 54,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 55,
+    "Name": "Flip Buzzy Beetle ",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 56,
+    "Name": "Spike Top",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 57,
+    "Name": "Parabuzzy",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 58,
+    "Name": "Spiky Parabuzzy",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 59,
+    "Name": "Spiny",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 60,
+    "Name": "(UNUSED?) Weird Spiny",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 61,
+    "Name": "Lakitu",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 62,
+    "Name": "Flip Lakitu",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 63,
+    "Name": "Mega Koopa",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 64,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 65,
+    "Name": "Chain Chomp",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 66,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 67,
+    "Name": "Red Cheep Cheep",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 68,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 69,
+    "Name": "Flip Cheep Cheep",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 70,
+    "Name": "Swooper",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 71,
+    "Name": "Glitchy Dark Koopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 72,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 73,
+    "Name": "Glitchy Koopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 74,
+    "Name": "Spinia",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 75,
+    "Name": "Spania",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 76,
+    "Name": "Spunia",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 77,
+    "Name": "Bald Cleft",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 78,
+    "Name": "Moon Cleft",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 79,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 80,
+    "Name": "Magikoopa",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 81,
+    "Name": "Broom Magikoopa",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 82,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 83,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 84,
+    "Name": "Headbonk Goomba",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 85,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 86,
+    "Name": "Barribad",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 87,
+    "Name": "Barribad Projectile?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 88,
+    "Name": "Pigarithm",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 89,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 90,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 91,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 92,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 93,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 94,
+    "Name": "Zombie Shroom",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 95,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 96,
+    "Name": "Stone Buzzy",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 97,
+    "Name": "Longator",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 98,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 99,
+    "Name": "Flip Spiny",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 100,
+    "Name": "Mister I",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 101,
+    "Name": "(Unused) Flip Spike Top",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 102,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 103,
+    "Name": "Projectile?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 104,
+    "Name": "Howl",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 105,
+    "Name": "Growl",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 106,
+    "Name": "Bullet Bill",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 107,
+    "Name": "Bill Blaster",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 108,
+    "Name": "(Unused) Giant Bombshell Bill",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 109,
+    "Name": "(Unused) Giant Bombshell Bill Blaster",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 110,
+    "Name": "Unknown",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 111,
+    "Name": "Boo",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 112,
+    "Name": "Dark Boo",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 113,
+    "Name": "Atomic Boo",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 114,
+    "Name": "(Unused) Dark Atomic Boo",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 115,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 116,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 117,
+    "Name": "Fuzzy",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 118,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 119,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 120,
+    "Name": "Pink Fuzzy",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 121,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 122,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 123,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 124,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 125,
+    "Name": "Weak Ruff Puff",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 126,
+    "Name": "Pokey",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 127,
+    "Name": "Poison Pokey",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 128,
+    "Name": "Koopa Striker",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 129,
+    "Name": "Koopa Striker's Shell",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 130,
+    "Name": "Mimi",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 131,
+    "Name": "Chasing Mimi",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 132,
+    "Name": "Bowser",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 133,
+    "Name": "Bittacuda",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 134,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 135,
+    "Name": "BombMeow",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 136,
+    "Name": "Big Blooper",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 137,
+    "Name": "Mr. L",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 138,
+    "Name": "Brobot",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 139,
+    "Name": "Brobot Missile",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 140,
+    "Name": "Brobot Mustache",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 141,
+    "Name": "Jawbus",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 142,
+    "Name": "Dimentio",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 143,
+    "Name": "Dimentio Magic",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 144,
+    "Name": "Sproing-Oing",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 145,
+    "Name": "Mini Sproing-Oing",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 146,
+    "Name": "Rubee",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 147,
+    "Name": "Shlurp",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 148,
+    "Name": "Squig",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 149,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 150,
+    "Name": "King Croacus",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 151,
+    "Name": "Slow Cursya",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 152,
+    "Name": "Megabite",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 153,
+    "Name": "Boomboxer",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 154,
+    "Name": "Choppa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 155,
+    "Name": "Croacus Petal",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 156,
+    "Name": "Croacus Petal",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 157,
+    "Name": "Croacus Petal",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 158,
+    "Name": "Boomboxer Attack",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 159,
+    "Name": "Ruff Puff",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 160,
+    "Name": "Tileoid G",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 161,
+    "Name": "Tileoid B",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 162,
+    "Name": "Tileoid R",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 163,
+    "Name": "Tileoid Y",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 164,
+    "Name": "Growmeba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 165,
+    "Name": "Growmeba Part",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 166,
+    "Name": "Boomerang",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 167,
+    "Name": "Fire Bro Fireball",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 168,
+    "Name": "BigMeow",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 169,
+    "Name": "Eeligon",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 170,
+    "Name": "Jellien",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 171,
+    "Name": "Foton",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 172,
+    "Name": "Warpid",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 173,
+    "Name": "Muth",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 174,
+    "Name": "Veggiefied O'Chunks",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 175,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 176,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 177,
+    "Name": "Trap Gold Bar x3",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 178,
+    "Name": "Ninjoe",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 179,
+    "Name": "Player Pinwheel",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 180,
+    "Name": "Projectile?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 181,
+    "Name": "O'Chunks",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 182,
+    "Name": "O'Chunks",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 183,
+    "Name": "Giant O'Chunks",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 184,
+    "Name": "Small Dimentio Dimension Cube",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 185,
+    "Name": "Medium Dimentio Dimension Cube",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 186,
+    "Name": "Big Dimentio Dimension Cube",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 187,
+    "Name": "World 6 Mimi",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 188,
+    "Name": "Brobot L Type",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 189,
+    "Name": "Bonechill",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 190,
+    "Name": "Bonechill Projectile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 191,
+    "Name": "Bonechill Icicle",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 192,
+    "Name": "Ninjoe Attack",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 193,
+    "Name": "\"FRY_BAKUDAN\" (Nothing?)",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 194,
+    "Name": "Skellobit",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 195,
+    "Name": "Spiky Skellobit",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 196,
+    "Name": "Count Bleck",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 197,
+    "Name": "Void",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 198,
+    "Name": "Big Void",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 199,
+    "Name": "Particle",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 200,
+    "Name": "Nastasia?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 201,
+    "Name": "Disappearing Count Bleck",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 202,
+    "Name": "Boomerang",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 203,
+    "Name": "Fire Bro Fire",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 204,
+    "Name": "Pokey Part",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 205,
+    "Name": "Poison Pokey Part",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 206,
+    "Name": "Back Cursya",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 207,
+    "Name": "Tech Cursya",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 208,
+    "Name": "Heavy Cursya",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 209,
+    "Name": "Reversya Cursya",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 210,
+    "Name": "Hooligon",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 211,
+    "Name": "Eeligon Part",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 212,
+    "Name": "Hooligon Part",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 213,
+    "Name": "Overworld Underchomp (3)",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 214,
+    "Name": "Overworld Blue Underchomp",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 215,
+    "Name": "Overworld Yellow Underchomp",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 216,
+    "Name": "Overworld Red Underchomp",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 217,
+    "Name": "Crazee Dayzee",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 218,
+    "Name": "Dayzee Attack",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 219,
+    "Name": "Stench",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 220,
+    "Name": "Freeze",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 221,
+    "Name": "Skellobomber w/Skellobait",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 222,
+    "Name": "Skellobomber",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 223,
+    "Name": "Skellobait",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 224,
+    "Name": "Spiky Skellobait",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 225,
+    "Name": "Dimentio",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 226,
+    "Name": "Dimentio",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 227,
+    "Name": "Skellobomber Head",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 228,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 229,
+    "Name": "Red Magiblot",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 230,
+    "Name": "Blue Magiblot",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 231,
+    "Name": "Yellow Magiblot",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 232,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 233,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 234,
+    "Name": "Nothing? ",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 235,
+    "Name": "Gloomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 236,
+    "Name": "Bone",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 237,
+    "Name": "Glasses-less Koopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 238,
+    "Name": "Glasses-less Paratroopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 239,
+    "Name": "Floro Sapien",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 240,
+    "Name": "Floro Sapien Head",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 241,
+    "Name": "8-Bit Shell",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 242,
+    "Name": "Small 8-Bit Shell",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 243,
+    "Name": "Purple Floro Sapien",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 244,
+    "Name": "Purple Floro Sapien Head",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 245,
+    "Name": "Red Floro Sapien",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 246,
+    "Name": "Red Floro Sapien Head",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 247,
+    "Name": "Free Underhand",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 248,
+    "Name": "Bound Underhand",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 249,
+    "Name": "Disappearing Bound Underhand",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 250,
+    "Name": "Squiglet",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 251,
+    "Name": "Squog",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 252,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 253,
+    "Name": "Spike Top",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 254,
+    "Name": "Broken Flip Koopa Troopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 255,
+    "Name": "Super Dimentio",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 256,
+    "Name": "Pal Pill Luigi",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 257,
+    "Name": "Gold Bar",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 258,
+    "Name": "Gold Bar x3",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 259,
+    "Name": "Ninjohn",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 260,
+    "Name": "Ninjohn Projectile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 261,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 262,
+    "Name": "Ninjerry",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 263,
+    "Name": "Ninjerry Projectile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 264,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 265,
+    "Name": "Gigabite",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 266,
+    "Name": "Blomeba",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 267,
+    "Name": "Chromeba",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 268,
+    "Name": "Flip Koopa Stiker",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 269,
+    "Name": "Flip Toopa Striker",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 270,
+    "Name": "Soopa Striker",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 271,
+    "Name": "Soopa Striker's Shell",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 272,
+    "Name": "Ghoul Shroom",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 273,
+    "Name": "Longadile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 274,
+    "Name": "Beepboxer",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 275,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 276,
+    "Name": "(Unused) Boomboxer Recolor",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 277,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 278,
+    "Name": "Copta",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 279,
+    "Name": "(Unused) Muth Recolor",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 280,
+    "Name": "Red I",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 281,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 282,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 283,
+    "Name": "Squoinker",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 284,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 285,
+    "Name": "Dark Bowser",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 286,
+    "Name": "Dark Luigi",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 287,
+    "Name": "Dark Mario",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 288,
+    "Name": "Dark Peach",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 289,
+    "Name": "Boing-Oing",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 290,
+    "Name": "Mini Boing-Oing",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 291,
+    "Name": "Zoing-Oing",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 292,
+    "Name": "Mini Zoing-Oing",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 293,
+    "Name": "Mega Muth",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 294,
+    "Name": "Blastboxer",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 295,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 296,
+    "Name": "Rawbus",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 297,
+    "Name": "Gawbus",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 298,
+    "Name": "Sobarribad",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 299,
+    "Name": "Sobarribad Projectile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 300,
+    "Name": "Hogarithm",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 301,
+    "Name": "Shlorp",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 302,
+    "Name": "Amazee Dayzee",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 303,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 304,
+    "Name": "Flip Gloomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 305,
+    "Name": "Invincible Underchomp",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 306,
+    "Name": "Invincible Blue Underchomp",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 307,
+    "Name": "Invincible Yellow Underchomp",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 308,
+    "Name": "Invincible Red Underchomp",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 309,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 310,
+    "Name": "Flip Boomerang Bro",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 311,
+    "Name": "Flip Fire Bro",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 312,
+    "Name": "Flip Skellobit",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 313,
+    "Name": "Flip Spiky Skellobit",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 314,
+    "Name": "Flip Skellobomber w/Skellobait",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 315,
+    "Name": "Flip Skellobomber",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 316,
+    "Name": "(Unused) Green Magikoopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 317,
+    "Name": "(Unused) Broom Green Magikoopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 318,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 319,
+    "Name": "(Unused) White Magikoopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 320,
+    "Name": "(Unused) Broom White Magikoopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 321,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 322,
+    "Name": "(Unused) Red Magikoopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 323,
+    "Name": "(Unused) Broom Red Magikoopa",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 324,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 325,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 326,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 327,
+    "Name": "Dark Spiked Goomba",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 328,
+    "Name": "Dark Paragoomba",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 329,
+    "Name": "Dark Goomba",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 330,
+    "Name": "Dark Headbonk Goomba",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 331,
+    "Name": "Dark Koopatrol",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 332,
+    "Name": "Dark Shady Koopa",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 333,
+    "Name": "Dark Paratroopa",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 334,
+    "Name": "Dark Spike Top",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 335,
+    "Name": "Dark Stone Buzzy",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 336,
+    "Name": "Dark Spiny",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 337,
+    "Name": "Dark Dull Bones",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 338,
+    "Name": "Dark Bone",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 339,
+    "Name": "Dark Hammer Bro",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 340,
+    "Name": "Dark Boomerang Bro",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 341,
+    "Name": "Dark Fire Bro",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 342,
+    "Name": "Dark Hammer",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 343,
+    "Name": "Dark Boomerang",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 344,
+    "Name": "Dark Fire Bro Fireball",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 345,
+    "Name": "Dark Magikoopa",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 346,
+    "Name": "Broom Dark Magikoopa",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 347,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 348,
+    "Name": "Dark Striker",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 349,
+    "Name": "Dark Striker's Shell",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 350,
+    "Name": "Dark Clubba",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 351,
+    "Name": "Dark Dayzee",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 352,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 353,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 354,
+    "Name": "Dark Fuzzy",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 355,
+    "Name": "Dark Pokey",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 356,
+    "Name": "Dark Pokey Part",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 357,
+    "Name": "Dark Ruff Puff",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 358,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 359,
+    "Name": "Dark Spania",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 360,
+    "Name": "Dark Cursya",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 361,
+    "Name": "(Unused) Dark Back Cursya",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 362,
+    "Name": "Dark Tech Cursya",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 363,
+    "Name": "Dark Heavy Cursya",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 364,
+    "Name": "Dark Reversya Cursya",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 365,
+    "Name": "Dark Chomp",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 366,
+    "Name": "Dark Dark Boo",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 367,
+    "Name": "Dark Cleft",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 368,
+    "Name": "Dark Shlurp",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 369,
+    "Name": "Dark Squiglet",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 370,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 371,
+    "Name": "Dark Sproing-Oing",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 372,
+    "Name": "Mini Dark Sproing-Oing",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 373,
+    "Name": "Dark Boomboxer",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 374,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 375,
+    "Name": "Dark Jawbus",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 376,
+    "Name": "(Unused) Dark I",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 377,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 378,
+    "Name": "Dark Growmeba",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 379,
+    "Name": "Dark Tileoid ",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 380,
+    "Name": "Dark Eeligon",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 381,
+    "Name": "Dark Eeligon Part",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 382,
+    "Name": "Dark Longator",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 383,
+    "Name": "Dark Barribad",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 384,
+    "Name": "Dark Barribad Projectile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 385,
+    "Name": "Dark Pigarithm",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 386,
+    "Name": "Dark Choppa",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 387,
+    "Name": "Dark Muth",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 388,
+    "Name": "Dark Ninjoe",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 389,
+    "Name": "Dark Ninjoe Projectile",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 390,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 391,
+    "Name": "Dark Skellobit",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 392,
+    "Name": "Dark Spiky Skellobit",
+    "Description": "",
+    "Difficulty": 2,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 393,
+    "Name": "Dark Megabite",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 394,
+    "Name": "Dark Magiblot",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 395,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 396,
+    "Name": "Brobot Fist",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 397,
+    "Name": "Mimi 2",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 398,
+    "Name": "Bowser 2",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 399,
+    "Name": "Dark Dimentio Cube",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 400,
+    "Name": "Big Dark Dimentio Cube",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 401,
+    "Name": "Giant Dark Dimentio Cube",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 402,
+    "Name": "Rubee",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": true
+  },
+  {
+    "ID": 403,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 404,
+    "Name": "Dimentio Attack",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 405,
+    "Name": "Dimentio",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 406,
+    "Name": "Dimentio",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 407,
+    "Name": "Dimentio",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": true,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 408,
+    "Name": "Stench",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 409,
+    "Name": "Cherbil",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 410,
+    "Name": "Cherbil's Projectile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 411,
+    "Name": "Poison Cherbil",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 412,
+    "Name": "Poison Cherbil's Projectile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 413,
+    "Name": "Ice Cherbil",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 414,
+    "Name": "Ice Cherbil's Projectile",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 415,
+    "Name": "Dark Cherbil",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 416,
+    "Name": "Dark Cherbil's Projectile",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 417,
+    "Name": "Ice Dark Cherbil's Projectile",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 418,
+    "Name": "Poison Dark Cherbil's Projectile",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 419,
+    "Name": "Frackle",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 420,
+    "Name": "Wrackle",
+    "Description": "",
+    "Difficulty": 1,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 421,
+    "Name": "Nothing?",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 422,
+    "Name": "Enemy Mario",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 423,
+    "Name": "Glitchy Enemy Mario",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 424,
+    "Name": "Enemy Luigi?",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 425,
+    "Name": "Enemy Luigi?",
+    "Description": "",
+    "Difficulty": 3,
+    "Weird": false,
+    "Boss": true,
+    "Obstacle": false
+  },
+  {
+    "ID": 426,
+    "Name": "Sammer Guy",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 427,
+    "Name": "Stationary Enemy Mario",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 428,
+    "Name": "Stationary Enemy Luigi",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 429,
+    "Name": "Stationary Enemy Peach",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 430,
+    "Name": "Stationary Enemy Bowser",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 431,
+    "Name": "Two Koopa Strikers at once",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 432,
+    "Name": "Giant Shell",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
+    "Boss": false,
+    "Obstacle": false
+  }
+]

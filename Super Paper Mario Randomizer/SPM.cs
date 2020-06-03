@@ -37,11 +37,11 @@ namespace Super_Paper_Mario_Randomizer
 
     public class LevelSetupEntryEntry
     {
-        public UInt32 ActorID;
+        public UInt32 ID;
         public int PosX;
         public int PosY;
         public int PosZ;
-        public UInt16 Unk;
+        public byte[] Unk = new byte[0x2];
         public byte[] Unknown = new byte[0x64];
 
         public LevelSetupEntryEntry(byte[] Data)
@@ -53,8 +53,8 @@ namespace Super_Paper_Mario_Randomizer
                 PosX = ByteOps.GetInt32(Data, 0);
                 PosY = ByteOps.GetInt32(Data, 4);
                 PosZ = ByteOps.GetInt32(Data, 8);
-                Unk = ByteOps.GetUInt16(Data, 12);
-                ActorID = ByteOps.GetUInt32(Data, 14);
+                Unk = Data.Skip(12).Take(2).ToArray();
+                ID = ByteOps.GetUInt32(Data, 14);
 
                 Unknown = Data.Skip(18).Take(100).ToArray();
             }
@@ -62,7 +62,15 @@ namespace Super_Paper_Mario_Randomizer
 
         public override string ToString()
         {
-            return "Enemy ID " + ActorID;
+            Enemy E = null;
+
+            if (Globals.EnemyList != null)
+                E = Globals.EnemyList.Find(x => x.ID == ID);
+
+            if (E == null)
+                return "Enemy ID " + ID;
+            else
+                return ID.ToString() + " - " + E.Name;
         }
 
         public static List<LevelSetupEntryEntry> GetListOfEntriesFromData(byte[] Data)
@@ -79,6 +87,33 @@ namespace Super_Paper_Mario_Randomizer
             }
 
             return Outl;
+        }
+    }
+
+    public class Enemy
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int Difficulty { get; set; }
+        public bool Weird { get; set; }
+        public bool Boss { get; set; }
+        public bool Obstacle { get; set; }
+
+        public Enemy()
+        {
+            ID = -1;
+            Name = "";
+            Description = "";
+            Difficulty = 0;
+            Weird = false;
+            Boss = false;
+            Obstacle = false;
+        }
+
+        public override string ToString()
+        {
+            return ID + " - " + Name;
         }
     }
 }

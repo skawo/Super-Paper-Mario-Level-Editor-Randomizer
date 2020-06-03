@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="done" xml:space="preserve">
-    <value>done</value>
+    <value>Done</value>
   </data>
   <data name="err_extract_failed" xml:space="preserve">
     <value>There was an error extracting the ISO.</value>
@@ -131,6 +131,9 @@
   </data>
   <data name="isoselect_filter" xml:space="preserve">
     <value>ISO files (*.iso)|*.iso|WBFS files (*.wbfs)|*.wbfs</value>
+  </data>
+  <data name="loading_stages" xml:space="preserve">
+    <value>Loading stages...</value>
   </data>
   <data name="not_spm_iso" xml:space="preserve">
     <value>This does not seem to be a Super Paper Mario ISO.</value>

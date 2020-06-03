@@ -40,5 +40,10 @@ namespace Super_Paper_Mario_Randomizer
         {
             return (Int16)(Data[Offset] | Data[Offset + 1]);
         }
+
+        public static string GetFormattedByteString(byte[] Data)
+        {
+            return BitConverter.ToString(Data, 0).Replace("-", " ");
+        }
     }
 }

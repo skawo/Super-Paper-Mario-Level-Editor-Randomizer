@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openStageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openSetupFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openISOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsWBFSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,24 +48,24 @@
             this.lbl_Separator = new System.Windows.Forms.Label();
             this.lbl_Progress = new System.Windows.Forms.Label();
             this.tabP_Enemies = new System.Windows.Forms.TabPage();
-            this.tabC_Editor = new System.Windows.Forms.TabControl();
-            this.lst_EnemyEntries = new System.Windows.Forms.ListBox();
-            this.lbl_EnemyEntries = new System.Windows.Forms.Label();
-            this.lb_SeparatorEnemies = new System.Windows.Forms.Label();
-            this.combo_Actor = new System.Windows.Forms.ComboBox();
-            this.lb_Actor = new System.Windows.Forms.Label();
-            this.lb_PosX = new System.Windows.Forms.Label();
-            this.tx_PosX = new System.Windows.Forms.TextBox();
-            this.tx_PosY = new System.Windows.Forms.TextBox();
-            this.lb_PosY = new System.Windows.Forms.Label();
-            this.tx_PosZ = new System.Windows.Forms.TextBox();
-            this.lb_PosZ = new System.Windows.Forms.Label();
-            this.tx_UnknownData = new System.Windows.Forms.TextBox();
-            this.lbl_UnknownData = new System.Windows.Forms.Label();
-            this.lb_Setupheader = new System.Windows.Forms.Label();
-            this.tx_Setupheader = new System.Windows.Forms.TextBox();
             this.tx_Unk = new System.Windows.Forms.TextBox();
             this.lbl_Unk = new System.Windows.Forms.Label();
+            this.tx_Setupheader = new System.Windows.Forms.TextBox();
+            this.lb_Setupheader = new System.Windows.Forms.Label();
+            this.lbl_UnknownData = new System.Windows.Forms.Label();
+            this.tx_UnknownData = new System.Windows.Forms.TextBox();
+            this.tx_PosZ = new System.Windows.Forms.TextBox();
+            this.lb_PosZ = new System.Windows.Forms.Label();
+            this.tx_PosY = new System.Windows.Forms.TextBox();
+            this.lb_PosY = new System.Windows.Forms.Label();
+            this.tx_PosX = new System.Windows.Forms.TextBox();
+            this.lb_PosX = new System.Windows.Forms.Label();
+            this.lb_Actor = new System.Windows.Forms.Label();
+            this.combo_Actor = new System.Windows.Forms.ComboBox();
+            this.lb_SeparatorEnemies = new System.Windows.Forms.Label();
+            this.lbl_EnemyEntries = new System.Windows.Forms.Label();
+            this.lst_EnemyEntries = new System.Windows.Forms.ListBox();
+            this.tabC_Editor = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.tabP_Enemies.SuspendLayout();
             this.tabC_Editor.SuspendLayout();
@@ -85,6 +86,7 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openStageToolStripMenuItem,
             this.openSetupFolderToolStripMenuItem,
             this.openISOToolStripMenuItem,
             this.saveAsWBFSToolStripMenuItem,
@@ -94,11 +96,17 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // openStageToolStripMenuItem
+            // 
+            this.openStageToolStripMenuItem.Name = "openStageToolStripMenuItem";
+            this.openStageToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.openStageToolStripMenuItem.Text = "Open setup...";
+            // 
             // openSetupFolderToolStripMenuItem
             // 
             this.openSetupFolderToolStripMenuItem.Name = "openSetupFolderToolStripMenuItem";
             this.openSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.openSetupFolderToolStripMenuItem.Text = "Open...";
+            this.openSetupFolderToolStripMenuItem.Text = "Open setup folder...";
             this.openSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.openSetupFolderToolStripMenuItem_Click);
             // 
             // openISOToolStripMenuItem
@@ -156,6 +164,8 @@
             // 
             // checkedlistbox_Stages
             // 
+            this.checkedlistbox_Stages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.checkedlistbox_Stages.FormattingEnabled = true;
             this.checkedlistbox_Stages.Location = new System.Drawing.Point(13, 57);
             this.checkedlistbox_Stages.Name = "checkedlistbox_Stages";
@@ -174,6 +184,7 @@
             // 
             // pb_Progress
             // 
+            this.pb_Progress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pb_Progress.Location = new System.Drawing.Point(578, 474);
             this.pb_Progress.Name = "pb_Progress";
             this.pb_Progress.Size = new System.Drawing.Size(145, 23);
@@ -181,6 +192,7 @@
             // 
             // lbl_Separator
             // 
+            this.lbl_Separator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbl_Separator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_Separator.Location = new System.Drawing.Point(15, 470);
             this.lbl_Separator.Name = "lbl_Separator";
@@ -189,6 +201,7 @@
             // 
             // lbl_Progress
             // 
+            this.lbl_Progress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbl_Progress.Location = new System.Drawing.Point(376, 474);
             this.lbl_Progress.Name = "lbl_Progress";
             this.lbl_Progress.Size = new System.Drawing.Size(196, 23);
@@ -223,89 +236,59 @@
             this.tabP_Enemies.Text = "Enemies";
             this.tabP_Enemies.UseVisualStyleBackColor = true;
             // 
-            // tabC_Editor
+            // tx_Unk
             // 
-            this.tabC_Editor.Controls.Add(this.tabP_Enemies);
-            this.tabC_Editor.Location = new System.Drawing.Point(209, 41);
-            this.tabC_Editor.Name = "tabC_Editor";
-            this.tabC_Editor.SelectedIndex = 0;
-            this.tabC_Editor.Size = new System.Drawing.Size(514, 410);
-            this.tabC_Editor.TabIndex = 6;
+            this.tx_Unk.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_Unk.Location = new System.Drawing.Point(263, 137);
+            this.tx_Unk.Name = "tx_Unk";
+            this.tx_Unk.Size = new System.Drawing.Size(106, 20);
+            this.tx_Unk.TabIndex = 22;
             // 
-            // lst_EnemyEntries
+            // lbl_Unk
             // 
-            this.lst_EnemyEntries.FormattingEnabled = true;
-            this.lst_EnemyEntries.Location = new System.Drawing.Point(6, 71);
-            this.lst_EnemyEntries.Name = "lst_EnemyEntries";
-            this.lst_EnemyEntries.Size = new System.Drawing.Size(181, 303);
-            this.lst_EnemyEntries.TabIndex = 0;
-            this.lst_EnemyEntries.SelectedIndexChanged += new System.EventHandler(this.lst_EnemyEntries_SelectedIndexChanged);
+            this.lbl_Unk.AutoSize = true;
+            this.lbl_Unk.Location = new System.Drawing.Point(200, 140);
+            this.lbl_Unk.Name = "lbl_Unk";
+            this.lbl_Unk.Size = new System.Drawing.Size(30, 13);
+            this.lbl_Unk.TabIndex = 21;
+            this.lbl_Unk.Text = "Unk:";
             // 
-            // lbl_EnemyEntries
+            // tx_Setupheader
             // 
-            this.lbl_EnemyEntries.AutoSize = true;
-            this.lbl_EnemyEntries.Location = new System.Drawing.Point(6, 55);
-            this.lbl_EnemyEntries.Name = "lbl_EnemyEntries";
-            this.lbl_EnemyEntries.Size = new System.Drawing.Size(76, 13);
-            this.lbl_EnemyEntries.TabIndex = 7;
-            this.lbl_EnemyEntries.Text = "Enemy entries:";
+            this.tx_Setupheader.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_Setupheader.Location = new System.Drawing.Point(6, 24);
+            this.tx_Setupheader.Name = "tx_Setupheader";
+            this.tx_Setupheader.Size = new System.Drawing.Size(181, 20);
+            this.tx_Setupheader.TabIndex = 20;
             // 
-            // lb_SeparatorEnemies
+            // lb_Setupheader
             // 
-            this.lb_SeparatorEnemies.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lb_SeparatorEnemies.Location = new System.Drawing.Point(193, 6);
-            this.lb_SeparatorEnemies.Name = "lb_SeparatorEnemies";
-            this.lb_SeparatorEnemies.Size = new System.Drawing.Size(1, 371);
-            this.lb_SeparatorEnemies.TabIndex = 8;
+            this.lb_Setupheader.AutoSize = true;
+            this.lb_Setupheader.Location = new System.Drawing.Point(6, 7);
+            this.lb_Setupheader.Name = "lb_Setupheader";
+            this.lb_Setupheader.Size = new System.Drawing.Size(92, 13);
+            this.lb_Setupheader.TabIndex = 19;
+            this.lb_Setupheader.Text = "Unknown header:";
             // 
-            // combo_Actor
+            // lbl_UnknownData
             // 
-            this.combo_Actor.FormattingEnabled = true;
-            this.combo_Actor.Location = new System.Drawing.Point(200, 23);
-            this.combo_Actor.Name = "combo_Actor";
-            this.combo_Actor.Size = new System.Drawing.Size(169, 21);
-            this.combo_Actor.TabIndex = 9;
+            this.lbl_UnknownData.AutoSize = true;
+            this.lbl_UnknownData.Location = new System.Drawing.Point(200, 183);
+            this.lbl_UnknownData.Name = "lbl_UnknownData";
+            this.lbl_UnknownData.Size = new System.Drawing.Size(80, 13);
+            this.lbl_UnknownData.TabIndex = 18;
+            this.lbl_UnknownData.Text = "Unknown data:";
             // 
-            // lb_Actor
+            // tx_UnknownData
             // 
-            this.lb_Actor.AutoSize = true;
-            this.lb_Actor.Location = new System.Drawing.Point(200, 7);
-            this.lb_Actor.Name = "lb_Actor";
-            this.lb_Actor.Size = new System.Drawing.Size(35, 13);
-            this.lb_Actor.TabIndex = 10;
-            this.lb_Actor.Text = "Actor:";
-            // 
-            // lb_PosX
-            // 
-            this.lb_PosX.AutoSize = true;
-            this.lb_PosX.Location = new System.Drawing.Point(200, 62);
-            this.lb_PosX.Name = "lb_PosX";
-            this.lb_PosX.Size = new System.Drawing.Size(57, 13);
-            this.lb_PosX.TabIndex = 11;
-            this.lb_PosX.Text = "Position X:";
-            // 
-            // tx_PosX
-            // 
-            this.tx_PosX.Location = new System.Drawing.Point(263, 59);
-            this.tx_PosX.Name = "tx_PosX";
-            this.tx_PosX.Size = new System.Drawing.Size(106, 20);
-            this.tx_PosX.TabIndex = 12;
-            // 
-            // tx_PosY
-            // 
-            this.tx_PosY.Location = new System.Drawing.Point(263, 85);
-            this.tx_PosY.Name = "tx_PosY";
-            this.tx_PosY.Size = new System.Drawing.Size(106, 20);
-            this.tx_PosY.TabIndex = 14;
-            // 
-            // lb_PosY
-            // 
-            this.lb_PosY.AutoSize = true;
-            this.lb_PosY.Location = new System.Drawing.Point(200, 88);
-            this.lb_PosY.Name = "lb_PosY";
-            this.lb_PosY.Size = new System.Drawing.Size(57, 13);
-            this.lb_PosY.TabIndex = 13;
-            this.lb_PosY.Text = "Position Y:";
+            this.tx_UnknownData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tx_UnknownData.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_UnknownData.Location = new System.Drawing.Point(203, 199);
+            this.tx_UnknownData.Multiline = true;
+            this.tx_UnknownData.Name = "tx_UnknownData";
+            this.tx_UnknownData.Size = new System.Drawing.Size(297, 175);
+            this.tx_UnknownData.TabIndex = 17;
             // 
             // tx_PosZ
             // 
@@ -323,54 +306,93 @@
             this.lb_PosZ.TabIndex = 15;
             this.lb_PosZ.Text = "Position Z:";
             // 
-            // tx_UnknownData
+            // tx_PosY
             // 
-            this.tx_UnknownData.Location = new System.Drawing.Point(203, 199);
-            this.tx_UnknownData.Multiline = true;
-            this.tx_UnknownData.Name = "tx_UnknownData";
-            this.tx_UnknownData.Size = new System.Drawing.Size(297, 175);
-            this.tx_UnknownData.TabIndex = 17;
+            this.tx_PosY.Location = new System.Drawing.Point(263, 85);
+            this.tx_PosY.Name = "tx_PosY";
+            this.tx_PosY.Size = new System.Drawing.Size(106, 20);
+            this.tx_PosY.TabIndex = 14;
             // 
-            // lbl_UnknownData
+            // lb_PosY
             // 
-            this.lbl_UnknownData.AutoSize = true;
-            this.lbl_UnknownData.Location = new System.Drawing.Point(200, 183);
-            this.lbl_UnknownData.Name = "lbl_UnknownData";
-            this.lbl_UnknownData.Size = new System.Drawing.Size(80, 13);
-            this.lbl_UnknownData.TabIndex = 18;
-            this.lbl_UnknownData.Text = "Unknown data:";
+            this.lb_PosY.AutoSize = true;
+            this.lb_PosY.Location = new System.Drawing.Point(200, 88);
+            this.lb_PosY.Name = "lb_PosY";
+            this.lb_PosY.Size = new System.Drawing.Size(57, 13);
+            this.lb_PosY.TabIndex = 13;
+            this.lb_PosY.Text = "Position Y:";
             // 
-            // lb_Setupheader
+            // tx_PosX
             // 
-            this.lb_Setupheader.AutoSize = true;
-            this.lb_Setupheader.Location = new System.Drawing.Point(6, 7);
-            this.lb_Setupheader.Name = "lb_Setupheader";
-            this.lb_Setupheader.Size = new System.Drawing.Size(92, 13);
-            this.lb_Setupheader.TabIndex = 19;
-            this.lb_Setupheader.Text = "Unknown header:";
+            this.tx_PosX.Location = new System.Drawing.Point(263, 59);
+            this.tx_PosX.Name = "tx_PosX";
+            this.tx_PosX.Size = new System.Drawing.Size(106, 20);
+            this.tx_PosX.TabIndex = 12;
             // 
-            // tx_Setupheader
+            // lb_PosX
             // 
-            this.tx_Setupheader.Location = new System.Drawing.Point(6, 24);
-            this.tx_Setupheader.Name = "tx_Setupheader";
-            this.tx_Setupheader.Size = new System.Drawing.Size(181, 20);
-            this.tx_Setupheader.TabIndex = 20;
+            this.lb_PosX.AutoSize = true;
+            this.lb_PosX.Location = new System.Drawing.Point(200, 62);
+            this.lb_PosX.Name = "lb_PosX";
+            this.lb_PosX.Size = new System.Drawing.Size(57, 13);
+            this.lb_PosX.TabIndex = 11;
+            this.lb_PosX.Text = "Position X:";
             // 
-            // tx_Unk
+            // lb_Actor
             // 
-            this.tx_Unk.Location = new System.Drawing.Point(263, 137);
-            this.tx_Unk.Name = "tx_Unk";
-            this.tx_Unk.Size = new System.Drawing.Size(106, 20);
-            this.tx_Unk.TabIndex = 22;
+            this.lb_Actor.AutoSize = true;
+            this.lb_Actor.Location = new System.Drawing.Point(200, 7);
+            this.lb_Actor.Name = "lb_Actor";
+            this.lb_Actor.Size = new System.Drawing.Size(35, 13);
+            this.lb_Actor.TabIndex = 10;
+            this.lb_Actor.Text = "Actor:";
             // 
-            // lbl_Unk
+            // combo_Actor
             // 
-            this.lbl_Unk.AutoSize = true;
-            this.lbl_Unk.Location = new System.Drawing.Point(200, 140);
-            this.lbl_Unk.Name = "lbl_Unk";
-            this.lbl_Unk.Size = new System.Drawing.Size(30, 13);
-            this.lbl_Unk.TabIndex = 21;
-            this.lbl_Unk.Text = "Unk:";
+            this.combo_Actor.FormattingEnabled = true;
+            this.combo_Actor.Location = new System.Drawing.Point(200, 23);
+            this.combo_Actor.Name = "combo_Actor";
+            this.combo_Actor.Size = new System.Drawing.Size(169, 21);
+            this.combo_Actor.TabIndex = 9;
+            // 
+            // lb_SeparatorEnemies
+            // 
+            this.lb_SeparatorEnemies.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_SeparatorEnemies.Location = new System.Drawing.Point(193, 6);
+            this.lb_SeparatorEnemies.Name = "lb_SeparatorEnemies";
+            this.lb_SeparatorEnemies.Size = new System.Drawing.Size(1, 371);
+            this.lb_SeparatorEnemies.TabIndex = 8;
+            // 
+            // lbl_EnemyEntries
+            // 
+            this.lbl_EnemyEntries.AutoSize = true;
+            this.lbl_EnemyEntries.Location = new System.Drawing.Point(6, 55);
+            this.lbl_EnemyEntries.Name = "lbl_EnemyEntries";
+            this.lbl_EnemyEntries.Size = new System.Drawing.Size(76, 13);
+            this.lbl_EnemyEntries.TabIndex = 7;
+            this.lbl_EnemyEntries.Text = "Enemy entries:";
+            // 
+            // lst_EnemyEntries
+            // 
+            this.lst_EnemyEntries.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lst_EnemyEntries.FormattingEnabled = true;
+            this.lst_EnemyEntries.Location = new System.Drawing.Point(6, 71);
+            this.lst_EnemyEntries.Name = "lst_EnemyEntries";
+            this.lst_EnemyEntries.Size = new System.Drawing.Size(181, 303);
+            this.lst_EnemyEntries.TabIndex = 0;
+            this.lst_EnemyEntries.SelectedIndexChanged += new System.EventHandler(this.lst_EnemyEntries_SelectedIndexChanged);
+            // 
+            // tabC_Editor
+            // 
+            this.tabC_Editor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tabC_Editor.Controls.Add(this.tabP_Enemies);
+            this.tabC_Editor.Location = new System.Drawing.Point(209, 41);
+            this.tabC_Editor.Name = "tabC_Editor";
+            this.tabC_Editor.SelectedIndex = 0;
+            this.tabC_Editor.Size = new System.Drawing.Size(514, 410);
+            this.tabC_Editor.TabIndex = 6;
             // 
             // Form1
             // 
@@ -436,6 +458,7 @@
         private System.Windows.Forms.ComboBox combo_Actor;
         private System.Windows.Forms.TextBox tx_Unk;
         private System.Windows.Forms.Label lbl_Unk;
+        private System.Windows.Forms.ToolStripMenuItem openStageToolStripMenuItem;
     }
 }
 
