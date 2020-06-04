@@ -138,28 +138,14 @@ namespace Super_Paper_Mario_Randomizer
         {
             List<byte> Out = new List<byte>();
 
-            switch (Header[1])
-            {
-                case 1:
-                    {
-                        Out.AddRange(Unknown_Header1);
-                        Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosX));
-                        Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosY));
-                        Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosZ));
-                        Out.AddRange(EndianBitConverter.BigEndian.GetBytes(ID));
-                        Out.AddRange(Unknown);
-                        break;
-                    }
-                default:
-                    {
-                        Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosX));
-                        Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosY));
-                        Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosZ));
-                        Out.AddRange(EndianBitConverter.BigEndian.GetBytes(ID));
-                        Out.AddRange(Unknown);
-                        break;
-                    }
-            }
+            if (Header[1] == (byte)SPMDefs.HeaderSize.HEADER_SIZE_1)
+                Out.AddRange(Unknown_Header1);
+
+            Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosX));
+            Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosY));
+            Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosZ));
+            Out.AddRange(EndianBitConverter.BigEndian.GetBytes(ID));
+            Out.AddRange(Unknown);
 
             return Out.ToArray();
         }
