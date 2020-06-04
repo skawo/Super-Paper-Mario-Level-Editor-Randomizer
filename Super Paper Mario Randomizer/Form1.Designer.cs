@@ -50,6 +50,9 @@
             this.lbl_Progress = new System.Windows.Forms.Label();
             this.tabP_Enemies = new System.Windows.Forms.TabPage();
             this.pn_EnemyEditor = new System.Windows.Forms.Panel();
+            this.picturebox_info = new System.Windows.Forms.PictureBox();
+            this.lbl_ActorID = new System.Windows.Forms.Label();
+            this.lbl_Header1Unk = new System.Windows.Forms.Label();
             this.numUp_Z = new System.Windows.Forms.NumericUpDown();
             this.lb_PosX = new System.Windows.Forms.Label();
             this.numUp_Y = new System.Windows.Forms.NumericUpDown();
@@ -65,11 +68,13 @@
             this.lst_EnemyEntries = new System.Windows.Forms.ListBox();
             this.tabC_Editor = new System.Windows.Forms.TabControl();
             this.container = new System.Windows.Forms.SplitContainer();
+            this.tx_Header1Unk = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.tx_UnknownData = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.tx_Setupheader = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.menuStrip1.SuspendLayout();
             this.tabP_Enemies.SuspendLayout();
             this.pn_EnemyEditor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUp_Z)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUp_Y)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUp_X)).BeginInit();
@@ -109,49 +114,49 @@
             // openSetupFileToolStripMenuItem
             // 
             this.openSetupFileToolStripMenuItem.Name = "openSetupFileToolStripMenuItem";
-            this.openSetupFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openSetupFileToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.openSetupFileToolStripMenuItem.Text = "Open setup file...";
             this.openSetupFileToolStripMenuItem.Click += new System.EventHandler(this.openSetupFileToolStripMenuItem_Click);
             // 
             // openSetupFolderToolStripMenuItem
             // 
             this.openSetupFolderToolStripMenuItem.Name = "openSetupFolderToolStripMenuItem";
-            this.openSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.openSetupFolderToolStripMenuItem.Text = "Open setup folder...";
             this.openSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.openSetupFolderToolStripMenuItem_Click);
             // 
             // saveCurrentToolStripMenuItem
             // 
             this.saveCurrentToolStripMenuItem.Name = "saveCurrentToolStripMenuItem";
-            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.saveCurrentToolStripMenuItem.Text = "Save current";
             this.saveCurrentToolStripMenuItem.Click += new System.EventHandler(this.saveCurrentToolStripMenuItem_Click);
             // 
             // savesSetupFolderToolStripMenuItem
             // 
             this.savesSetupFolderToolStripMenuItem.Name = "savesSetupFolderToolStripMenuItem";
-            this.savesSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.savesSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.savesSetupFolderToolStripMenuItem.Text = "Save all";
             this.savesSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
             // 
             // openISOToolStripMenuItem
             // 
             this.openISOToolStripMenuItem.Name = "openISOToolStripMenuItem";
-            this.openISOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openISOToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.openISOToolStripMenuItem.Text = "Extract ISO...";
             this.openISOToolStripMenuItem.Click += new System.EventHandler(this.extractISOToolStripMenuItem_Click);
             // 
             // saveAsWBFSToolStripMenuItem
             // 
             this.saveAsWBFSToolStripMenuItem.Name = "saveAsWBFSToolStripMenuItem";
-            this.saveAsWBFSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsWBFSToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.saveAsWBFSToolStripMenuItem.Text = "Pack ISO...";
             this.saveAsWBFSToolStripMenuItem.Click += new System.EventHandler(this.saveAsWBFSToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -190,7 +195,7 @@
             this.checkedlistbox_Stages.FormattingEnabled = true;
             this.checkedlistbox_Stages.Location = new System.Drawing.Point(13, 57);
             this.checkedlistbox_Stages.Name = "checkedlistbox_Stages";
-            this.checkedlistbox_Stages.Size = new System.Drawing.Size(190, 409);
+            this.checkedlistbox_Stages.Size = new System.Drawing.Size(190, 439);
             this.checkedlistbox_Stages.TabIndex = 1;
             this.checkedlistbox_Stages.SelectedIndexChanged += new System.EventHandler(this.checkedlistbox_Stages_SelectedIndexChanged);
             // 
@@ -206,7 +211,7 @@
             // pb_Progress
             // 
             this.pb_Progress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pb_Progress.Location = new System.Drawing.Point(578, 15);
+            this.pb_Progress.Location = new System.Drawing.Point(578, 20);
             this.pb_Progress.Name = "pb_Progress";
             this.pb_Progress.Size = new System.Drawing.Size(145, 23);
             this.pb_Progress.TabIndex = 3;
@@ -215,7 +220,7 @@
             // 
             this.lbl_Separator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbl_Separator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl_Separator.Location = new System.Drawing.Point(13, 0);
+            this.lbl_Separator.Location = new System.Drawing.Point(13, 5);
             this.lbl_Separator.Name = "lbl_Separator";
             this.lbl_Separator.Size = new System.Drawing.Size(708, 1);
             this.lbl_Separator.TabIndex = 4;
@@ -223,7 +228,7 @@
             // lbl_Progress
             // 
             this.lbl_Progress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbl_Progress.Location = new System.Drawing.Point(376, 15);
+            this.lbl_Progress.Location = new System.Drawing.Point(376, 20);
             this.lbl_Progress.Name = "lbl_Progress";
             this.lbl_Progress.Size = new System.Drawing.Size(196, 23);
             this.lbl_Progress.TabIndex = 5;
@@ -241,13 +246,17 @@
             this.tabP_Enemies.Location = new System.Drawing.Point(4, 22);
             this.tabP_Enemies.Name = "tabP_Enemies";
             this.tabP_Enemies.Padding = new System.Windows.Forms.Padding(3);
-            this.tabP_Enemies.Size = new System.Drawing.Size(506, 400);
+            this.tabP_Enemies.Size = new System.Drawing.Size(506, 441);
             this.tabP_Enemies.TabIndex = 0;
             this.tabP_Enemies.Text = "Enemies";
             this.tabP_Enemies.UseVisualStyleBackColor = true;
             // 
             // pn_EnemyEditor
             // 
+            this.pn_EnemyEditor.Controls.Add(this.picturebox_info);
+            this.pn_EnemyEditor.Controls.Add(this.lbl_ActorID);
+            this.pn_EnemyEditor.Controls.Add(this.tx_Header1Unk);
+            this.pn_EnemyEditor.Controls.Add(this.lbl_Header1Unk);
             this.pn_EnemyEditor.Controls.Add(this.numUp_Z);
             this.pn_EnemyEditor.Controls.Add(this.lb_PosX);
             this.pn_EnemyEditor.Controls.Add(this.numUp_Y);
@@ -263,6 +272,37 @@
             this.pn_EnemyEditor.Name = "pn_EnemyEditor";
             this.pn_EnemyEditor.Size = new System.Drawing.Size(313, 387);
             this.pn_EnemyEditor.TabIndex = 26;
+            // 
+            // picturebox_info
+            // 
+            this.picturebox_info.Image = global::Super_Paper_Mario_Randomizer.Properties.Resources.Blue_question_mark_icon_svg;
+            this.picturebox_info.Location = new System.Drawing.Point(275, 23);
+            this.picturebox_info.Name = "picturebox_info";
+            this.picturebox_info.Size = new System.Drawing.Size(28, 22);
+            this.picturebox_info.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturebox_info.TabIndex = 29;
+            this.picturebox_info.TabStop = false;
+            this.picturebox_info.Visible = false;
+            // 
+            // lbl_ActorID
+            // 
+            this.lbl_ActorID.AutoSize = true;
+            this.lbl_ActorID.Location = new System.Drawing.Point(7, 27);
+            this.lbl_ActorID.Name = "lbl_ActorID";
+            this.lbl_ActorID.Size = new System.Drawing.Size(18, 13);
+            this.lbl_ActorID.TabIndex = 28;
+            this.lbl_ActorID.Text = "ID";
+            this.lbl_ActorID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbl_Header1Unk
+            // 
+            this.lbl_Header1Unk.AutoSize = true;
+            this.lbl_Header1Unk.Location = new System.Drawing.Point(7, 322);
+            this.lbl_Header1Unk.Name = "lbl_Header1Unk";
+            this.lbl_Header1Unk.Size = new System.Drawing.Size(154, 13);
+            this.lbl_Header1Unk.TabIndex = 26;
+            this.lbl_Header1Unk.Text = "Unknown data (Size header 1):";
+            this.lbl_Header1Unk.Visible = false;
             // 
             // numUp_Z
             // 
@@ -314,9 +354,9 @@
             // combo_Actor
             // 
             this.combo_Actor.FormattingEnabled = true;
-            this.combo_Actor.Location = new System.Drawing.Point(7, 24);
+            this.combo_Actor.Location = new System.Drawing.Point(70, 24);
             this.combo_Actor.Name = "combo_Actor";
-            this.combo_Actor.Size = new System.Drawing.Size(169, 21);
+            this.combo_Actor.Size = new System.Drawing.Size(199, 21);
             this.combo_Actor.TabIndex = 9;
             this.combo_Actor.SelectedIndexChanged += new System.EventHandler(this.combo_Actor_SelectedIndexChanged);
             // 
@@ -380,9 +420,9 @@
             this.lb_Setupheader.AutoSize = true;
             this.lb_Setupheader.Location = new System.Drawing.Point(6, 7);
             this.lb_Setupheader.Name = "lb_Setupheader";
-            this.lb_Setupheader.Size = new System.Drawing.Size(92, 13);
+            this.lb_Setupheader.Size = new System.Drawing.Size(45, 13);
             this.lb_Setupheader.TabIndex = 19;
-            this.lb_Setupheader.Text = "Unknown header:";
+            this.lb_Setupheader.Text = "Header:";
             // 
             // lb_SeparatorEnemies
             // 
@@ -408,7 +448,7 @@
             this.lst_EnemyEntries.FormattingEnabled = true;
             this.lst_EnemyEntries.Location = new System.Drawing.Point(6, 71);
             this.lst_EnemyEntries.Name = "lst_EnemyEntries";
-            this.lst_EnemyEntries.Size = new System.Drawing.Size(181, 316);
+            this.lst_EnemyEntries.Size = new System.Drawing.Size(181, 355);
             this.lst_EnemyEntries.TabIndex = 0;
             this.lst_EnemyEntries.SelectedIndexChanged += new System.EventHandler(this.lst_EnemyEntries_SelectedIndexChanged);
             // 
@@ -420,7 +460,7 @@
             this.tabC_Editor.Location = new System.Drawing.Point(209, 41);
             this.tabC_Editor.Name = "tabC_Editor";
             this.tabC_Editor.SelectedIndex = 0;
-            this.tabC_Editor.Size = new System.Drawing.Size(514, 426);
+            this.tabC_Editor.Size = new System.Drawing.Size(514, 467);
             this.tabC_Editor.TabIndex = 6;
             // 
             // container
@@ -443,9 +483,20 @@
             this.container.Panel2.Controls.Add(this.pb_Progress);
             this.container.Panel2.Controls.Add(this.lbl_Separator);
             this.container.Panel2.Controls.Add(this.lbl_Progress);
-            this.container.Size = new System.Drawing.Size(735, 524);
-            this.container.SplitterDistance = 470;
+            this.container.Size = new System.Drawing.Size(735, 570);
+            this.container.SplitterDistance = 511;
             this.container.TabIndex = 7;
+            // 
+            // tx_Header1Unk
+            // 
+            this.tx_Header1Unk.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_Header1Unk.Location = new System.Drawing.Point(6, 338);
+            this.tx_Header1Unk.Name = "tx_Header1Unk";
+            this.tx_Header1Unk.Size = new System.Drawing.Size(297, 20);
+            this.tx_Header1Unk.TabIndex = 27;
+            this.tx_Header1Unk.Tag = "header1unk";
+            this.tx_Header1Unk.Visible = false;
+            this.tx_Header1Unk.TextChanged += new System.EventHandler(this.bytetx_Changed);
             // 
             // tx_UnknownData
             // 
@@ -455,13 +506,14 @@
             this.tx_UnknownData.Location = new System.Drawing.Point(6, 153);
             this.tx_UnknownData.Multiline = true;
             this.tx_UnknownData.Name = "tx_UnknownData";
-            this.tx_UnknownData.Size = new System.Drawing.Size(297, 224);
+            this.tx_UnknownData.Size = new System.Drawing.Size(297, 166);
             this.tx_UnknownData.TabIndex = 17;
             this.tx_UnknownData.Tag = "unkd";
             this.tx_UnknownData.TextChanged += new System.EventHandler(this.bytetx_Changed);
             // 
             // tx_Setupheader
             // 
+            this.tx_Setupheader.Enabled = false;
             this.tx_Setupheader.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tx_Setupheader.Location = new System.Drawing.Point(6, 24);
             this.tx_Setupheader.Name = "tx_Setupheader";
@@ -474,10 +526,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 524);
+            this.ClientSize = new System.Drawing.Size(735, 570);
             this.Controls.Add(this.container);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(751, 9999999);
             this.Name = "Form1";
             this.Text = "Super Paper Mario Level Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -487,6 +540,7 @@
             this.tabP_Enemies.PerformLayout();
             this.pn_EnemyEditor.ResumeLayout(false);
             this.pn_EnemyEditor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUp_Z)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUp_Y)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUp_X)).EndInit();
@@ -539,6 +593,10 @@
         private System.Windows.Forms.ToolStripMenuItem saveCurrentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openSetupFileToolStripMenuItem;
         private System.Windows.Forms.SplitContainer container;
+        private ByteTextbox tx_Header1Unk;
+        private System.Windows.Forms.Label lbl_Header1Unk;
+        private System.Windows.Forms.Label lbl_ActorID;
+        private System.Windows.Forms.PictureBox picturebox_info;
     }
 }
 

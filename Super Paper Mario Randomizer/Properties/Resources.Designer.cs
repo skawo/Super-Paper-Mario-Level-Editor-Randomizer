@@ -70,6 +70,16 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blue_question_mark_icon_svg {
+            get {
+                object obj = ResourceManager.GetObject("Blue_question_mark_icon.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This folder doesn&apos;t seem to contain the Super Paper Mario files....
         /// </summary>
         internal static string data_not_found {

@@ -19,10 +19,16 @@ namespace Super_Paper_Mario_Randomizer
     {
         private readonly SynchronizationContext synchronizationContext;
 
+        ToolTip Tip = new ToolTip();
+
         public Form1()
         {
             InitializeComponent();
             this.synchronizationContext = SynchronizationContext.Current;
+
+            Tip.AutoPopDelay = 5000;
+            Tip.InitialDelay = 500;
+            Tip.ReshowDelay = 500;
 
             if (File.Exists(Globals.EnemyJsonPath))
             {
@@ -397,6 +403,32 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
+        private void SetHeaderExclusive(SPMDefs.HeaderSize Header, bool Enable)
+        {
+            switch (Header)
+            {
+                case SPMDefs.HeaderSize.HEADER_SIZE_1:
+                    {
+                        lbl_Header1Unk.Visible = Enable;
+                        tx_Header1Unk.Visible = Enable;
+                        tx_Header1Unk.SetBytes(Globals.CurrentLevelSetupEntryEntry.Unknown_Header1);
+                        break;
+                    }
+                default: break;
+            }
+        }
+
+        private void ShowHideHeaderExclusive(SPMDefs.HeaderSize CurrHeader)
+        {
+            foreach (SPMDefs.HeaderSize h in Enum.GetValues(typeof(SPMDefs.HeaderSize)))
+            {
+                if (h != CurrHeader)
+                    SetHeaderExclusive(h, false);
+                else
+                    SetHeaderExclusive(h, true);
+            }
+        }
+
         private void lst_EnemyEntries_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -409,6 +441,8 @@ namespace Super_Paper_Mario_Randomizer
 
                     Globals.CurrentLevelSetupEntryEntry = (LevelSetupEntryEntry)lst_EnemyEntries.Items[lst_EnemyEntries.SelectedIndex];
 
+                    ShowHideHeaderExclusive((SPMDefs.HeaderSize)Globals.CurrentLevelSetupEntry.Header[1]);
+
                     numUp_X.Value = (decimal)Globals.CurrentLevelSetupEntryEntry.PosX;
                     numUp_Y.Value = (decimal)Globals.CurrentLevelSetupEntryEntry.PosY;
                     numUp_Z.Value = (decimal)Globals.CurrentLevelSetupEntryEntry.PosZ;
@@ -417,8 +451,22 @@ namespace Super_Paper_Mario_Randomizer
 
                     Enemy en = Globals.EnemyList.Find(x => x.ID == Globals.CurrentLevelSetupEntryEntry.ID);
 
+                    lbl_ActorID.Text = Globals.CurrentLevelSetupEntryEntry.ID.ToString();
+
                     if (en != null)
+                    {
                         combo_Actor.SelectedItem = en;
+
+                        if (en.Description != "")
+                        {
+                            picturebox_info.Visible = true;
+                            Tip.SetToolTip(this.picturebox_info, en.Description);
+                        }
+                        else
+                        {
+                            picturebox_info.Visible = false;
+                        }
+                    }
                     else
                         combo_Actor.SelectedIndex = -1;
                 }
@@ -442,6 +490,7 @@ namespace Super_Paper_Mario_Randomizer
             {
                 case "unkd": Globals.CurrentLevelSetupEntryEntry.Unknown = (sender as ByteTextbox).GetBytes(); break;
                 case "header": Globals.CurrentLevelSetupEntry.Header = (sender as ByteTextbox).GetBytes(); break;
+                case "header1unk": Globals.CurrentLevelSetupEntryEntry.Unknown_Header1 = (sender as ByteTextbox).GetBytes(); break;
             }
         }
 

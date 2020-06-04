@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -107,7 +108,7 @@
   <ItemGroup>
     <Content Include="424691217939300362_JH9_icon.ico" />
     <Content Include="LICENSE.EndianBitConverter.txt" />
-    <Content Include="SPMe.ico" />
+    <None Include="Resources\Blue_question_mark_icon.svg.png" />
     <Content Include="Wit\cygattr-1.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

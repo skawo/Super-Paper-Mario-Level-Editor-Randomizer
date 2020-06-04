@@ -12,6 +12,8 @@ namespace Super_Paper_Mario_Randomizer
     {
         public static byte[] GetNumBytes(int Size, int Offset, string Path)
         {
+            if (Offset % 4 != 0)
+                return null;
 
             using (FileStream fsSource = new FileStream(Path, FileMode.Open, FileAccess.Read))
             {

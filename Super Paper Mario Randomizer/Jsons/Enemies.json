@@ -1576,8 +1576,8 @@
   },
   {
     "ID": 175,
-    "Name": "Nothing?",
-    "Description": "",
+    "Name": "Floro Cragnon (Round)",
+    "Description": "Disappears after Chapter 5",
     "Difficulty": 0,
     "Weird": true,
     "Boss": false,
@@ -1585,8 +1585,8 @@
   },
   {
     "ID": 176,
-    "Name": "Nothing?",
-    "Description": "",
+    "Name": "Floro Cragnon (Triangular)",
+    "Description": "Disappears after Chapter 5",
     "Difficulty": 0,
     "Weird": true,
     "Boss": false,
