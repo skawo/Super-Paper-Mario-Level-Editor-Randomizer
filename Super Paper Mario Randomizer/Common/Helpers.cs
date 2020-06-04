@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -38,6 +39,31 @@ namespace Super_Paper_Mario_Randomizer
                 MessageBox.Show(ex.Message);
                 return;
             }
+        }
+
+        public static string GetStringSHA1OfString(string s)
+        {
+            HashAlgorithm hsh = HashAlgorithm.Create("SHA1");
+            return Encoding.ASCII.GetString(hsh.ComputeHash(Encoding.ASCII.GetBytes(s)));
+        }
+
+        public static void DeleteDirectory(string target_dir)
+        {
+            string[] files = Directory.GetFiles(target_dir);
+            string[] dirs = Directory.GetDirectories(target_dir);
+
+            foreach (string file in files)
+            {
+                File.SetAttributes(file, FileAttributes.Normal);
+                File.Delete(file);
+            }
+
+            foreach (string dir in dirs)
+            {
+                DeleteDirectory(dir);
+            }
+
+            Directory.Delete(target_dir, false);
         }
     }
 }

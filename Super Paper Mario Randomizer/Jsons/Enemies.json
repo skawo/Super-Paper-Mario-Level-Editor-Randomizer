@@ -991,7 +991,7 @@
   },
   {
     "ID": 110,
-    "Name": "Unknown",
+    "Name": "Boo",
     "Description": "",
     "Difficulty": 0,
     "Weird": true,
@@ -1000,15 +1000,6 @@
   },
   {
     "ID": 111,
-    "Name": "Boo",
-    "Description": "",
-    "Difficulty": 0,
-    "Weird": false,
-    "Boss": false,
-    "Obstacle": false
-  },
-  {
-    "ID": 112,
     "Name": "Dark Boo",
     "Description": "",
     "Difficulty": 0,
@@ -1017,7 +1008,7 @@
     "Obstacle": false
   },
   {
-    "ID": 113,
+    "ID": 112,
     "Name": "Atomic Boo",
     "Description": "",
     "Difficulty": 1,
@@ -1026,11 +1017,20 @@
     "Obstacle": false
   },
   {
-    "ID": 114,
+    "ID": 113,
     "Name": "(Unused) Dark Atomic Boo",
     "Description": "",
     "Difficulty": 2,
     "Weird": false,
+    "Boss": false,
+    "Obstacle": false
+  },
+  {
+    "ID": 114,
+    "Name": "Goomba",
+    "Description": "",
+    "Difficulty": 0,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },

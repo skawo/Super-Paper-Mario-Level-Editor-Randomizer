@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using BitConverter;
 
 namespace Super_Paper_Mario_Randomizer
 {
@@ -22,8 +23,8 @@ namespace Super_Paper_Mario_Randomizer
             FileName = Path.GetFileNameWithoutExtension(FilePath);
             Description = "";
 
-            Header = ByteOps.GetNumBytes(2, 0, FilePath);
-            Entries = LevelSetupEntryEntry.GetListOfEntriesFromData(File.ReadAllBytes(FilePath).Skip(2).ToArray());
+            Header = ByteOps.GetNumBytes(4, 0, FilePath);
+            Entries = LevelSetupEntryEntry.GetListOfEntriesFromData(File.ReadAllBytes(FilePath).Skip(4).ToArray());
         }
 
         public override string ToString()
@@ -33,16 +34,33 @@ namespace Super_Paper_Mario_Randomizer
             else
                 return FileName;
         }
+
+        public byte[] ToBytes()
+        {
+            List<byte> Out = new List<byte>();
+
+            Out.AddRange(this.Header);
+
+            foreach (LevelSetupEntryEntry Entry in this.Entries)
+                Out.AddRange(Entry.ToBytes());
+
+            return Out.ToArray();
+        }
+
+        public static bool IsValid(string FilePath)
+        {
+            FileInfo fi = new FileInfo(FilePath);
+            return true;
+        }
     }
 
     public class LevelSetupEntryEntry
     {
         public UInt32 ID;
-        public int PosX;
-        public int PosY;
-        public int PosZ;
-        public byte[] Unk = new byte[0x2];
-        public byte[] Unknown = new byte[0x64];
+        public float PosX;
+        public float PosY;
+        public float PosZ;
+        public byte[] Unknown = new byte[0x60];
 
         public LevelSetupEntryEntry(byte[] Data)
         {
@@ -50,13 +68,12 @@ namespace Super_Paper_Mario_Randomizer
                 return;
             else
             {
-                PosX = ByteOps.GetInt32(Data, 0);
-                PosY = ByteOps.GetInt32(Data, 4);
-                PosZ = ByteOps.GetInt32(Data, 8);
-                Unk = Data.Skip(12).Take(2).ToArray();
-                ID = ByteOps.GetUInt32(Data, 14);
+                PosX = ByteOps.GetFloat(Data, 0);
+                PosY = ByteOps.GetFloat(Data, 4);
+                PosZ = ByteOps.GetFloat(Data, 8);
+                ID = ByteOps.GetUInt32(Data, 12);
 
-                Unknown = Data.Skip(18).Take(100).ToArray();
+                Unknown = Data.Skip(16).Take(0x60).ToArray();
             }
         }
 
@@ -73,12 +90,25 @@ namespace Super_Paper_Mario_Randomizer
                 return ID.ToString() + " - " + E.Name;
         }
 
+        public byte[] ToBytes()
+        {
+            List<byte> Out = new List<byte>();
+
+            Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosX));
+            Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosY));
+            Out.AddRange(EndianBitConverter.BigEndian.GetBytes(PosZ));
+            Out.AddRange(EndianBitConverter.BigEndian.GetBytes(ID));
+            Out.AddRange(Unknown);
+
+            return Out.ToArray();
+        }
+
         public static List<LevelSetupEntryEntry> GetListOfEntriesFromData(byte[] Data)
         {
             int Pos = 0;
             List<LevelSetupEntryEntry> Outl = new List<LevelSetupEntryEntry>();
 
-            while (Pos < Data.Length)
+            while (Pos + 0x70 <= Data.Length)
             {
                 byte[] Entry = Data.Skip(Pos).Take(0x70).ToArray();
                 Outl.Add(new LevelSetupEntryEntry(Entry));

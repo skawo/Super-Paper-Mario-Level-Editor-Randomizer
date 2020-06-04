@@ -43,6 +43,36 @@ namespace Super_Paper_Mario_Randomizer
 
         }
 
+        public static bool PackISO(string InPath, string OutFile)
+        {
+            try
+            {
+                ProcessStartInfo info = new ProcessStartInfo(WitPath);
+                info.Arguments = " copy --align-files \"" + InPath + "\" \"" + OutFile + "\"";
+                info.UseShellExecute = true;
+                info.CreateNoWindow = true;
+                info.WindowStyle = ProcessWindowStyle.Hidden;
+
+                Process p = new Process();
+                p.EnableRaisingEvents = true;
+                p.StartInfo = info;
+                p.Start();
+
+                p.WaitForExit();
+                int ec = p.ExitCode;
+
+                if (ec != 0)
+                    return false;
+                else
+                    return true;
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
         public static bool UnpackISO(string InPath, string OutPath)
         {
             try

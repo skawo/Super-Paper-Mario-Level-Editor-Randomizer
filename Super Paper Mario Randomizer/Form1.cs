@@ -1,21 +1,28 @@
-﻿using Super_Paper_Mario_Randomizer.Properties;
+﻿using BitConverter;
+using Newtonsoft.Json;
+using Super_Paper_Mario_Randomizer.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Super_Paper_Mario_Randomizer
 {
     public partial class Form1 : Form
     {
+        private readonly SynchronizationContext synchronizationContext;
 
         public Form1()
         {
             InitializeComponent();
+            this.synchronizationContext = SynchronizationContext.Current;
 
             if (File.Exists(Globals.EnemyJsonPath))
             {
@@ -23,29 +30,276 @@ namespace Super_Paper_Mario_Randomizer
 
                 foreach (Enemy e in Globals.EnemyList)
                     combo_Actor.Items.Add(e);
-
-                int last = -1;
-
-                foreach (Enemy e in Globals.EnemyList)
-                {
-                    if (e.ID != last + 1)
-                        MessageBox.Show(e.Name + e.ID);
-
-
-                    else
-                        last = e.ID;
-                }
             }
         }
 
-        #region Extract ISO Option
+        #region ProgressBar
 
-        string OutPath = "";
-        string InFile = "";
-        int FileNum = 0;
-
-        private void openISOToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SetBusy(bool Busy)
         {
+            synchronizationContext.Post(new SendOrPostCallback(o =>
+            {
+                container.Panel1.Enabled = !Busy;
+            }), Busy);
+        }
+
+        private void SetProgress(string Msg = "", int Percent = -1)
+        {
+            if (Msg != "")
+                SetProgressMessage(Msg);
+
+            if (Percent != -1)
+                SetProgressVal(Percent);
+        }
+
+        private void SetProgressMessage(string Msg)
+        {
+            synchronizationContext.Post(new SendOrPostCallback(o =>
+            {
+                lbl_Progress.Text = Msg;
+            }), Msg);
+        }
+
+        private void SetProgressVal(int Percent)
+        {
+            if (Percent < pb_Progress.Minimum || Percent > pb_Progress.Maximum)
+                return;
+
+            synchronizationContext.Post(new SendOrPostCallback(o =>
+            {
+                pb_Progress.Value = Percent;
+            }), Percent);
+        }
+
+        #endregion
+
+        #region ISO
+
+        private async Task<bool> PackISO(string InPath, string OutFile)
+        {
+            SetBusy(true);
+            SetProgress(Resources.saving_iso, 0);
+            bool Res = await Task.Run(() => _PackISO(InPath, OutFile));
+            SetProgress(Resources.done, 100);
+            SetBusy(false);
+
+            return Res;
+        }
+
+        private bool _PackISO(string InPath, string OutFile)
+        {
+            try
+            {
+                if (File.Exists(OutFile))
+                    File.Delete(OutFile);
+
+                bool Res = false;
+
+                Thread th = new Thread(() => { Res = Wit.PackISO(InPath, OutFile); });
+                th.Start();
+
+                int i = 0;
+
+                while (th.IsAlive)
+                {
+                    i++;
+                    SetProgressVal(i);
+                    Thread.Sleep(100);
+                }
+
+                if (Res == false)
+                {
+                    MessageBox.Show(Resources.saving_err);
+                    return false;
+                }
+                else
+                    return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
+        private async Task<bool> ExtractISO(string InFile, string OutPath)
+        {
+            SetBusy(true);
+            SetProgress(Resources.extracting_iso, 0);
+            bool Res = await Task.Run(() => _ExtractISO(InFile, OutPath));
+            SetProgress(Resources.done, 100);
+            SetBusy(false);
+
+            return Res;
+        }
+
+        private bool _ExtractISO(string InFile, string OutPath)
+        {
+            try
+            {
+                int FileNum = Wit.GetNumFiles(InFile);
+
+                if (FileNum == -1)
+                {
+                    MessageBox.Show(Resources.err_extract_failed);
+                    return false;
+                }
+
+                if (Directory.Exists(OutPath))
+                    Helpers.DeleteDirectory(OutPath);
+
+                bool Res = false;
+
+                Thread th = new Thread(() => { Res = Wit.UnpackISO(InFile, OutPath); });
+                th.Start();
+
+                while (th.IsAlive)
+                {
+                    if (Directory.Exists(OutPath))
+                    {
+                        int FileC = Directory.GetFiles(OutPath, "*", SearchOption.AllDirectories).Count();
+                        int Percent = (int)(((decimal)FileC / (decimal)FileNum) * 100);
+                        SetProgressVal(Percent);
+                    }
+
+                    Thread.Sleep(100);
+                }
+
+                if (Res == false)
+                {
+                    MessageBox.Show(Resources.err_extract_failed);
+                    return false;
+                }
+                else
+                    return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
+        #endregion
+
+        #region Load
+
+        private async Task<bool> LoadFolder(string Path)
+        {
+            SetBusy(true);
+            SetProgress(Resources.loading_stages, 0);
+            bool Res = await Task.Run(() => LoadStages(Path));
+            SetProgress(Resources.done, 0);
+            SetBusy(false);
+
+            return Res;
+        }
+
+        private bool LoadStages(string Path)
+        {
+            try
+            {
+                Globals.LevelSetups.Clear();
+                string[] Files = Directory.GetFiles(Path);
+
+                int i = 0;
+
+                foreach (string File in Files)
+                {
+                    if (LevelSetupEntry.IsValid(File))
+                    {
+                        Globals.LevelSetups.Add(new LevelSetupEntry(File));
+
+                        i++;
+                        int Percent = (int)(((decimal)i / (decimal)(Files.Count())) * 100);
+                        SetProgressVal(Percent);
+                    }
+                }
+
+                string f = "";
+
+                foreach (LevelSetupEntry e in Globals.LevelSetups)
+                {
+                    FileInfo fi = new FileInfo(e.FilePath);
+
+                    f += e.Entries.Count() + ", " + System.BitConverter.ToString(e.Header) + ", " + fi.Length + Environment.NewLine;
+
+                }
+
+                File.WriteAllText("test.txt", f);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
+        #endregion
+
+        #region Save
+
+        private async Task<bool> SaveAll()
+        {
+            SetBusy(true);
+            SetProgress(Resources.saving_sages, 0);
+            bool Res = await Task.Run(() => SaveEntries());
+            SetProgress(Resources.done, 100);
+            SetBusy(false);
+
+            return Res;
+        }
+
+        private bool SaveEntries()
+        {
+            try
+            {
+                int i = 0;
+
+                foreach (LevelSetupEntry Entry in Globals.LevelSetups)
+                {
+                    SaveEntry(Entry);
+
+                    i++;
+                    int Percent = (int)(((decimal)i / (decimal)(Globals.LevelSetups.Count())) * 100);
+                    SetProgressVal(Percent);
+                }
+
+                Globals.LoadedStagesJsonHash = Helpers.GetStringSHA1OfString(JsonConvert.SerializeObject(Globals.LevelSetups));
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
+        private bool SaveEntry(LevelSetupEntry Entry)
+        {
+            try
+            {
+                File.WriteAllBytes(Entry.FilePath, Entry.ToBytes());
+                Globals.LoadedStagesJsonHash = Helpers.GetStringSHA1OfString(JsonConvert.SerializeObject(Globals.LevelSetups));
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
+        #endregion
+
+        private async void extractISOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string InFile = "";
+            string OutPath = "";
+
             using (OpenFileDialog fd = new OpenFileDialog())
             {
                 fd.Title = Resources.select_spm_iso;
@@ -64,14 +318,6 @@ namespace Super_Paper_Mario_Randomizer
                     else
                         InFile = fd.FileName;
 
-                    FileNum = Wit.GetNumFiles(InFile);
-
-                    if (FileNum == -1)
-                    {
-                        MessageBox.Show(Resources.err_extract_failed);
-                        return;
-                    }
-
                     using (FolderBrowserDialog fb = new FolderBrowserDialog())
                     {
                         fb.Description = Resources.select_iso_extract_dir;
@@ -84,17 +330,7 @@ namespace Super_Paper_Mario_Randomizer
 
                             if (!Directory.Exists(OutPath) || MessageBox.Show(Resources.folder_will_be_overwritten, Resources.folder_will_be_overwritten_title, MessageBoxButtons.YesNo) == DialogResult.Yes)
                             {
-                                if (Directory.Exists(OutPath))
-                                    Directory.Delete(OutPath, true);
-
-                                SetProgress("Extracting " + FileNum + " files...", 0);
-
-                                BackgroundWorker WkrCheckExtractProgress = new BackgroundWorker();
-                                WkrCheckExtractProgress.WorkerReportsProgress = true;
-                                WkrCheckExtractProgress.DoWork += WkrCheckExtractProgress_DoWork;
-                                WkrCheckExtractProgress.ProgressChanged += Workers_ProgressChanged;
-                                WkrCheckExtractProgress.RunWorkerCompleted += Workers_Complete;
-                                WkrCheckExtractProgress.RunWorkerAsync(10000);
+                                await ExtractISO(InFile, OutPath);
                             }
                         }
                     }
@@ -102,73 +338,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void WkrCheckExtractProgress_DoWork(object sender, DoWorkEventArgs e)
-        {
-            bool Res = false;
-
-            Thread th = new Thread(() => { Res = Wit.UnpackISO(InFile, OutPath); });
-            th.Start();
-
-            while (th.IsAlive)
-            {
-                if (Directory.Exists(OutPath))
-                {
-                    int FileC = Directory.GetFiles(OutPath, "*", SearchOption.AllDirectories).Count();
-                    int Percent = (int)(((decimal)FileC / (decimal)FileNum) * 100);
-                    (sender as BackgroundWorker).ReportProgress(Percent);
-                }
-
-                Thread.Sleep(100);
-            }
-
-            if (Res == false)
-            {
-                MessageBox.Show(Resources.err_extract_failed);
-                return;
-            }
-        }
-
-        #endregion
-
-        #region ProgressBar
-
-        private void SetProgress(string Msg = "", int Percent = -1)
-        {
-            if (Msg != "")
-                SetProgressMessage(Msg);
-
-            if (Percent != -1)
-                SetProgressVal(Percent);
-        }
-
-        private void SetProgressMessage(string Msg)
-        {
-            lbl_Progress.Text = Msg;
-            lbl_Progress.Update();
-        }
-
-        private void SetProgressVal(int Percent)
-        {
-            if (Percent < pb_Progress.Minimum || Percent > pb_Progress.Maximum)
-                return;
-
-            pb_Progress.Value = Percent;
-            pb_Progress.Update();
-        }
-
-        private void Workers_Complete(object sender, RunWorkerCompletedEventArgs e)
-        {
-            SetProgress(Resources.done, 100);
-        }
-
-        private void Workers_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            SetProgressVal(e.ProgressPercentage);
-        }
-
-        #endregion
-
-        private void openSetupFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void openSetupFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -180,51 +350,15 @@ namespace Super_Paper_Mario_Randomizer
 
                     if (dr == DialogResult.OK)
                     {
-                        SetProgress(Resources.loading_stages, 0);
+                        await LoadFolder(fb.SelectedPath);
 
-                        BackgroundWorker WkrLoadStagesProgress = new BackgroundWorker();
-                        WkrLoadStagesProgress.WorkerReportsProgress = true;
-                        WkrLoadStagesProgress.DoWork += WkrLoadStagesProgress_DoWork;
-                        WkrLoadStagesProgress.ProgressChanged += Workers_ProgressChanged;
-                        WkrLoadStagesProgress.RunWorkerCompleted += WkrLoadStagesProgress_RunWorkerCompleted; ;
-                        WkrLoadStagesProgress.RunWorkerAsync(fb.SelectedPath);
+                        checkedlistbox_Stages.Items.Clear();
+
+                        foreach (LevelSetupEntry Setup in Globals.LevelSetups)
+                            checkedlistbox_Stages.Items.Add(Setup, true);
+
+                        Globals.LoadedStagesJsonHash = Helpers.GetStringSHA1OfString(JsonConvert.SerializeObject(Globals.LevelSetups));
                     }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return;
-            }
-        }
-
-        private void WkrLoadStagesProgress_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            checkedlistbox_Stages.Items.Clear();
-
-            foreach (LevelSetupEntry Setup in Globals.LevelSetups)
-                checkedlistbox_Stages.Items.Add(Setup, true);
-
-            SetProgress(Resources.done, 100);
-        }
-
-        private void WkrLoadStagesProgress_DoWork(object sender, DoWorkEventArgs e)
-        {
-            try
-            {
-                Globals.LevelSetups.Clear();
-
-                string[] Files = Directory.GetFiles((string)e.Argument);
-
-                int i = 0;
-
-                foreach (string File in Files)
-                {
-                    Globals.LevelSetups.Add(new LevelSetupEntry(File));
-
-                    i++;
-                    int Percent = (int)(((decimal)i / (decimal)(Files.Count())) * 100);
-                    (sender as BackgroundWorker).ReportProgress(Percent);
                 }
             }
             catch (Exception ex)
@@ -240,15 +374,21 @@ namespace Super_Paper_Mario_Randomizer
             {
                 if (checkedlistbox_Stages.SelectedIndex < 0 || checkedlistbox_Stages.SelectedIndex > checkedlistbox_Stages.Items.Count)
                     return;
+                else
+                {
+                    Globals.CurrentLevelSetupEntry = (LevelSetupEntry)checkedlistbox_Stages.Items[checkedlistbox_Stages.SelectedIndex];
 
-                LevelSetupEntry Setup = (LevelSetupEntry)checkedlistbox_Stages.Items[checkedlistbox_Stages.SelectedIndex];
+                    lst_EnemyEntries.SelectedIndex = -1;
+                    lst_EnemyEntries.Items.Clear();
 
-                lst_EnemyEntries.Items.Clear();
+                    foreach (LevelSetupEntryEntry Entry in Globals.CurrentLevelSetupEntry.Entries)
+                        lst_EnemyEntries.Items.Add(Entry);
 
-                foreach (LevelSetupEntryEntry Entry in Setup.Entries)
-                    lst_EnemyEntries.Items.Add(Entry);
+                    tx_Setupheader.SetBytes(Globals.CurrentLevelSetupEntry.Header);
 
-                tx_Setupheader.Text = ByteOps.GetFormattedByteString(Setup.Header);
+                    if (lst_EnemyEntries.Items.Count != 0)
+                        lst_EnemyEntries.SelectedIndex = 0;
+                }
             }
             catch (Exception ex)
             {
@@ -262,23 +402,229 @@ namespace Super_Paper_Mario_Randomizer
             try
             {
                 if (lst_EnemyEntries.SelectedIndex < 0 || lst_EnemyEntries.SelectedIndex > lst_EnemyEntries.Items.Count)
-                    return;
+                    pn_EnemyEditor.Enabled = false;
+                else
+                {
+                    pn_EnemyEditor.Enabled = true;
 
-                LevelSetupEntryEntry Setup = (LevelSetupEntryEntry)lst_EnemyEntries.Items[lst_EnemyEntries.SelectedIndex];
+                    Globals.CurrentLevelSetupEntryEntry = (LevelSetupEntryEntry)lst_EnemyEntries.Items[lst_EnemyEntries.SelectedIndex];
 
-                tx_PosX.Text = Setup.PosX.ToString();
-                tx_PosY.Text = Setup.PosY.ToString();
-                tx_PosZ.Text = Setup.PosZ.ToString();
+                    numUp_X.Value = (decimal)Globals.CurrentLevelSetupEntryEntry.PosX;
+                    numUp_Y.Value = (decimal)Globals.CurrentLevelSetupEntryEntry.PosY;
+                    numUp_Z.Value = (decimal)Globals.CurrentLevelSetupEntryEntry.PosZ;
 
-                tx_Unk.Text = ByteOps.GetFormattedByteString(Setup.Unk);
-                tx_UnknownData.Text = ByteOps.GetFormattedByteString(Setup.Unknown);
+                    tx_UnknownData.SetBytes(Globals.CurrentLevelSetupEntryEntry.Unknown);
 
-                combo_Actor.SelectedIndex = (int)Setup.ID - 1;
+                    Enemy en = Globals.EnemyList.Find(x => x.ID == Globals.CurrentLevelSetupEntryEntry.ID);
+
+                    if (en != null)
+                        combo_Actor.SelectedItem = en;
+                    else
+                        combo_Actor.SelectedIndex = -1;
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 return;
+            }
+        }
+
+        private void bytetx_Changed(object sender, EventArgs e)
+        {
+            if (Globals.CurrentLevelSetupEntry == null)
+                return;
+
+            if (Globals.CurrentLevelSetupEntryEntry == null)
+                return;
+
+            switch ((sender as ByteTextbox).Tag)
+            {
+                case "unkd": Globals.CurrentLevelSetupEntryEntry.Unknown = (sender as ByteTextbox).GetBytes(); break;
+                case "header": Globals.CurrentLevelSetupEntry.Header = (sender as ByteTextbox).GetBytes(); break;
+            }
+        }
+
+        private void numUp_X_ValueChanged(object sender, EventArgs e)
+        {
+            if (Globals.CurrentLevelSetupEntry == null)
+                return;
+
+            if (Globals.CurrentLevelSetupEntryEntry == null)
+                return;
+
+            switch ((sender as NumericUpDown).Tag)
+            {
+                case "X": Globals.CurrentLevelSetupEntryEntry.PosX = (Int16)(sender as NumericUpDown).Value; break;
+                case "Y": Globals.CurrentLevelSetupEntryEntry.PosY = (Int16)(sender as NumericUpDown).Value; break;
+                case "Z": Globals.CurrentLevelSetupEntryEntry.PosZ = (Int16)(sender as NumericUpDown).Value; break;
+            }
+        }
+
+        private void combo_Actor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Globals.CurrentLevelSetupEntry == null)
+                return;
+
+            if (Globals.CurrentLevelSetupEntryEntry == null)
+                return;
+
+            Enemy en = (Enemy)combo_Actor.SelectedItem;
+            Globals.CurrentLevelSetupEntryEntry.ID = (uint)en.ID;
+
+            lst_EnemyEntries.Items[lst_EnemyEntries.SelectedIndex] = Globals.CurrentLevelSetupEntryEntry;
+        }
+
+        private bool FilesChanged()
+        {
+            return Globals.LevelSetups.Count != 0 && Helpers.GetStringSHA1OfString(JsonConvert.SerializeObject(Globals.LevelSetups)) != Globals.LoadedStagesJsonHash;
+        }
+
+        private async Task<DialogResult> AskToSaveFilesIfChanged()
+        {
+            DialogResult dr = DialogResult.None;
+
+            if (FilesChanged())
+            {
+                dr = MessageBox.Show(Resources.files_changed_save, Resources.alert, MessageBoxButtons.YesNoCancel);
+
+                if (dr == DialogResult.Yes)
+                {
+                    bool Ret = await SaveAll();
+
+                    if (Ret)
+                        return dr;
+                    else
+                        return DialogResult.Cancel;
+                }
+            }
+
+            return dr;
+        }
+
+        private async void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = await AskToSaveFilesIfChanged();
+
+            if (dr == DialogResult.Cancel)
+                e.Cancel = true;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private async void saveAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            await SaveAll();
+        }
+
+        private void saveCurrentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globals.CurrentLevelSetupEntry == null)
+                return;
+
+            SaveEntry(Globals.CurrentLevelSetupEntry);
+        }
+
+        private void openSetupFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (OpenFileDialog fd = new OpenFileDialog())
+                {
+                    fd.Title = Resources.select_setup_file;
+                    DialogResult dr = fd.ShowDialog();
+
+                    if (dr == DialogResult.OK)
+                    {
+                        if (!LevelSetupEntry.IsValid(fd.FileName))
+                            throw new Exception(Resources.setup_file_invalid);
+
+                        Globals.LevelSetups.Clear();
+                        Globals.LevelSetups.Add(new LevelSetupEntry(fd.FileName));
+
+                        checkedlistbox_Stages.Items.Clear();
+
+                        foreach (LevelSetupEntry Setup in Globals.LevelSetups)
+                            checkedlistbox_Stages.Items.Add(Setup, true);
+
+                        Globals.LoadedStagesJsonHash = Helpers.GetStringSHA1OfString(JsonConvert.SerializeObject(Globals.LevelSetups));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Super Paper Mario Level Editor / Randomizer by Skawo.");
+        }
+
+        private async void saveAsWBFSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string InPath = "";
+            string OutFile = "";
+
+            using (FolderBrowserDialog fd = new FolderBrowserDialog())
+            {
+                fd.Description = Resources.select_exported;
+                fd.ShowNewFolderButton = false;
+
+                DialogResult dr = fd.ShowDialog();
+
+                if (dr == DialogResult.OK)
+                {
+                    InPath = fd.SelectedPath;
+
+                    string[] Files = Directory.GetDirectories(InPath);
+                    bool found = false;
+
+                    foreach (string f in Files)
+                    {
+                        if (f.EndsWith("DATA") || f.EndsWith("disc"))
+                        {
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (!found)
+                    {
+                        MessageBox.Show(Resources.data_not_found);
+                        return;
+                    }
+
+                    if (!File.Exists(Path.Combine(InPath, "DATA", "align-files.txt")) && !File.Exists(Path.Combine(InPath, "align-files.txt")))
+                    {
+                        MessageBox.Show(Resources.no_align_files);
+                        return;
+                    }
+
+ 
+                    using (SaveFileDialog sf = new SaveFileDialog())
+                    {
+                        sf.Title = Resources.select_outf;
+                        sf.Filter = Resources.isoselect_filter;
+
+                        DialogResult drsf = sf.ShowDialog();
+
+                        if (drsf == DialogResult.OK)
+                        {
+                            OutFile = Path.Combine(sf.FileName);
+
+                            if (!File.Exists(OutFile) || MessageBox.Show(Resources.file_will_be_overwritten, Resources.file_will_be_overwritten_title, MessageBoxButtons.YesNo) == DialogResult.Yes)
+                            {
+                                await PackISO(InPath, OutFile);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

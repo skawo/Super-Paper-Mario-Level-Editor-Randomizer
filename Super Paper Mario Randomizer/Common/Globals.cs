@@ -11,5 +11,11 @@ namespace Super_Paper_Mario_Randomizer
         public static List<LevelSetupEntry> LevelSetups = new List<LevelSetupEntry>();
         public static List<Enemy> EnemyList = null;
         public static string EnemyJsonPath = @"Jsons\Enemies.json";
+
+        public static string OpenedSetupPath = "";
+        public static string LoadedStagesJsonHash = "";
+
+        public static LevelSetupEntry CurrentLevelSetupEntry;
+        public static LevelSetupEntryEntry CurrentLevelSetupEntryEntry;
     }
 }

@@ -61,6 +61,24 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        internal static string alert {
+            get {
+                return ResourceManager.GetString("alert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This folder doesn&apos;t seem to contain the Super Paper Mario files....
+        /// </summary>
+        internal static string data_not_found {
+            get {
+                return ResourceManager.GetString("data_not_found", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Done.
         /// </summary>
         internal static string done {
@@ -75,6 +93,42 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         internal static string err_extract_failed {
             get {
                 return ResourceManager.GetString("err_extract_failed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extracting ISO....
+        /// </summary>
+        internal static string extracting_iso {
+            get {
+                return ResourceManager.GetString("extracting_iso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File will be overwritten. Continue?.
+        /// </summary>
+        internal static string file_will_be_overwritten {
+            get {
+                return ResourceManager.GetString("file_will_be_overwritten", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File exists.
+        /// </summary>
+        internal static string file_will_be_overwritten_title {
+            get {
+                return ResourceManager.GetString("file_will_be_overwritten_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Files were changed. Save folder?.
+        /// </summary>
+        internal static string files_changed_save {
+            get {
+                return ResourceManager.GetString("files_changed_save", resourceCulture);
             }
         }
         
@@ -115,6 +169,15 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Did not find &quot;align-files.txt&quot;, without which the game will crash. Use the &quot;Extract ISO&quot; option to get the file. Aborting..
+        /// </summary>
+        internal static string no_align_files {
+            get {
+                return ResourceManager.GetString("no_align_files", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This does not seem to be a Super Paper Mario ISO..
         /// </summary>
         internal static string not_spm_iso {
@@ -124,11 +187,65 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Saving failed..
+        /// </summary>
+        internal static string saving_err {
+            get {
+                return ResourceManager.GetString("saving_err", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saving ISO....
+        /// </summary>
+        internal static string saving_iso {
+            get {
+                return ResourceManager.GetString("saving_iso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saving stages....
+        /// </summary>
+        internal static string saving_sages {
+            get {
+                return ResourceManager.GetString("saving_sages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select exported Super Paper Mario ISO..
+        /// </summary>
+        internal static string select_exported {
+            get {
+                return ResourceManager.GetString("select_exported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select directory to extract this ISO to....
         /// </summary>
         internal static string select_iso_extract_dir {
             get {
                 return ResourceManager.GetString("select_iso_extract_dir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select folder to save the ISO in..
+        /// </summary>
+        internal static string select_outf {
+            get {
+                return ResourceManager.GetString("select_outf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Super Paper Mario setup file..
+        /// </summary>
+        internal static string select_setup_file {
+            get {
+                return ResourceManager.GetString("select_setup_file", resourceCulture);
             }
         }
         
@@ -147,6 +264,15 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         internal static string select_spm_iso {
             get {
                 return ResourceManager.GetString("select_spm_iso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not a valid Super Paper Mario level file..
+        /// </summary>
+        internal static string setup_file_invalid {
+            get {
+                return ResourceManager.GetString("setup_file_invalid", resourceCulture);
             }
         }
         
