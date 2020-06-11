@@ -43,7 +43,6 @@
             this.randomizeWithPresetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.presetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkedlistbox_Stages = new System.Windows.Forms.CheckedListBox();
             this.lbl_Stages = new System.Windows.Forms.Label();
             this.pb_Progress = new System.Windows.Forms.ProgressBar();
             this.lbl_Separator = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.pn_EnemyEditor = new System.Windows.Forms.Panel();
             this.picturebox_info = new System.Windows.Forms.PictureBox();
             this.lbl_ActorID = new System.Windows.Forms.Label();
+            this.tx_Header1Unk = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.lbl_Header1Unk = new System.Windows.Forms.Label();
             this.numUp_Z = new System.Windows.Forms.NumericUpDown();
             this.lb_PosX = new System.Windows.Forms.Label();
@@ -61,16 +61,16 @@
             this.lb_Actor = new System.Windows.Forms.Label();
             this.lb_PosY = new System.Windows.Forms.Label();
             this.lb_PosZ = new System.Windows.Forms.Label();
+            this.tx_UnknownData = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.lbl_UnknownData = new System.Windows.Forms.Label();
+            this.tx_Setupheader = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.lb_Setupheader = new System.Windows.Forms.Label();
             this.lb_SeparatorEnemies = new System.Windows.Forms.Label();
             this.lbl_EnemyEntries = new System.Windows.Forms.Label();
             this.lst_EnemyEntries = new System.Windows.Forms.ListBox();
             this.tabC_Editor = new System.Windows.Forms.TabControl();
             this.container = new System.Windows.Forms.SplitContainer();
-            this.tx_Header1Unk = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
-            this.tx_UnknownData = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
-            this.tx_Setupheader = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
+            this.lstbox_Stages = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.tabP_Enemies.SuspendLayout();
             this.pn_EnemyEditor.SuspendLayout();
@@ -114,49 +114,49 @@
             // openSetupFileToolStripMenuItem
             // 
             this.openSetupFileToolStripMenuItem.Name = "openSetupFileToolStripMenuItem";
-            this.openSetupFileToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.openSetupFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openSetupFileToolStripMenuItem.Text = "Open setup file...";
             this.openSetupFileToolStripMenuItem.Click += new System.EventHandler(this.openSetupFileToolStripMenuItem_Click);
             // 
             // openSetupFolderToolStripMenuItem
             // 
             this.openSetupFolderToolStripMenuItem.Name = "openSetupFolderToolStripMenuItem";
-            this.openSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.openSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openSetupFolderToolStripMenuItem.Text = "Open setup folder...";
             this.openSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.openSetupFolderToolStripMenuItem_Click);
             // 
             // saveCurrentToolStripMenuItem
             // 
             this.saveCurrentToolStripMenuItem.Name = "saveCurrentToolStripMenuItem";
-            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveCurrentToolStripMenuItem.Text = "Save current";
             this.saveCurrentToolStripMenuItem.Click += new System.EventHandler(this.saveCurrentToolStripMenuItem_Click);
             // 
             // savesSetupFolderToolStripMenuItem
             // 
             this.savesSetupFolderToolStripMenuItem.Name = "savesSetupFolderToolStripMenuItem";
-            this.savesSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.savesSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.savesSetupFolderToolStripMenuItem.Text = "Save all";
             this.savesSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
             // 
             // openISOToolStripMenuItem
             // 
             this.openISOToolStripMenuItem.Name = "openISOToolStripMenuItem";
-            this.openISOToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.openISOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openISOToolStripMenuItem.Text = "Extract ISO...";
             this.openISOToolStripMenuItem.Click += new System.EventHandler(this.extractISOToolStripMenuItem_Click);
             // 
             // saveAsWBFSToolStripMenuItem
             // 
             this.saveAsWBFSToolStripMenuItem.Name = "saveAsWBFSToolStripMenuItem";
-            this.saveAsWBFSToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.saveAsWBFSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsWBFSToolStripMenuItem.Text = "Pack ISO...";
             this.saveAsWBFSToolStripMenuItem.Click += new System.EventHandler(this.saveAsWBFSToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -180,6 +180,7 @@
             this.presetsToolStripMenuItem.Name = "presetsToolStripMenuItem";
             this.presetsToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.presetsToolStripMenuItem.Text = "Presets...";
+            this.presetsToolStripMenuItem.Click += new System.EventHandler(this.presetsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -187,17 +188,6 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // checkedlistbox_Stages
-            // 
-            this.checkedlistbox_Stages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.checkedlistbox_Stages.FormattingEnabled = true;
-            this.checkedlistbox_Stages.Location = new System.Drawing.Point(13, 57);
-            this.checkedlistbox_Stages.Name = "checkedlistbox_Stages";
-            this.checkedlistbox_Stages.Size = new System.Drawing.Size(190, 439);
-            this.checkedlistbox_Stages.TabIndex = 1;
-            this.checkedlistbox_Stages.SelectedIndexChanged += new System.EventHandler(this.checkedlistbox_Stages_SelectedIndexChanged);
             // 
             // lbl_Stages
             // 
@@ -293,6 +283,17 @@
             this.lbl_ActorID.TabIndex = 28;
             this.lbl_ActorID.Text = "ID";
             this.lbl_ActorID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // tx_Header1Unk
+            // 
+            this.tx_Header1Unk.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_Header1Unk.Location = new System.Drawing.Point(6, 338);
+            this.tx_Header1Unk.Name = "tx_Header1Unk";
+            this.tx_Header1Unk.Size = new System.Drawing.Size(297, 20);
+            this.tx_Header1Unk.TabIndex = 27;
+            this.tx_Header1Unk.Tag = "header1unk";
+            this.tx_Header1Unk.Visible = false;
+            this.tx_Header1Unk.TextChanged += new System.EventHandler(this.bytetx_Changed);
             // 
             // lbl_Header1Unk
             // 
@@ -406,6 +407,19 @@
             this.lb_PosZ.TabIndex = 15;
             this.lb_PosZ.Text = "Position Z:";
             // 
+            // tx_UnknownData
+            // 
+            this.tx_UnknownData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tx_UnknownData.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_UnknownData.Location = new System.Drawing.Point(6, 153);
+            this.tx_UnknownData.Multiline = true;
+            this.tx_UnknownData.Name = "tx_UnknownData";
+            this.tx_UnknownData.Size = new System.Drawing.Size(297, 166);
+            this.tx_UnknownData.TabIndex = 17;
+            this.tx_UnknownData.Tag = "unkd";
+            this.tx_UnknownData.TextChanged += new System.EventHandler(this.bytetx_Changed);
+            // 
             // lbl_UnknownData
             // 
             this.lbl_UnknownData.AutoSize = true;
@@ -414,6 +428,17 @@
             this.lbl_UnknownData.Size = new System.Drawing.Size(80, 13);
             this.lbl_UnknownData.TabIndex = 18;
             this.lbl_UnknownData.Text = "Unknown data:";
+            // 
+            // tx_Setupheader
+            // 
+            this.tx_Setupheader.Enabled = false;
+            this.tx_Setupheader.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_Setupheader.Location = new System.Drawing.Point(6, 24);
+            this.tx_Setupheader.Name = "tx_Setupheader";
+            this.tx_Setupheader.Size = new System.Drawing.Size(181, 20);
+            this.tx_Setupheader.TabIndex = 20;
+            this.tx_Setupheader.Tag = "header";
+            this.tx_Setupheader.TextChanged += new System.EventHandler(this.bytetx_Changed);
             // 
             // lb_Setupheader
             // 
@@ -473,9 +498,9 @@
             // 
             // container.Panel1
             // 
+            this.container.Panel1.Controls.Add(this.lstbox_Stages);
             this.container.Panel1.Controls.Add(this.tabC_Editor);
             this.container.Panel1.Controls.Add(this.lbl_Stages);
-            this.container.Panel1.Controls.Add(this.checkedlistbox_Stages);
             this.container.Panel1.Controls.Add(this.menuStrip1);
             // 
             // container.Panel2
@@ -487,40 +512,16 @@
             this.container.SplitterDistance = 511;
             this.container.TabIndex = 7;
             // 
-            // tx_Header1Unk
+            // lstbox_Stages
             // 
-            this.tx_Header1Unk.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_Header1Unk.Location = new System.Drawing.Point(6, 338);
-            this.tx_Header1Unk.Name = "tx_Header1Unk";
-            this.tx_Header1Unk.Size = new System.Drawing.Size(297, 20);
-            this.tx_Header1Unk.TabIndex = 27;
-            this.tx_Header1Unk.Tag = "header1unk";
-            this.tx_Header1Unk.Visible = false;
-            this.tx_Header1Unk.TextChanged += new System.EventHandler(this.bytetx_Changed);
-            // 
-            // tx_UnknownData
-            // 
-            this.tx_UnknownData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lstbox_Stages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.tx_UnknownData.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_UnknownData.Location = new System.Drawing.Point(6, 153);
-            this.tx_UnknownData.Multiline = true;
-            this.tx_UnknownData.Name = "tx_UnknownData";
-            this.tx_UnknownData.Size = new System.Drawing.Size(297, 166);
-            this.tx_UnknownData.TabIndex = 17;
-            this.tx_UnknownData.Tag = "unkd";
-            this.tx_UnknownData.TextChanged += new System.EventHandler(this.bytetx_Changed);
-            // 
-            // tx_Setupheader
-            // 
-            this.tx_Setupheader.Enabled = false;
-            this.tx_Setupheader.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_Setupheader.Location = new System.Drawing.Point(6, 24);
-            this.tx_Setupheader.Name = "tx_Setupheader";
-            this.tx_Setupheader.Size = new System.Drawing.Size(181, 20);
-            this.tx_Setupheader.TabIndex = 20;
-            this.tx_Setupheader.Tag = "header";
-            this.tx_Setupheader.TextChanged += new System.EventHandler(this.bytetx_Changed);
+            this.lstbox_Stages.FormattingEnabled = true;
+            this.lstbox_Stages.Location = new System.Drawing.Point(16, 57);
+            this.lstbox_Stages.Name = "lstbox_Stages";
+            this.lstbox_Stages.Size = new System.Drawing.Size(191, 446);
+            this.lstbox_Stages.TabIndex = 27;
+            this.lstbox_Stages.SelectedIndexChanged += new System.EventHandler(this.checkedlistbox_Stages_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -563,7 +564,6 @@
         private System.Windows.Forms.ToolStripMenuItem saveAsWBFSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.CheckedListBox checkedlistbox_Stages;
         private System.Windows.Forms.Label lbl_Stages;
         private System.Windows.Forms.ProgressBar pb_Progress;
         private System.Windows.Forms.Label lbl_Separator;
@@ -597,6 +597,7 @@
         private System.Windows.Forms.Label lbl_Header1Unk;
         private System.Windows.Forms.Label lbl_ActorID;
         private System.Windows.Forms.PictureBox picturebox_info;
+        private System.Windows.Forms.ListBox lstbox_Stages;
     }
 }
 

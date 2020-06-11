@@ -197,6 +197,15 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to JSON files (*.json)|*.json.
+        /// </summary>
+        internal static string presetsf_filter {
+            get {
+                return ResourceManager.GetString("presetsf_filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Saving failed..
         /// </summary>
         internal static string saving_err {
@@ -247,6 +256,24 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         internal static string select_outf {
             get {
                 return ResourceManager.GetString("select_outf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select preset....
+        /// </summary>
+        internal static string select_preset {
+            get {
+                return ResourceManager.GetString("select_preset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save where?.
+        /// </summary>
+        internal static string select_presetsf {
+            get {
+                return ResourceManager.GetString("select_presetsf", resourceCulture);
             }
         }
         

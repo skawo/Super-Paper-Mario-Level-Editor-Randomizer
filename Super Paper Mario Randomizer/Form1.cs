@@ -358,10 +358,10 @@ namespace Super_Paper_Mario_Randomizer
                     {
                         await LoadFolder(fb.SelectedPath);
 
-                        checkedlistbox_Stages.Items.Clear();
+                        lstbox_Stages.Items.Clear();
 
                         foreach (LevelSetupEntry Setup in Globals.LevelSetups)
-                            checkedlistbox_Stages.Items.Add(Setup, true);
+                            lstbox_Stages.Items.Add(Setup);
 
                         Globals.LoadedStagesJsonHash = Helpers.GetStringSHA1OfString(JsonConvert.SerializeObject(Globals.LevelSetups));
                     }
@@ -378,11 +378,11 @@ namespace Super_Paper_Mario_Randomizer
         {
             try
             {
-                if (checkedlistbox_Stages.SelectedIndex < 0 || checkedlistbox_Stages.SelectedIndex > checkedlistbox_Stages.Items.Count)
+                if (lstbox_Stages.SelectedIndex < 0 || lstbox_Stages.SelectedIndex > lstbox_Stages.Items.Count)
                     return;
                 else
                 {
-                    Globals.CurrentLevelSetupEntry = (LevelSetupEntry)checkedlistbox_Stages.Items[checkedlistbox_Stages.SelectedIndex];
+                    Globals.CurrentLevelSetupEntry = (LevelSetupEntry)lstbox_Stages.Items[lstbox_Stages.SelectedIndex];
 
                     lst_EnemyEntries.SelectedIndex = -1;
                     lst_EnemyEntries.Items.Clear();
@@ -594,10 +594,10 @@ namespace Super_Paper_Mario_Randomizer
                         Globals.LevelSetups.Clear();
                         Globals.LevelSetups.Add(new LevelSetupEntry(fd.FileName));
 
-                        checkedlistbox_Stages.Items.Clear();
+                        lstbox_Stages.Items.Clear();
 
                         foreach (LevelSetupEntry Setup in Globals.LevelSetups)
-                            checkedlistbox_Stages.Items.Add(Setup, true);
+                            lstbox_Stages.Items.Add(Setup);
 
                         Globals.LoadedStagesJsonHash = Helpers.GetStringSHA1OfString(JsonConvert.SerializeObject(Globals.LevelSetups));
                     }
@@ -675,6 +675,12 @@ namespace Super_Paper_Mario_Randomizer
                     }
                 }
             }
+        }
+
+        private void presetsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PresetEditor pe = new PresetEditor();
+            pe.ShowDialog();
         }
     }
 }

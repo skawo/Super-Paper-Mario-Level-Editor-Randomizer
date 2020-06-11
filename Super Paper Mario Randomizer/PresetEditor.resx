@@ -117,92 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="not_spm_iso" xml:space="preserve">
-    <value>This does not seem to be a Super Paper Mario ISO.</value>
-  </data>
-  <data name="folder_will_be_overwritten_title" xml:space="preserve">
-    <value>Folder exists</value>
-  </data>
-  <data name="select_setup_folder" xml:space="preserve">
-    <value>Select the "setup" folder extracted from a Super Paper Mario ISO.</value>
-  </data>
-  <data name="select_iso_extract_dir" xml:space="preserve">
-    <value>Select directory to extract this ISO to...</value>
-  </data>
-  <data name="loading_stages" xml:space="preserve">
-    <value>Loading stages...</value>
-  </data>
-  <data name="setup_file_invalid" xml:space="preserve">
-    <value>Not a valid Super Paper Mario level file.</value>
-  </data>
-  <data name="saving_sages" xml:space="preserve">
-    <value>Saving stages...</value>
-  </data>
-  <data name="folder_will_be_overwritten" xml:space="preserve">
-    <value>Folder will be overwritten. Continue?</value>
-  </data>
-  <data name="done" xml:space="preserve">
-    <value>Done</value>
-  </data>
-  <data name="err_extract_failed" xml:space="preserve">
-    <value>There was an error extracting the ISO.</value>
-  </data>
-  <data name="spm_titlecode" xml:space="preserve">
-    <value>R8P</value>
-  </data>
-  <data name="saving_err" xml:space="preserve">
-    <value>Saving failed.</value>
-  </data>
-  <data name="saving_iso" xml:space="preserve">
-    <value>Saving ISO...</value>
-  </data>
-  <data name="select_setup_file" xml:space="preserve">
-    <value>Select a Super Paper Mario setup file.</value>
-  </data>
-  <data name="extracting_iso" xml:space="preserve">
-    <value>Extracting ISO...</value>
-  </data>
-  <data name="file_will_be_overwritten_title" xml:space="preserve">
-    <value>File exists</value>
-  </data>
-  <data name="files_changed_save" xml:space="preserve">
-    <value>Files were changed. Save folder?</value>
-  </data>
-  <data name="select_outf" xml:space="preserve">
-    <value>Select folder to save the ISO in.</value>
-  </data>
-  <data name="no_align_files" xml:space="preserve">
-    <value>Did not find "align-files.txt", without which the game will crash. Use the "Extract ISO" option to get the file. Aborting.</value>
-  </data>
-  <data name="data_not_found" xml:space="preserve">
-    <value>This folder doesn't seem to contain the Super Paper Mario files...</value>
-  </data>
-  <data name="isoselect_filter" xml:space="preserve">
-    <value>ISO files (*.iso)|*.iso|WBFS files (*.wbfs)|*.wbfs</value>
-  </data>
-  <data name="select_exported" xml:space="preserve">
-    <value>Select exported Super Paper Mario ISO.</value>
-  </data>
-  <data name="select_spm_iso" xml:space="preserve">
-    <value>Select a Super Paper Mario ISO...</value>
-  </data>
-  <data name="file_will_be_overwritten" xml:space="preserve">
-    <value>File will be overwritten. Continue?</value>
-  </data>
-  <data name="alert" xml:space="preserve">
-    <value>Warning</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Blue_question_mark_icon.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blue_question_mark_icon.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="presetsf_filter" xml:space="preserve">
-    <value>JSON files (*.json)|*.json</value>
-  </data>
-  <data name="select_preset" xml:space="preserve">
-    <value>Select preset...</value>
-  </data>
-  <data name="select_presetsf" xml:space="preserve">
-    <value>Save where?</value>
-  </data>
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
+  </metadata>
 </root>
