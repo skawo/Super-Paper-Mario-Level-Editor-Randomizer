@@ -1,0 +1,2408 @@
+[
+  {
+    "Name": "aa1_01",
+    "Description": "Mario's House (Outside)",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "aa1_02",
+    "Description": "Mario's House (Inside)",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "aa2_01",
+    "Description": "Bowser's Castle (Outside)",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "aa2_02",
+    "Description": "Bowser's Castle (Inside)",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "aa3_01",
+    "Description": "Ending Screen",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "aa4_01",
+    "Description": "Intro Cutscene",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "an1_01",
+    "Description": "(7-1) Underwhere Fountain Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_02",
+    "Description": "(7-1) Underwhere Two-Storey Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_03",
+    "Description": "(7-1) Underwhere River Twygz",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_04",
+    "Description": "(7-1) Underwhere's Queen Palace",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_05",
+    "Description": "(7-1) Underwhere Star Block Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_06",
+    "Description": "(7-1) Underwhere Sewers",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_07",
+    "Description": "(7-1) Underwhere Luigi Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_08",
+    "Description": "(7-1) Underwhere Luvbi Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_09",
+    "Description": "(7-1) Underwhere Underground 1",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_10",
+    "Description": "(7-1) Underwhere Underground 2",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an1_11",
+    "Description": "(7-1) Underwhere Underground 3",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_01",
+    "Description": "(7-2) Underwhere Road Start",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_02",
+    "Description": "(7-2) Underwhere Road, Doorguy The First",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_03",
+    "Description": "(7-2) Underwhere Three-Way-Road",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_04",
+    "Description": "(7-2) Underwhere Road Bowser Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_05",
+    "Description": "(7-2) Underwhere Road, Doorguy The Second",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_06",
+    "Description": "(7-2) Underwhere Road, Three Hags Entrance",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_07",
+    "Description": "(7-2) Underwhere Road, Three Hags Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_08",
+    "Description": "(7-2) Underwhere Road, Underchomp Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_09",
+    "Description": "(7-2) Underwhere Road Star Block Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an2_10",
+    "Description": "(7-2) Underwhere Road Underground 1",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_01",
+    "Description": "(7-3) Overthere Stair, Stair 1",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_02",
+    "Description": "(7-3) Overthere Stair, Stair 4",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_03",
+    "Description": "(7-3) Overthere Stair, Stair 5",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_04",
+    "Description": "(7-3) Overthere Stair, Star Block Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_05",
+    "Description": "(7-3) Overthere Stair, Blue Apple Tree Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_06",
+    "Description": "(7-3) Overthere Stair, Gold Apple Tree Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_07",
+    "Description": "(7-3) Overthere Stair, Yellow Apple Tree Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_08",
+    "Description": "(7-3) Overthere Stair, Red Apple Tree Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_09",
+    "Description": "(7-3) Overthere Stair, Pink Apple Tree Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_10",
+    "Description": "(7-3) Overthere Stair, Black Apple Tree Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_11",
+    "Description": "(7-3) Overthere Stair, Skellobits Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_12",
+    "Description": "(7-3) Overthere Stair, Stair 2",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_13",
+    "Description": "(7-3) Overthere Stair, Stair 3",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_14",
+    "Description": "(7-3) Overthere Stair, Stair 6",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_15",
+    "Description": "(7-3) Overthere Stair, Stair 7",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an3_16",
+    "Description": "(7-3) Overthere Stair, Launched by Cyrrus scene",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_01",
+    "Description": "(7-4) Overthere Sector 1",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_02",
+    "Description": "(7-4) Overthere Sector 3",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_03",
+    "Description": "(7-4) Overthere Sector 4",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_04",
+    "Description": "(7-4) Overthere Sector 2",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_05",
+    "Description": "(7-4) Overthere Sector 5",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_06",
+    "Description": "(7-4) Overthere Sector 6",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_07",
+    "Description": "(7-4) Overthere Sector 7",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_08",
+    "Description": "(7-4) Overthere Sector 8",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_09",
+    "Description": "(7-4) Overthere Grambi's Palace Entrance",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_10",
+    "Description": "(7-4) Overthere Grambi's Palace",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_11",
+    "Description": "(7-4) Overthere Gigabite Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "an4_12",
+    "Description": "(7-4) Overthere Bonus Room",
+    "Chapter": 7,
+    "Randomize": true
+  },
+  {
+    "Name": "bos_01",
+    "Description": "Dimentio Dimension",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "dan_01",
+    "Description": "Flipside Pit of 100 Trials, Rooms 1-25",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_02",
+    "Description": "Flipside Pit of 100 Trials, Rooms 26-49",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_03",
+    "Description": "Flipside Pit of 100 Trials, Rooms 51-75",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_04",
+    "Description": "Flipside Pit of 100 Trials, Rooms 76-99",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_11",
+    "Description": "Unused Flipside Pit of 100 Trials Room 1",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_12",
+    "Description": "Unused Flipside Pit of 100 Trials Room 2",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_13",
+    "Description": "Unused Flipside Pit of 100 Trials Room 3",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_14",
+    "Description": "Unused Flipside Pit of 100 Trials Room 4",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_21",
+    "Description": "Flipside Pit of 100 Trials Rooms 10 and 20",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_22",
+    "Description": "Flipside Pit of 100 Trials Rooms 30 and 40",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_23",
+    "Description": "Flipside Pit of 100 Trials Rooms 50 and 60",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_24",
+    "Description": "Flipside Pit of 100 Trials Rooms 70, 80 and 90",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_25",
+    "Description": "Flipside Pit of 100 Trials, Wracktail",
+    "Chapter": 8,
+    "Randomize": false
+  },
+  {
+    "Name": "dan_30",
+    "Description": "Flipside Pit of 100 Trials, Wracktail",
+    "Chapter": 8,
+    "Randomize": false
+  },
+  {
+    "Name": "dan_41",
+    "Description": "Flopside Pit of 100 Trials, Rooms 1-25",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_42",
+    "Description": "Flopside Pit of 100 Trials, Rooms 26-49",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_43",
+    "Description": "Flopside Pit of 100 Trials, Rooms 51-75",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_44",
+    "Description": "Flopside Pit of 100 Trials, Rooms 76-99",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_61",
+    "Description": "Flopside Pit of 100 Trials Rooms 10 and 20",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_62",
+    "Description": "Flopside Pit of 100 Trials Rooms 30 and 40",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_63",
+    "Description": "Flopside Pit of 100 Trials Rooms 50 and 60",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_64",
+    "Description": "Flopside Pit of 100 Trials Rooms 70, 80 and 90",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "dan_70",
+    "Description": "Flopside Pit of 100 Trials, Shadoo",
+    "Chapter": 8,
+    "Randomize": false
+  },
+  {
+    "Name": "dos_01",
+    "Description": "Unused yellow room",
+    "Chapter": 0,
+    "Randomize": true
+  },
+  {
+    "Name": "gn1_01",
+    "Description": "(5-1) Downtown of Crag Town",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn1_02",
+    "Description": "(5-1) Downtown of Crag, Hills",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn1_03",
+    "Description": "(5-1) Downtown of Crag Star Block Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn1_04",
+    "Description": "(5-1) Downtown of Crag Underground Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn1_05",
+    "Description": "(5-1) Downtown of Crag Underwater Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn2_01",
+    "Description": "(5-2) Gap of Crag, Water Tablet Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn2_02",
+    "Description": "(5-2) Gap of Crag Cudge Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn2_03",
+    "Description": "(5-2) Gap of Crag Stone Tablet Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn2_04",
+    "Description": "(5-2) Gap of Crag Fire Tablet Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn2_05",
+    "Description": "(5-2) Gap of Crag Star Block Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn2_06",
+    "Description": "(5-2) Gap of Crag Underground Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_01",
+    "Description": "(5-3) Floro Caverns Start Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_02",
+    "Description": "(5-3) Floro Caverns Room 2",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_03",
+    "Description": "(5-3) Floro Caverns Save Block Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_04",
+    "Description": "(5-3) Floro Caverns Tiny Room 1",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_05",
+    "Description": "(5-3) Floro Caverns Secret Wall",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_06",
+    "Description": "(5-3) Floro Caverns First Crew Member",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_07",
+    "Description": "(5-3) Floro Caverns Tiny Room 2",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_08",
+    "Description": "(5-3) Floro Caverns Second Crew Member",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_09",
+    "Description": "(5-3) Floro Caverns Star Block Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_10",
+    "Description": "(5-3) Floro Caverns Secret Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_11",
+    "Description": "(5-3) Floro Caverns Minecart 1",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_12",
+    "Description": "(5-3) Floro Caverns Minecart 2",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_13",
+    "Description": "(5-3) Floro Caverns Minecart 3",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_14",
+    "Description": "(5-3) Floro Caverns Mega Star Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_15",
+    "Description": "(5-3) Floro Caverns 2-1 Remake Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn3_16",
+    "Description": "(5-3) Floro Caverns 2-1 Sky Remake Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_01",
+    "Description": "(5-4) Floro Caverns Main Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_02",
+    "Description": "(5-4) Floro Caverns Prison Room Entrance",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_03",
+    "Description": "(5-4) Floro Caverns Dottie Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_04",
+    "Description": "(5-4) Floro Caverns Maze 1",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_05",
+    "Description": "(5-4) Floro Caverns Maze 2",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_06",
+    "Description": "(5-4) Floro Caverns Maze 3",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_07",
+    "Description": "(5-4) Floro Caverns Maze 4",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_08",
+    "Description": "(5-4) Floro Caverns Maze 5",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_09",
+    "Description": "(5-4) Floro Caverns Maze 6",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_10",
+    "Description": "(5-4) Floro Caverns Card Key Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_11",
+    "Description": "(5-4) Floro Caverns Pipe Exit Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_12",
+    "Description": "(5-4) Floro Caverns Prison Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_13",
+    "Description": "(5-4) Floro Caverns O'Chunks Battle Room",
+    "Chapter": 5,
+    "Randomize": false
+  },
+  {
+    "Name": "gn4_14",
+    "Description": "(5-4) Floro Caverns Scanner",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_15",
+    "Description": "(5-4) Floro Caverns King Hall",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "gn4_16",
+    "Description": "(5-4) Floro Caverns King Croacus' Room",
+    "Chapter": 5,
+    "Randomize": false
+  },
+  {
+    "Name": "gn4_17",
+    "Description": "(5-4) Floro Caverns Mini Pipe Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "go1_01",
+    "Description": "Japanese Game Over Screen",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "go1_02",
+    "Description": "English Game Over Screen",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "he1_01",
+    "Description": "(1-1) Lineland Road Start",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he1_02",
+    "Description": "(1-1) Lineland Road Background Hill Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he1_03",
+    "Description": "(1-1) Lineland Road Underground 1",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he1_04",
+    "Description": "(1-1) Lineland Road Squiglet Spam Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he1_05",
+    "Description": "(1-1) Lineland Road Mega Star Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he1_06",
+    "Description": "(1-1) Lineland Road Bestovius' House",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_01",
+    "Description": "(1-2) Mount Lineland Start",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_02",
+    "Description": "(1-2) Mount Lineland Spiny Tromp Ramp",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_03",
+    "Description": "(1-2) Yold Town",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_04",
+    "Description": "(1-2) Yold Town Red's House",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_05",
+    "Description": "(1-2) Yold Town Green's House",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_06",
+    "Description": "(1-2) Yold Town Thwomp Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_07",
+    "Description": "(1-2) Yold Town Thoreau Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_08",
+    "Description": "(1-2) Yold Town Underground Vault",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he2_09",
+    "Description": "(1-2) Yold Town Tippi Door Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he3_01",
+    "Description": "(1-3) Yold Desert Red Palm Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he3_02",
+    "Description": "(1-3) Yold Desert Arrow Rock Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he3_03",
+    "Description": "(1-3) Yold Desert Giant Quickand Pit Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he3_04",
+    "Description": "(1-3) Yold Desert O'Chunks Fight Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he3_05",
+    "Description": "(1-3) Yold Desert Underground Bonus",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he3_06",
+    "Description": "(1-3) Yold Desert Platforms Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he3_07",
+    "Description": "(1-3) Yold Desert Hero's Explanation Statue Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he3_08",
+    "Description": "(1-3) Yold Desert Star Block Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_01",
+    "Description": "(1-4) Yold Ruins Start",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_02",
+    "Description": "(1-4) Yold Ruins Life Shroom Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_03",
+    "Description": "(1-4) Yold Ruins Firebars Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_04",
+    "Description": "(1-4) Yold Ruins Key 1 Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_05",
+    "Description": "(1-4) Yold Ruins Underlined Top Hat Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_06",
+    "Description": "(1-4) Yold Ruins Underlined Top Hat Switch Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_07",
+    "Description": "(1-4) Yold Ruins Tippi Door Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_08",
+    "Description": "(1-4) Yold Ruins Caged Key Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_09",
+    "Description": "(1-4) Yold Ruins Spiky Tromp Pit",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_10",
+    "Description": "(1-4) Yold Ruins Grand Staircase Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "he4_11",
+    "Description": "(1-4) Yold Ruins Fracktail Room",
+    "Chapter": 1,
+    "Randomize": false
+  },
+  {
+    "Name": "he4_12",
+    "Description": "(1-4) Yold Ruins Star Block Room",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_01",
+    "Description": "(8-1) Castle Bleck Entrance",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_02",
+    "Description": "(8-1) Castle Bleck Room 1",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_03",
+    "Description": "(8-1) Castle Bleck Staircase 1",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_04",
+    "Description": "(8-1) Castle Bleck Balcony",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_05",
+    "Description": "(8-1) Castle Bleck Three Doors Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_06",
+    "Description": "(8-1) Castle Bleck Outside",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_07",
+    "Description": "(8-1) Castle Bleck Low Corridor",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_08",
+    "Description": "(8-1) Castle Bleck Long Corridor",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_09",
+    "Description": "(8-1) Castle Bleck Torches Staircase",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_10",
+    "Description": "(8-1) Castle Bleck Huge Staircase",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_11",
+    "Description": "(8-1) Castle Bleck O'Chunks Fight Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls1_12",
+    "Description": "(8-1) Castle Bleck Star Block Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_01",
+    "Description": "(8-2) Castle Bleck Long Star Corridor",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_02",
+    "Description": "(8-2) Castle Bleck Floor Hole Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_03",
+    "Description": "(8-2) Castle Bleck Prison Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_04",
+    "Description": "(8-2) Castle Bleck Firebars Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_05",
+    "Description": "(8-2) Castle Bleck Spikes Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_06",
+    "Description": "(8-2) Castle Bleck Pipes Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_07",
+    "Description": "(8-2) Castle Bleck Staircase",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_08",
+    "Description": "(8-2) Castle Bleck Outside",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_09",
+    "Description": "(8-2) Castle Bleck Trap Mushrooms Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_10",
+    "Description": "(8-2) Castle Bleck Shlorp Trap",
+    "Chapter": 8,
+    "Randomize": false
+  },
+  {
+    "Name": "ls2_11",
+    "Description": "(8-2) Castle Bleck Cherbil Trap",
+    "Chapter": 8,
+    "Randomize": false
+  },
+  {
+    "Name": "ls2_12",
+    "Description": "(8-2) Castle Bleck Chromeba Trap",
+    "Chapter": 8,
+    "Randomize": false
+  },
+  {
+    "Name": "ls2_13",
+    "Description": "(8-2) Castle Bleck Merlee? Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_14",
+    "Description": "(8-2) Castle Bleck Hated Thing 1",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_15",
+    "Description": "(8-2) Castle Bleck Hated Thing 2",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_16",
+    "Description": "(8-2) Castle Bleck Hated Thing 3",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_17",
+    "Description": "(8-2) Castle Bleck Mimi Fight Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls2_18",
+    "Description": "(8-2) Castle Bleck Star Block Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_01",
+    "Description": "(8-3) Castle Bleck Long Corridor",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_02",
+    "Description": "(8-3) Castle Bleck Divided Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_03",
+    "Description": "(8-3) Castle Bleck Mirror Room 1",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_04",
+    "Description": "(8-3) Castle Bleck Staircase with Secret",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_05",
+    "Description": "(8-3) Castle Bleck High Blocks 1",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_06",
+    "Description": "(8-3) Castle Bleck High Blocks 2",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_07",
+    "Description": "(8-3) Castle Bleck High Blocks 3",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_08",
+    "Description": "(8-3) Castle Bleck Chomp Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_09",
+    "Description": "(8-3) Castle Bleck High Blocks 4",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_10",
+    "Description": "(8-3) Castle Bleck Path-tracing Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_11",
+    "Description": "(8-3) Castle Bleck Mirror Room 2",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_12",
+    "Description": "(8-3) Castle Bleck Dimentio Fight Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls3_13",
+    "Description": "(8-3) Castle Bleck Star Block Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_01",
+    "Description": "(8-4) Castle Bleck Long Corridor",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_02",
+    "Description": "(8-4) Unused Castle Bleck Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_03",
+    "Description": "(8-4) Castle Bleck Pillar Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_04",
+    "Description": "(8-4) Castle Bleck Platform Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_05",
+    "Description": "(8-4) Castle Bleck Mini Corridor",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_06",
+    "Description": "(8-4) Castle Bleck Long Corridor 2",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_07",
+    "Description": "(8-4) Castle Bleck Maze 1",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_08",
+    "Description": "(8-4) Castle Bleck Maze 2",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_09",
+    "Description": "(8-4) Castle Bleck Maze 3",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_10",
+    "Description": "(8-4) Castle Bleck Grand Staircase",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_11",
+    "Description": "(8-4) Castle Bleck Final Fight Room",
+    "Chapter": 8,
+    "Randomize": false
+  },
+  {
+    "Name": "ls4_12",
+    "Description": "(8-4) Castle Bleck Sanctuary Room",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "ls4_13",
+    "Description": "(8-4) Castle Bleck Two Doors",
+    "Chapter": 8,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_01",
+    "Description": "Flipside 3rd Floor",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_02",
+    "Description": "Flipside 2nd Floor",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_03",
+    "Description": "Flipside Mirror Hall",
+    "Chapter": 1,
+    "Randomize": false
+  },
+  {
+    "Name": "mac_04",
+    "Description": "Flipside B1",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_05",
+    "Description": "Flipside B2",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_06",
+    "Description": "Flipside Peach Hover Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_07",
+    "Description": "Flipside B1 Outskirts",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_08",
+    "Description": "Flipside Treasure Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_09",
+    "Description": "Flipside 1st Floor",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_11",
+    "Description": "Flopside 3rd Floor",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_12",
+    "Description": "Flopside 2nd Floor",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_14",
+    "Description": "Flopside B1",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_15",
+    "Description": "Flopside B2",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_16",
+    "Description": "Flopside Dottie Switch",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_17",
+    "Description": "Flopside B1 Outskirts",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_18",
+    "Description": "Flopside Treasure Room",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_19",
+    "Description": "Flopside 1st Floor",
+    "Chapter": 5,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_22",
+    "Description": "Flipside Tower",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "mac_30",
+    "Description": "Flipside Arcade",
+    "Chapter": 1,
+    "Randomize": true
+  },
+  {
+    "Name": "mg1_01",
+    "Description": "Tilt Island",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg2_01",
+    "Description": "Forget Me Not 1",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg2_02",
+    "Description": "Forget Me Not 2",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg2_03",
+    "Description": "Forget Me Not 3",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg2_04",
+    "Description": "Forget Me Not 4",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg2_05",
+    "Description": "Forget Me Not 5",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg3_01",
+    "Description": "Hammer Whacker 1",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg3_02",
+    "Description": "Hammer Whacker 2",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg3_03",
+    "Description": "Hammer Whacker 3",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg3_04",
+    "Description": "Hammer Whacker 4",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg3_05",
+    "Description": "Hammer Whacker 5",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mg4_01",
+    "Description": "Mansion Patrol",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mi1_01",
+    "Description": "(2-1) Gloam Valley Start",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_02",
+    "Description": "(2-1) Gloam Valley Underground Maze 1",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_03",
+    "Description": "(2-1) Gloam Valley Underground Maze 2",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_04",
+    "Description": "(2-1) Gloam Valley Star Block Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_05",
+    "Description": "(2-1) Gloam Valley Underground Treasure",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_06",
+    "Description": "(2-1) Gloam Valley Underground Tippi Block",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_07",
+    "Description": "(2-1) Gloam Valley Boomer Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_08",
+    "Description": "(2-1) Gloam Valley Wind Farm",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_09",
+    "Description": "(2-1) Gloam Valley Creepy Prisoner Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_10",
+    "Description": "(2-1) Gloam Valley Six Doors Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi1_11",
+    "Description": "(2-1) Gloam Valley Mega Star Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi2_01",
+    "Description": "(2-2) Merlee's Mansion Entrance",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi2_02",
+    "Description": "(2-2) Merlee's Mansion Crystal Ball Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi2_03",
+    "Description": "(2-2) Merlee's Mansion Six Doors Room",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mi2_04",
+    "Description": "(2-2) Merlee's Mansion Mushroom Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi2_05",
+    "Description": "(2-2) Merlee's Mansion Coins Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi2_06",
+    "Description": "(2-2) Merlee's Mansion Spiky Ceiling Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi2_07",
+    "Description": "(2-2) Merlee's Mansion Running Mushroom Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi2_08",
+    "Description": "(2-2) Merlee's Mansion Star Block Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi2_09",
+    "Description": "(2-2) Merlee's Mansion Shlurp Trap",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mi2_10",
+    "Description": "(2-2) Merlee's Mansion Swooper Trap",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mi2_11",
+    "Description": "(2-2) Merlee's Mansion Boo Trap",
+    "Chapter": 2,
+    "Randomize": false
+  },
+  {
+    "Name": "mi3_01",
+    "Description": "(2-3) Merlee's Mansion Vase Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi3_02",
+    "Description": "(2-3) Merlee's Mansion Prisoner Lounge 1",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi3_03",
+    "Description": "(2-3) Merlee's Mansion VIP Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi3_04",
+    "Description": "(2-3) Merlee's Mansion Basic Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi3_05",
+    "Description": "(2-3) Merlee's Mansion Mushroom Block Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi3_06",
+    "Description": "(2-3) Merlee's Mansion Star Block Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_01",
+    "Description": "(2-4) Merlee's Basement Start",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_02",
+    "Description": "(2-4) Merlee's Basement Room 1",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_03",
+    "Description": "(2-4) Merlee's Basement Room 2",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_04",
+    "Description": "(2-4) Merlee's Basement Room 3",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_05",
+    "Description": "(2-4) Merlee's Basement Room 4",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_06",
+    "Description": "(2-4) Merlee's Basement Fake Merlee Meetup",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_07",
+    "Description": "(2-4) Merlee's Basement Room 6",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_08",
+    "Description": "(2-4) Merlee's Basement Room 7",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_09",
+    "Description": "(2-4) Merlee's Basement Narrow Pit Room",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_10",
+    "Description": "(2-4) Merlee's Basement Room 8",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_11",
+    "Description": "(2-4) Merlee's Basement Room 9",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_12",
+    "Description": "(2-4) Merlee's Basement Bathrooms Entrance",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_13",
+    "Description": "(2-4) Merlee's Basement Men Bathroom",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_14",
+    "Description": "(2-4) Merlee's Basement Women Bathroom",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "mi4_15",
+    "Description": "(2-4) Merlee's Basement Atomic Boo Staircase",
+    "Chapter": 2,
+    "Randomize": true
+  },
+  {
+    "Name": "sp1_01",
+    "Description": "(4-1) Outer Space Start",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp1_02",
+    "Description": "(4-1) Outer Space Asteroids Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp1_03",
+    "Description": "(4-1) Outer Space Three Black Holes Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp1_04",
+    "Description": "(4-1) Outer Space Fire Flower Constellation Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp1_05",
+    "Description": "(4-1) Outer Space Asteroids Room 2",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp1_06",
+    "Description": "(4-1) Outer Space Star Block Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp1_07",
+    "Description": "(4-1) Outer Space Secret Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_01",
+    "Description": "(4-2) Planet Blobule Bathroom",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_02",
+    "Description": "(4-2) Planet Blobule Star Block Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_03",
+    "Description": "(4-2) Planet Blobule Hills",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_04",
+    "Description": "(4-2) Planet Blobule High Door",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_05",
+    "Description": "(4-2) Planet Blobule High Pipe",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_06",
+    "Description": "(4-2) Planet Blobule Blollop's Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_07",
+    "Description": "(4-2) Planet Blobule Blarfle's Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_08",
+    "Description": "(4-2) Planet Blobule Blappy's Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_09",
+    "Description": "(4-2) Planet Blobule Secret Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp2_10",
+    "Description": "(4-2) Planet Blobule Mega Star Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp3_01",
+    "Description": "(4-3) Outer Limits Gate",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp3_02",
+    "Description": "(4-3) Outer Limits Gates",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp3_03",
+    "Description": "(4-3) Outer Limits Star Block Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp3_04",
+    "Description": "(4-3) Outer Limits Main Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp3_05",
+    "Description": "(4-3) Outer Limits Twinkle Mart",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp3_06",
+    "Description": "(4-3) Outer Limits Barriers Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp3_07",
+    "Description": "(4-3) Outer Limits Bonus Coins Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_01",
+    "Description": "(4-4) Whoa Zone Start",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_02",
+    "Description": "(4-4) Whoa Zone Hidden 3D Door",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_03",
+    "Description": "(4-4) Whoa Zone Staircase",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_04",
+    "Description": "(4-4) Whoa Zone Mirror Staircases",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_05",
+    "Description": "(4-4) Whoa Zone Treasure Chest Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_06",
+    "Description": "(4-4) Whoa Zone Sideways Doors Hall",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_07",
+    "Description": "(4-4) Whoa Zone Upside-Down Treasure Chest Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_08",
+    "Description": "(4-4) Whoa Zone Dividing Staircase Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_09",
+    "Description": "(4-4) Unused Whoa Zone Room (Piccolo Card)",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_10",
+    "Description": "(4-4) Whoa Zone Big Square Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_11",
+    "Description": "(4-4) Whoa Zone Save Block Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_12",
+    "Description": "(4-4) Whoa Zone Five Doors Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_13",
+    "Description": "(4-4) Whoa Zone Mr.L Fight Room",
+    "Chapter": 4,
+    "Randomize": false
+  },
+  {
+    "Name": "sp4_14",
+    "Description": "(4-4) Whoa Zone Star Block Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_15",
+    "Description": "(4-4) Whoa Zone Upside-Down Coin Block Room",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_16",
+    "Description": "(4-4) Whoa Zone Switcharoo Corridor",
+    "Chapter": 4,
+    "Randomize": true
+  },
+  {
+    "Name": "sp4_17",
+    "Description": "(4-4) Whoa Zone Brobot Fight",
+    "Chapter": 4,
+    "Randomize": false
+  },
+  {
+    "Name": "ta1_01",
+    "Description": "(3-1) Bitlands Start",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta1_02",
+    "Description": "(3-1) Bitlands Mega Star Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta1_02",
+    "Description": "(3-1) Bitlands Mega Star Room",
+    "Chapter": 3,
+    "Randomize": false
+  },
+  {
+    "Name": "ta1_03",
+    "Description": "(3-1) Bitlands 1-2 Remake",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta1_04",
+    "Description": "(3-1) Bitlands Star Block Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta1_05",
+    "Description": "(3-1) Bitlands Underground Treasure Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta1_06",
+    "Description": "(3-1) Bitlands 1-2 Remake Bonus Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta1_07",
+    "Description": "(3-1) Bitlands Pyramid Bonus Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta1_08",
+    "Description": "(3-1) Bitlands Underground Five Question Blocks",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta1_09",
+    "Description": "(3-1) Bitlands Mega Koopa Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta2_01",
+    "Description": "(3-2) Tide Pool Start",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta2_02",
+    "Description": "(3-2) Tide Pool Tentacle Corridor",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta2_03",
+    "Description": "(3-2) Tide Pool Z-Shaped Corridor",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta2_04",
+    "Description": "(3-2) Tide Pool Thudley Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta2_05",
+    "Description": "(3-2) Tide Pool Big Blooper Fight",
+    "Chapter": 3,
+    "Randomize": false
+  },
+  {
+    "Name": "ta2_06",
+    "Description": "(3-2) Tide Pool Star Block",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta3_01",
+    "Description": "(3-3) Dotwood Tree Main Outside",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta3_02",
+    "Description": "(3-3) Dotwood Tree Main Inside",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta3_03",
+    "Description": "(3-3) Dotwood Tree Top",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta3_04",
+    "Description": "(3-3) Dotwood Tree Star Block",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta3_05",
+    "Description": "(3-3) Dotwood Tree Coin Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta3_06",
+    "Description": "(3-3) Dotwood Tree Spikes Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta3_07",
+    "Description": "(3-3) Dotwood Tree Chain Chomp Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta3_08",
+    "Description": "(3-3) Dotwood Tree Moving-Platform-Through-Spikes Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_01",
+    "Description": "(3-4) Fort Francis Entrance",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_02",
+    "Description": "(3-4) Fort Francis Underground",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_03",
+    "Description": "(3-4) Fort Francis Save Block Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_04",
+    "Description": "(3-4) Fort Francis Cat Door Hall",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_05",
+    "Description": "(3-4) Fort Francis Second Floor Access",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_06",
+    "Description": "(3-4) Fort Francis Hanging Doors Hall",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_07",
+    "Description": "(3-4) Fort Francis Third Floor Access",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_08",
+    "Description": "(3-4) Fort Francis Bridge",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_09",
+    "Description": "(3-4) Fort Francis Right Room Door",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_10",
+    "Description": "(3-4) Fort Francis Right Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_11",
+    "Description": "(3-4) Fort Francis Left Room Elevator",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_12",
+    "Description": "(3-4) Fort Francis Carrie Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_13",
+    "Description": "(3-4) Fort Francis Francis Fight",
+    "Chapter": 3,
+    "Randomize": false
+  },
+  {
+    "Name": "ta4_14",
+    "Description": "(3-4) Fort Francis Spike Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "ta4_15",
+    "Description": "(3-4) Fort Francis Chain Chomps Room",
+    "Chapter": 3,
+    "Randomize": true
+  },
+  {
+    "Name": "title",
+    "Description": "Titlescreen",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "wa1_01",
+    "Description": "(6-1) Sammer's Kingdom Entrance",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa1_01",
+    "Description": "(6-1) Sammer's Kingdom Entrance",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa1_02",
+    "Description": "(6-1) Sammer's Kingdom Starting Rooms",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa1_03",
+    "Description": "(6-1) Sammer's Kingdom Star Block Room",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa1_04",
+    "Description": "(6-?) Destroyed Sammer's Kingdom",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa2_01",
+    "Description": "(6-2) Sammer's Kingdom Middle Rooms Start",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa2_02",
+    "Description": "(6-2) Sammer's Kingdom Middle Rooms",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa2_03",
+    "Description": "(6-2) Sammer's Kingdom Star Block Room",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa3_01",
+    "Description": "(6-3) Sammer's Kingdom Intermediate Rooms Start",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa3_02",
+    "Description": "(6-3) Sammer's Kingdom Intermediate Rooms",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa3_03",
+    "Description": "(6-3) Sammer's Kingdom Star Block Room",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa4_01",
+    "Description": "(6-4) Sammer's Kingdom Final Rooms Start",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa4_02",
+    "Description": "(6-4) Sammer's Kingdom Final Rooms",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "wa4_03",
+    "Description": "(6-4) Sammer's Kingdom Star Block Room",
+    "Chapter": 6,
+    "Randomize": true
+  },
+  {
+    "Name": "son_02",
+    "Description": "(Unused) son_02",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "tst_01",
+    "Description": "(Unused) tst_01",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "hei_01",
+    "Description": "(Unused) hei_01",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "hei_02",
+    "Description": "(Unused) hei_02",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "iwa_01",
+    "Description": "(Unused) iwa_01",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "iwa_02",
+    "Description": "(Unused) iwa_02",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "iwa_03",
+    "Description": "(Unused) iwa_03",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "tik_01",
+    "Description": "(Unused) tik_01",
+    "Chapter": 1,
+    "Randomize": false
+  },
+  {
+    "Name": "tik_02",
+    "Description": "(Unused) tik_02",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "tik_04",
+    "Description": "(Unused) tik_04",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "tik_05",
+    "Description": "(Unused) tik_05",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "tik_06",
+    "Description": "(Unused) tik_06",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "tik_07",
+    "Description": "(Unused) tik_07",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "tik_08",
+    "Description": "(Unused) tik_08",
+    "Chapter": 0,
+    "Randomize": false
+  },
+  {
+    "Name": "tik_10",
+    "Description": "(Unused) tik_10",
+    "Chapter": 0,
+    "Randomize": false
+  }
+]

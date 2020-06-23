@@ -4,7 +4,7 @@
     "Name": "Nothing",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -580,7 +580,7 @@
     "Name": "Goomba",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -715,7 +715,7 @@
     "Name": "Goomba",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -1111,7 +1111,7 @@
     "Name": "Goomba",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -1207,11 +1207,11 @@
   },
   {
     "ID": 134,
-    "Name": "Nothing?",
+    "Name": "Francis",
     "Description": "",
     "Difficulty": 0,
-    "Weird": true,
-    "Boss": false,
+    "Weird": false,
+    "Boss": true,
     "Obstacle": false
   },
   {
@@ -1345,7 +1345,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2092,7 +2092,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2101,7 +2101,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2110,7 +2110,7 @@
     "Name": "Nothing? ",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2272,7 +2272,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2353,7 +2353,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2380,7 +2380,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2560,7 +2560,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2659,7 +2659,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2785,7 +2785,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -3172,7 +3172,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -3793,7 +3793,7 @@
     "Name": "Nothing?",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -3847,7 +3847,7 @@
     "Name": "Stationary Enemy Mario",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -3856,7 +3856,7 @@
     "Name": "Stationary Enemy Luigi",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -3865,7 +3865,7 @@
     "Name": "Stationary Enemy Peach",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -3874,7 +3874,7 @@
     "Name": "Stationary Enemy Bowser",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },

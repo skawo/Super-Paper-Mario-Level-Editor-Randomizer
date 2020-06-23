@@ -205,4 +205,7 @@
   <data name="select_presetsf" xml:space="preserve">
     <value>Save where?</value>
   </data>
+  <data name="randomizing" xml:space="preserve">
+    <value>Randomizing...</value>
+  </data>
 </root>

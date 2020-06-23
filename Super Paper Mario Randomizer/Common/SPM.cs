@@ -37,7 +37,7 @@ namespace Super_Paper_Mario_Randomizer
     {
         public string FilePath { get; set; }
         public string FileName { get; set; }
-        public string Description { get; set; }
+        public StageInfo Info { get; set; }
 
         public byte[] Header { get; set; }
         public List<LevelSetupEntryEntry> Entries { get; set; }
@@ -46,7 +46,7 @@ namespace Super_Paper_Mario_Randomizer
         {
             FilePath = _FilePath;
             FileName = Path.GetFileNameWithoutExtension(FilePath);
-            Description = "";
+            Info = Globals.StageInfoList.Find(x => x.Name == FileName);
 
             Header = ByteOps.GetNumBytes(4, 0, FilePath);
             Entries = LevelSetupEntryEntry.GetListOfEntriesFromData(File.ReadAllBytes(FilePath).Skip(4).ToArray(), Header);
@@ -54,8 +54,8 @@ namespace Super_Paper_Mario_Randomizer
 
         public override string ToString()
         {
-            if (Description != "")
-                return Description;
+            if (Info != null)
+                return Info.Description;
             else
                 return FileName;
         }
@@ -193,6 +193,27 @@ namespace Super_Paper_Mario_Randomizer
         public override string ToString()
         {
             return Name;
+        }
+    }
+
+    public class StageInfo
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int Chapter { get; set; }
+        public bool Randomize { get; set; }
+
+        public StageInfo()
+        {
+            Name = "";
+            Description = "";
+            Chapter = 0;
+            Randomize = false;
+        }
+
+        public override string ToString()
+        {
+            return Description == "" ? Name : Description;
         }
     }
 }

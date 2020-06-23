@@ -8,9 +8,11 @@ namespace Super_Paper_Mario_Randomizer
 {
     public static class Globals
     {
+        public static List<StageInfo> StageInfoList = new List<StageInfo>();
         public static List<LevelSetupEntry> LevelSetups = new List<LevelSetupEntry>();
         public static List<Enemy> EnemyList = null;
         public static string EnemyJsonPath = @"Jsons\Enemies.json";
+        public static string StageJsonPath = @"Jsons\Stages.json";
 
         public static string OpenedSetupPath = "";
         public static string LoadedStagesJsonHash = "";

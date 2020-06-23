@@ -1,5 +1,6 @@
 ﻿using BitConverter;
 using Newtonsoft.Json;
+using Super_Paper_Mario_Randomizer.Common;
 using Super_Paper_Mario_Randomizer.Properties;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,9 @@ namespace Super_Paper_Mario_Randomizer
                 foreach (Enemy e in Globals.EnemyList)
                     combo_Actor.Items.Add(e);
             }
+
+            if (File.Exists(Globals.StageJsonPath))
+                Globals.StageInfoList = (List<StageInfo>)Helpers.DeserializeJsonFromFile(Globals.StageJsonPath, typeof(List<StageInfo>));
         }
 
         #region ProgressBar
@@ -681,6 +685,87 @@ namespace Super_Paper_Mario_Randomizer
         {
             PresetEditor pe = new PresetEditor();
             pe.ShowDialog();
+        }
+
+        private void container_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private async void randomizeWithPresetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (OpenFileDialog fd = new OpenFileDialog())
+                {
+                    fd.Title = Resources.select_preset;
+                    DialogResult dr = fd.ShowDialog();
+
+                    if (dr == DialogResult.OK)
+                    {
+                        Common.Preset pr = (Common.Preset)Helpers.DeserializeJsonFromFile(fd.FileName, typeof(Common.Preset));
+                        await Randomize(pr);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+
+        private async Task<bool> Randomize(Preset Pr)
+        {
+            SetBusy(true);
+            SetProgress(Resources.randomizing, 0);
+            bool Res = await Task.Run(() => _Randomize(Pr));
+            SetProgress(Resources.done, 100);
+            SetBusy(false);
+
+            return Res;
+        }
+
+        private bool _Randomize(Preset Pr)
+        {
+            try
+            {
+                int NumStages = Globals.LevelSetups.Count();
+                int Num = -1;
+                Random r = new Random();
+
+                foreach (LevelSetupEntry Setup in Globals.LevelSetups)
+                {
+                    Num++;
+                    int Percent = (int)(((decimal)Num / (decimal)NumStages) * 100);
+                    SetProgressVal(Percent);
+
+                    if (Setup.Info == null || Setup.Info.Chapter == 0 || !Setup.Info.Randomize)
+                        continue;
+
+                    int Chapter = Setup.Info.Chapter;
+
+                    int MaxDifficulty = Pr.ChapterDiffs[Chapter - 1];
+
+                    List<Enemy> Enemies = Globals.EnemyList.Where(x => (x.Difficulty <= MaxDifficulty && Pr.Enemies[x.ID] == true)).ToList();
+
+                    foreach (LevelSetupEntryEntry Entry in Setup.Entries)
+                    {
+                        if (Entry.ID != 0)
+                            if (Enemies.Count == 0)
+                                Entry.ID = 0;
+                            else
+                                Entry.ID = (uint)Enemies[r.Next(Enemies.Count)].ID;
+                    }
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
         }
     }
 }

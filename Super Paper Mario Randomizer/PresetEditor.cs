@@ -23,7 +23,7 @@ namespace Super_Paper_Mario_Randomizer
             foreach (Enemy en in Globals.EnemyList)
                 checkedlstbox_enemies.Items.Add(en.Name + " {" + en.Difficulty + "} ");
 
-            for (int i = 0; i < 9; i++)
+            for (int i = 1; i < 9; i++)
             {
                 ListViewItem item = new ListViewItem(new string[] { "Chapter " + i, "0" });
                 lstChapterDifficultyChart.Items.Add(item);
@@ -122,7 +122,7 @@ namespace Super_Paper_Mario_Randomizer
                 pr.Enemies[i] = (ch == CheckState.Checked) ? true : false;
             }
 
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 8; i++)
                 pr.ChapterDiffs[i] = Convert.ToInt32(lstChapterDifficultyChart.Items[i].SubItems[1].Text);
 
             return pr;

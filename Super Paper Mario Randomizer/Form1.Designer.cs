@@ -93,7 +93,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(735, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -174,6 +174,7 @@
             this.randomizeWithPresetToolStripMenuItem.Name = "randomizeWithPresetToolStripMenuItem";
             this.randomizeWithPresetToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.randomizeWithPresetToolStripMenuItem.Text = "Randomize with preset...";
+            this.randomizeWithPresetToolStripMenuItem.Click += new System.EventHandler(this.randomizeWithPresetToolStripMenuItem_Click);
             // 
             // presetsToolStripMenuItem
             // 
@@ -201,7 +202,7 @@
             // pb_Progress
             // 
             this.pb_Progress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pb_Progress.Location = new System.Drawing.Point(578, 20);
+            this.pb_Progress.Location = new System.Drawing.Point(823, 20);
             this.pb_Progress.Name = "pb_Progress";
             this.pb_Progress.Size = new System.Drawing.Size(145, 23);
             this.pb_Progress.TabIndex = 3;
@@ -212,13 +213,13 @@
             this.lbl_Separator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_Separator.Location = new System.Drawing.Point(13, 5);
             this.lbl_Separator.Name = "lbl_Separator";
-            this.lbl_Separator.Size = new System.Drawing.Size(708, 1);
+            this.lbl_Separator.Size = new System.Drawing.Size(958, 1);
             this.lbl_Separator.TabIndex = 4;
             // 
             // lbl_Progress
             // 
             this.lbl_Progress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbl_Progress.Location = new System.Drawing.Point(376, 20);
+            this.lbl_Progress.Location = new System.Drawing.Point(620, 20);
             this.lbl_Progress.Name = "lbl_Progress";
             this.lbl_Progress.Size = new System.Drawing.Size(196, 23);
             this.lbl_Progress.TabIndex = 5;
@@ -482,7 +483,7 @@
             this.tabC_Editor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.tabC_Editor.Controls.Add(this.tabP_Enemies);
-            this.tabC_Editor.Location = new System.Drawing.Point(209, 41);
+            this.tabC_Editor.Location = new System.Drawing.Point(458, 36);
             this.tabC_Editor.Name = "tabC_Editor";
             this.tabC_Editor.SelectedIndex = 0;
             this.tabC_Editor.Size = new System.Drawing.Size(514, 467);
@@ -502,13 +503,14 @@
             this.container.Panel1.Controls.Add(this.tabC_Editor);
             this.container.Panel1.Controls.Add(this.lbl_Stages);
             this.container.Panel1.Controls.Add(this.menuStrip1);
+            this.container.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.container_Panel1_Paint);
             // 
             // container.Panel2
             // 
             this.container.Panel2.Controls.Add(this.pb_Progress);
             this.container.Panel2.Controls.Add(this.lbl_Separator);
             this.container.Panel2.Controls.Add(this.lbl_Progress);
-            this.container.Size = new System.Drawing.Size(735, 570);
+            this.container.Size = new System.Drawing.Size(984, 570);
             this.container.SplitterDistance = 511;
             this.container.TabIndex = 7;
             // 
@@ -519,7 +521,7 @@
             this.lstbox_Stages.FormattingEnabled = true;
             this.lstbox_Stages.Location = new System.Drawing.Point(16, 57);
             this.lstbox_Stages.Name = "lstbox_Stages";
-            this.lstbox_Stages.Size = new System.Drawing.Size(191, 446);
+            this.lstbox_Stages.Size = new System.Drawing.Size(436, 446);
             this.lstbox_Stages.TabIndex = 27;
             this.lstbox_Stages.SelectedIndexChanged += new System.EventHandler(this.checkedlistbox_Stages_SelectedIndexChanged);
             // 
@@ -527,11 +529,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 570);
+            this.ClientSize = new System.Drawing.Size(984, 570);
             this.Controls.Add(this.container);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(751, 9999999);
+            this.MaximumSize = new System.Drawing.Size(1000, 9999999);
             this.Name = "Form1";
             this.Text = "Super Paper Mario Level Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);

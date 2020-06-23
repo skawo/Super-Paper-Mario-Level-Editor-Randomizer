@@ -206,6 +206,15 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Randomizing....
+        /// </summary>
+        internal static string randomizing {
+            get {
+                return ResourceManager.GetString("randomizing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Saving failed..
         /// </summary>
         internal static string saving_err {
