@@ -3855,7 +3855,7 @@
     "ID": 428,
     "Name": "Stationary Enemy Luigi",
     "Description": "",
-    "Difficulty": 0,
+    "Difficulty": 3,
     "Weird": true,
     "Boss": false,
     "Obstacle": false
