@@ -1497,13 +1497,13 @@
     "Name": "mi1_02",
     "Description": "(2-1) Gloam Valley Underground Maze 1",
     "Chapter": 2,
-    "Randomize": true
+    "Randomize": false
   },
   {
     "Name": "mi1_03",
     "Description": "(2-1) Gloam Valley Underground Maze 2",
     "Chapter": 2,
-    "Randomize": true
+    "Randomize": false
   },
   {
     "Name": "mi1_04",
@@ -1515,7 +1515,7 @@
     "Name": "mi1_05",
     "Description": "(2-1) Gloam Valley Underground Treasure",
     "Chapter": 2,
-    "Randomize": true
+    "Randomize": false
   },
   {
     "Name": "mi1_06",
@@ -1527,7 +1527,7 @@
     "Name": "mi1_07",
     "Description": "(2-1) Gloam Valley Boomer Room",
     "Chapter": 2,
-    "Randomize": true
+    "Randomize": false
   },
   {
     "Name": "mi1_08",
