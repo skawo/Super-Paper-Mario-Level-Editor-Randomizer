@@ -1737,7 +1737,7 @@
     "Name": "mi4_14",
     "Description": "(2-4) Merlee's Basement Women Bathroom",
     "Chapter": 2,
-    "Randomize": true
+    "Randomize": false
   },
   {
     "Name": "mi4_15",
