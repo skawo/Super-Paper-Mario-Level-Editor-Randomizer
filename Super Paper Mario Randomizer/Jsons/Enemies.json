@@ -1696,7 +1696,7 @@
     "Name": "Brobot L Type",
     "Description": "",
     "Difficulty": 2,
-    "Weird": false,
+    "Weird": true,
     "Boss": true,
     "Obstacle": false
   },
