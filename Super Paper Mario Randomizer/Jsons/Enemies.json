@@ -1309,7 +1309,7 @@
     "Name": "Mini Sproing-Oing",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2614,7 +2614,7 @@
     "Name": "Mini Boing-Oing",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -2632,7 +2632,7 @@
     "Name": "Mini Zoing-Oing",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
@@ -3352,7 +3352,7 @@
     "Name": "Mini Dark Sproing-Oing",
     "Description": "",
     "Difficulty": 0,
-    "Weird": false,
+    "Weird": true,
     "Boss": false,
     "Obstacle": false
   },
