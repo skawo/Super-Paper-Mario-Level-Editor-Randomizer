@@ -1,6 +1,6 @@
 # Super-Paper-Mario-Level-Editor-Randomizer
 
-A basic level editor for Super Paper Mario with Randomization capabilities.
+A basic level editor for Super Paper Mario with enemy randomization capabilities.
 
 Uses Wiims' WIT for Wii ISO extraction and repacking.
 
