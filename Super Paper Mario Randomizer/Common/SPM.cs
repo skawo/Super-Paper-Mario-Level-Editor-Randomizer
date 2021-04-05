@@ -41,6 +41,7 @@ namespace Super_Paper_Mario_Randomizer
 
         public byte[] Header { get; set; }
         public List<LevelSetupEntryEntry> Entries { get; set; }
+        public byte[] Footer { get; set; }
 
         public LevelSetupEntry(string _FilePath)
         {
@@ -50,6 +51,7 @@ namespace Super_Paper_Mario_Randomizer
 
             Header = ByteOps.GetNumBytes(4, 0, FilePath);
             Entries = LevelSetupEntryEntry.GetListOfEntriesFromData(File.ReadAllBytes(FilePath).Skip(4).ToArray(), Header);
+            Footer = File.ReadAllBytes(FilePath).Skip(4 + (100 * (int)SPMDefs.EntrySizes[(SPMDefs.HeaderSize)Header[1]])).ToArray();
         }
 
         public override string ToString()
@@ -68,6 +70,8 @@ namespace Super_Paper_Mario_Randomizer
 
             foreach (LevelSetupEntryEntry Entry in this.Entries)
                 Out.AddRange(Entry.ToBytes(this.Header));
+
+            Out.AddRange(this.Footer);
 
             return Out.ToArray();
         }
@@ -157,7 +161,7 @@ namespace Super_Paper_Mario_Randomizer
 
             int EntrySize = (int)SPMDefs.EntrySizes[(SPMDefs.HeaderSize)Header[1]];
 
-            while (Pos + EntrySize <= Data.Length)
+            for (int i = 0; i < 100; i++)
             {
                 byte[] Entry = Data.Skip(Pos).Take(EntrySize).ToArray();
                 Outl.Add(new LevelSetupEntryEntry(Entry, Header));
