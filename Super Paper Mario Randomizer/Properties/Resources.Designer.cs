@@ -188,11 +188,20 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This does not seem to be a Super Paper Mario ISO..
+        ///   Looks up a localized string similar to This does not seem to be a Super Paper Mario ISO. Extract anyway?.
         /// </summary>
         internal static string not_spm_iso {
             get {
                 return ResourceManager.GetString("not_spm_iso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Titlecode mismatch.
+        /// </summary>
+        internal static string not_spm_iso_title {
+            get {
+                return ResourceManager.GetString("not_spm_iso_title", resourceCulture);
             }
         }
         

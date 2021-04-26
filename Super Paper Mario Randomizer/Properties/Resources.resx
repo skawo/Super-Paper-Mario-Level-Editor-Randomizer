@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="not_spm_iso" xml:space="preserve">
-    <value>This does not seem to be a Super Paper Mario ISO.</value>
+    <value>This does not seem to be a Super Paper Mario ISO. Extract anyway?</value>
   </data>
   <data name="folder_will_be_overwritten_title" xml:space="preserve">
     <value>Folder exists</value>
@@ -207,5 +207,8 @@
   </data>
   <data name="randomizing" xml:space="preserve">
     <value>Randomizing...</value>
+  </data>
+  <data name="not_spm_iso_title" xml:space="preserve">
+    <value>Titlecode mismatch</value>
   </data>
 </root>

@@ -322,7 +322,9 @@ namespace Super_Paper_Mario_Randomizer
 
                     if (Encoding.ASCII.GetString(ISOID) != Resources.spm_titlecode)
                     {
-                        MessageBox.Show(Resources.not_spm_iso);
+                        if (MessageBox.Show(Resources.not_spm_iso, Resources.not_spm_iso_title, MessageBoxButtons.YesNo) == DialogResult.Yes)
+                            InFile = fd.FileName;
+                        else
                         return;
                     }
                     else
