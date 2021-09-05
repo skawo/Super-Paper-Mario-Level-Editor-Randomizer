@@ -10,11 +10,13 @@ namespace Super_Paper_Mario_Randomizer.Common
     {
         public Dictionary<int, bool> Enemies { get; set; }
         public Dictionary<int, int> ChapterDiffs { get; set; }
+        public string Seed;
 
         public Preset()
         {
             Enemies = new Dictionary<int, bool>();
             ChapterDiffs = new Dictionary<int, int>();
+            Seed = "";
         }
     }
 }

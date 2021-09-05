@@ -115,6 +115,8 @@ namespace Super_Paper_Mario_Randomizer
         private Preset GetPresetFromCurrent()
         {
             Preset pr = new Preset();
+
+            pr.Seed = tx_Random.Text;
             
             for (int i= 0; i < checkedlstbox_enemies.Items.Count; i++)
             {
@@ -164,6 +166,8 @@ namespace Super_Paper_Mario_Randomizer
                             lstChapterDifficultyChart.Items[i].SubItems[1].Text = pr.ChapterDiffs[i].ToString();
 
                         Opened = fd.FileName;
+
+                        tx_Random.Text = pr.Seed;
                     }
                     catch (Exception ex)
                     {
@@ -181,6 +185,11 @@ namespace Super_Paper_Mario_Randomizer
                 SaveAsToolStripMenuItem_Click(null, null);
             else
                 Helpers.SerializeJsonToFile(GetPresetFromCurrent(), Opened);
+        }
+
+        private void Btn_GenerateSeed_Click(object sender, EventArgs e)
+        {
+            tx_Random.Text = MainForm.NewSeed();
         }
     }
 }

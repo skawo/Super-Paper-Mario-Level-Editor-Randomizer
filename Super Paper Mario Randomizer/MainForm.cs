@@ -16,12 +16,12 @@ using System.Windows.Forms;
 
 namespace Super_Paper_Mario_Randomizer
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private readonly SynchronizationContext synchronizationContext;
         readonly ToolTip Tip = new ToolTip();
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             this.synchronizationContext = SynchronizationContext.Current;
@@ -31,7 +31,7 @@ namespace Super_Paper_Mario_Randomizer
             Tip.ReshowDelay = 500;
 
             chk_RandomSeed.Checked = true;
-            NewSeed();
+            tx_Random.Text = NewSeed();
 
             if (File.Exists(Globals.EnemyJsonPath))
             {
@@ -695,22 +695,6 @@ namespace Super_Paper_Mario_Randomizer
         {
             try
             {
-                int integerSeed = 0;
-
-                try
-                {
-                    if (chk_RandomSeed.Checked)
-                        NewSeed();
-
-                    integerSeed = Convert.ToInt32(tx_Random.Text.ToUpper(), 16);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(Resources.seed_wrong);
-                    return;
-                }
-
-
                 using (OpenFileDialog fd = new OpenFileDialog())
                 {
                     fd.Title = Resources.select_preset;
@@ -719,6 +703,30 @@ namespace Super_Paper_Mario_Randomizer
                     if (dr == DialogResult.OK)
                     {
                         Common.Preset pr = (Common.Preset)Helpers.DeserializeJsonFromFile(fd.FileName, typeof(Common.Preset));
+
+                        int integerSeed = 0;
+
+                        try
+                        {
+                            if (pr.Seed == "")
+                            {
+                                if (chk_RandomSeed.Checked)
+                                    tx_Random.Text = NewSeed();
+
+                                integerSeed = Convert.ToInt32(tx_Random.Text.ToUpper(), 16);
+                            }
+                            else
+                            {
+                                integerSeed = Convert.ToInt32(pr.Seed, 16);
+                                tx_Random.Text = pr.Seed;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(Resources.seed_wrong);
+                            return;
+                        }
+
                         await Randomize(pr, integerSeed);
                     }
                 }
@@ -786,14 +794,14 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void NewSeed()
+        public static string NewSeed()
         {
-            tx_Random.Text = (Int16.MaxValue + (Environment.TickCount * Environment.TickCount) / 2).ToString("X");
+            return (Int16.MaxValue + (Environment.TickCount * Environment.TickCount) / 2).ToString("X");
         }
 
         private void Btn_GenerateSeed_Click(object sender, EventArgs e)
         {
-            NewSeed();
+            tx_Random.Text = NewSeed();
         }
 
         private void Chk_RandomSeed_CheckedChanged(object sender, EventArgs e)

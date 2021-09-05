@@ -46,6 +46,9 @@
             this.lstChapterDifficultyChart = new System.Windows.Forms.ListView();
             this.numMaxDif = new System.Windows.Forms.NumericUpDown();
             this.lbl_MaxDiff = new System.Windows.Forms.Label();
+            this.tx_Random = new System.Windows.Forms.TextBox();
+            this.lbl_Random = new System.Windows.Forms.Label();
+            this.btn_GenerateSeed = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxDif)).BeginInit();
             this.SuspendLayout();
@@ -125,21 +128,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.saveAsToolStripMenuItem.Text = "Save as...";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.SaveAsToolStripMenuItem_Click);
             // 
@@ -218,11 +221,40 @@
             this.lbl_MaxDiff.TabIndex = 14;
             this.lbl_MaxDiff.Text = "Max difficulty:";
             // 
+            // tx_Random
+            // 
+            this.tx_Random.Location = new System.Drawing.Point(217, 531);
+            this.tx_Random.Name = "tx_Random";
+            this.tx_Random.Size = new System.Drawing.Size(202, 20);
+            this.tx_Random.TabIndex = 15;
+            // 
+            // lbl_Random
+            // 
+            this.lbl_Random.AutoSize = true;
+            this.lbl_Random.Location = new System.Drawing.Point(214, 499);
+            this.lbl_Random.Name = "lbl_Random";
+            this.lbl_Random.Size = new System.Drawing.Size(179, 26);
+            this.lbl_Random.TabIndex = 28;
+            this.lbl_Random.Text = "Randomization seed:\r\n(blank to use the main window seed)";
+            // 
+            // btn_GenerateSeed
+            // 
+            this.btn_GenerateSeed.Location = new System.Drawing.Point(310, 557);
+            this.btn_GenerateSeed.Name = "btn_GenerateSeed";
+            this.btn_GenerateSeed.Size = new System.Drawing.Size(109, 23);
+            this.btn_GenerateSeed.TabIndex = 29;
+            this.btn_GenerateSeed.Text = "Generate new";
+            this.btn_GenerateSeed.UseVisualStyleBackColor = true;
+            this.btn_GenerateSeed.Click += new System.EventHandler(this.Btn_GenerateSeed_Click);
+            // 
             // PresetEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(433, 591);
+            this.Controls.Add(this.btn_GenerateSeed);
+            this.Controls.Add(this.lbl_Random);
+            this.Controls.Add(this.tx_Random);
             this.Controls.Add(this.lbl_MaxDiff);
             this.Controls.Add(this.numMaxDif);
             this.Controls.Add(this.tglObst);
@@ -266,5 +298,8 @@
         private System.Windows.Forms.ListView lstChapterDifficultyChart;
         private System.Windows.Forms.NumericUpDown numMaxDif;
         private System.Windows.Forms.Label lbl_MaxDiff;
+        private System.Windows.Forms.TextBox tx_Random;
+        private System.Windows.Forms.Label lbl_Random;
+        private System.Windows.Forms.Button btn_GenerateSeed;
     }
 }
