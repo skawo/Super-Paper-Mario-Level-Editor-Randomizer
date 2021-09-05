@@ -51,7 +51,6 @@
             this.pn_EnemyEditor = new System.Windows.Forms.Panel();
             this.picturebox_info = new System.Windows.Forms.PictureBox();
             this.lbl_ActorID = new System.Windows.Forms.Label();
-            this.tx_Header1Unk = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.lbl_Header1Unk = new System.Windows.Forms.Label();
             this.numUp_Z = new System.Windows.Forms.NumericUpDown();
             this.lb_PosX = new System.Windows.Forms.Label();
@@ -61,9 +60,7 @@
             this.lb_Actor = new System.Windows.Forms.Label();
             this.lb_PosY = new System.Windows.Forms.Label();
             this.lb_PosZ = new System.Windows.Forms.Label();
-            this.tx_UnknownData = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.lbl_UnknownData = new System.Windows.Forms.Label();
-            this.tx_Setupheader = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.lb_Setupheader = new System.Windows.Forms.Label();
             this.lb_SeparatorEnemies = new System.Windows.Forms.Label();
             this.lbl_EnemyEntries = new System.Windows.Forms.Label();
@@ -71,6 +68,13 @@
             this.tabC_Editor = new System.Windows.Forms.TabControl();
             this.container = new System.Windows.Forms.SplitContainer();
             this.lstbox_Stages = new System.Windows.Forms.ListBox();
+            this.chk_RandomSeed = new System.Windows.Forms.CheckBox();
+            this.btn_GenerateSeed = new System.Windows.Forms.Button();
+            this.lbl_Random = new System.Windows.Forms.Label();
+            this.tx_Random = new System.Windows.Forms.TextBox();
+            this.tx_Header1Unk = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
+            this.tx_UnknownData = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
+            this.tx_Setupheader = new Super_Paper_Mario_Randomizer.ByteTextbox(this.components);
             this.menuStrip1.SuspendLayout();
             this.tabP_Enemies.SuspendLayout();
             this.pn_EnemyEditor.SuspendLayout();
@@ -114,51 +118,51 @@
             // openSetupFileToolStripMenuItem
             // 
             this.openSetupFileToolStripMenuItem.Name = "openSetupFileToolStripMenuItem";
-            this.openSetupFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openSetupFileToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.openSetupFileToolStripMenuItem.Text = "Open setup file...";
-            this.openSetupFileToolStripMenuItem.Click += new System.EventHandler(this.openSetupFileToolStripMenuItem_Click);
+            this.openSetupFileToolStripMenuItem.Click += new System.EventHandler(this.OpenSetupFileToolStripMenuItem_Click);
             // 
             // openSetupFolderToolStripMenuItem
             // 
             this.openSetupFolderToolStripMenuItem.Name = "openSetupFolderToolStripMenuItem";
-            this.openSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.openSetupFolderToolStripMenuItem.Text = "Open setup folder...";
-            this.openSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.openSetupFolderToolStripMenuItem_Click);
+            this.openSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.OpenSetupFolderToolStripMenuItem_Click);
             // 
             // saveCurrentToolStripMenuItem
             // 
             this.saveCurrentToolStripMenuItem.Name = "saveCurrentToolStripMenuItem";
-            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveCurrentToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.saveCurrentToolStripMenuItem.Text = "Save current";
-            this.saveCurrentToolStripMenuItem.Click += new System.EventHandler(this.saveCurrentToolStripMenuItem_Click);
+            this.saveCurrentToolStripMenuItem.Click += new System.EventHandler(this.SaveCurrentToolStripMenuItem_Click);
             // 
             // savesSetupFolderToolStripMenuItem
             // 
             this.savesSetupFolderToolStripMenuItem.Name = "savesSetupFolderToolStripMenuItem";
-            this.savesSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.savesSetupFolderToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.savesSetupFolderToolStripMenuItem.Text = "Save all";
-            this.savesSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
+            this.savesSetupFolderToolStripMenuItem.Click += new System.EventHandler(this.SaveAllToolStripMenuItem_Click);
             // 
             // openISOToolStripMenuItem
             // 
             this.openISOToolStripMenuItem.Name = "openISOToolStripMenuItem";
-            this.openISOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openISOToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.openISOToolStripMenuItem.Text = "Extract ISO...";
-            this.openISOToolStripMenuItem.Click += new System.EventHandler(this.extractISOToolStripMenuItem_Click);
+            this.openISOToolStripMenuItem.Click += new System.EventHandler(this.ExtractISOToolStripMenuItem_Click);
             // 
             // saveAsWBFSToolStripMenuItem
             // 
             this.saveAsWBFSToolStripMenuItem.Name = "saveAsWBFSToolStripMenuItem";
-            this.saveAsWBFSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveAsWBFSToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.saveAsWBFSToolStripMenuItem.Text = "Pack ISO...";
-            this.saveAsWBFSToolStripMenuItem.Click += new System.EventHandler(this.saveAsWBFSToolStripMenuItem_Click);
+            this.saveAsWBFSToolStripMenuItem.Click += new System.EventHandler(this.SaveAsWBFSToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // randomizationToolStripMenuItem
             // 
@@ -174,21 +178,21 @@
             this.randomizeWithPresetToolStripMenuItem.Name = "randomizeWithPresetToolStripMenuItem";
             this.randomizeWithPresetToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.randomizeWithPresetToolStripMenuItem.Text = "Randomize with preset...";
-            this.randomizeWithPresetToolStripMenuItem.Click += new System.EventHandler(this.randomizeWithPresetToolStripMenuItem_Click);
+            this.randomizeWithPresetToolStripMenuItem.Click += new System.EventHandler(this.RandomizeWithPresetToolStripMenuItem_Click);
             // 
             // presetsToolStripMenuItem
             // 
             this.presetsToolStripMenuItem.Name = "presetsToolStripMenuItem";
             this.presetsToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.presetsToolStripMenuItem.Text = "Presets...";
-            this.presetsToolStripMenuItem.Click += new System.EventHandler(this.presetsToolStripMenuItem_Click);
+            this.presetsToolStripMenuItem.Click += new System.EventHandler(this.PresetsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // lbl_Stages
             // 
@@ -285,17 +289,6 @@
             this.lbl_ActorID.Text = "ID";
             this.lbl_ActorID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tx_Header1Unk
-            // 
-            this.tx_Header1Unk.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_Header1Unk.Location = new System.Drawing.Point(6, 338);
-            this.tx_Header1Unk.Name = "tx_Header1Unk";
-            this.tx_Header1Unk.Size = new System.Drawing.Size(297, 20);
-            this.tx_Header1Unk.TabIndex = 27;
-            this.tx_Header1Unk.Tag = "header1unk";
-            this.tx_Header1Unk.Visible = false;
-            this.tx_Header1Unk.TextChanged += new System.EventHandler(this.bytetx_Changed);
-            // 
             // lbl_Header1Unk
             // 
             this.lbl_Header1Unk.AutoSize = true;
@@ -323,7 +316,7 @@
             this.numUp_Z.Size = new System.Drawing.Size(120, 20);
             this.numUp_Z.TabIndex = 25;
             this.numUp_Z.Tag = "Z";
-            this.numUp_Z.ValueChanged += new System.EventHandler(this.numUp_X_ValueChanged);
+            this.numUp_Z.ValueChanged += new System.EventHandler(this.NumUp_X_ValueChanged);
             // 
             // lb_PosX
             // 
@@ -351,7 +344,7 @@
             this.numUp_Y.Size = new System.Drawing.Size(120, 20);
             this.numUp_Y.TabIndex = 24;
             this.numUp_Y.Tag = "Y";
-            this.numUp_Y.ValueChanged += new System.EventHandler(this.numUp_X_ValueChanged);
+            this.numUp_Y.ValueChanged += new System.EventHandler(this.NumUp_X_ValueChanged);
             // 
             // combo_Actor
             // 
@@ -360,7 +353,7 @@
             this.combo_Actor.Name = "combo_Actor";
             this.combo_Actor.Size = new System.Drawing.Size(199, 21);
             this.combo_Actor.TabIndex = 9;
-            this.combo_Actor.SelectedIndexChanged += new System.EventHandler(this.combo_Actor_SelectedIndexChanged);
+            this.combo_Actor.SelectedIndexChanged += new System.EventHandler(this.Combo_Actor_SelectedIndexChanged);
             // 
             // numUp_X
             // 
@@ -379,7 +372,7 @@
             this.numUp_X.Size = new System.Drawing.Size(120, 20);
             this.numUp_X.TabIndex = 23;
             this.numUp_X.Tag = "X";
-            this.numUp_X.ValueChanged += new System.EventHandler(this.numUp_X_ValueChanged);
+            this.numUp_X.ValueChanged += new System.EventHandler(this.NumUp_X_ValueChanged);
             // 
             // lb_Actor
             // 
@@ -408,19 +401,6 @@
             this.lb_PosZ.TabIndex = 15;
             this.lb_PosZ.Text = "Position Z:";
             // 
-            // tx_UnknownData
-            // 
-            this.tx_UnknownData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.tx_UnknownData.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_UnknownData.Location = new System.Drawing.Point(6, 153);
-            this.tx_UnknownData.Multiline = true;
-            this.tx_UnknownData.Name = "tx_UnknownData";
-            this.tx_UnknownData.Size = new System.Drawing.Size(297, 166);
-            this.tx_UnknownData.TabIndex = 17;
-            this.tx_UnknownData.Tag = "unkd";
-            this.tx_UnknownData.TextChanged += new System.EventHandler(this.bytetx_Changed);
-            // 
             // lbl_UnknownData
             // 
             this.lbl_UnknownData.AutoSize = true;
@@ -429,17 +409,6 @@
             this.lbl_UnknownData.Size = new System.Drawing.Size(80, 13);
             this.lbl_UnknownData.TabIndex = 18;
             this.lbl_UnknownData.Text = "Unknown data:";
-            // 
-            // tx_Setupheader
-            // 
-            this.tx_Setupheader.Enabled = false;
-            this.tx_Setupheader.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_Setupheader.Location = new System.Drawing.Point(6, 24);
-            this.tx_Setupheader.Name = "tx_Setupheader";
-            this.tx_Setupheader.Size = new System.Drawing.Size(181, 20);
-            this.tx_Setupheader.TabIndex = 20;
-            this.tx_Setupheader.Tag = "header";
-            this.tx_Setupheader.TextChanged += new System.EventHandler(this.bytetx_Changed);
             // 
             // lb_Setupheader
             // 
@@ -476,7 +445,7 @@
             this.lst_EnemyEntries.Name = "lst_EnemyEntries";
             this.lst_EnemyEntries.Size = new System.Drawing.Size(181, 355);
             this.lst_EnemyEntries.TabIndex = 0;
-            this.lst_EnemyEntries.SelectedIndexChanged += new System.EventHandler(this.lst_EnemyEntries_SelectedIndexChanged);
+            this.lst_EnemyEntries.SelectedIndexChanged += new System.EventHandler(this.Lst_EnemyEntries_SelectedIndexChanged);
             // 
             // tabC_Editor
             // 
@@ -503,10 +472,13 @@
             this.container.Panel1.Controls.Add(this.tabC_Editor);
             this.container.Panel1.Controls.Add(this.lbl_Stages);
             this.container.Panel1.Controls.Add(this.menuStrip1);
-            this.container.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.container_Panel1_Paint);
             // 
             // container.Panel2
             // 
+            this.container.Panel2.Controls.Add(this.chk_RandomSeed);
+            this.container.Panel2.Controls.Add(this.btn_GenerateSeed);
+            this.container.Panel2.Controls.Add(this.lbl_Random);
+            this.container.Panel2.Controls.Add(this.tx_Random);
             this.container.Panel2.Controls.Add(this.pb_Progress);
             this.container.Panel2.Controls.Add(this.lbl_Separator);
             this.container.Panel2.Controls.Add(this.lbl_Progress);
@@ -523,7 +495,79 @@
             this.lstbox_Stages.Name = "lstbox_Stages";
             this.lstbox_Stages.Size = new System.Drawing.Size(436, 446);
             this.lstbox_Stages.TabIndex = 27;
-            this.lstbox_Stages.SelectedIndexChanged += new System.EventHandler(this.checkedlistbox_Stages_SelectedIndexChanged);
+            this.lstbox_Stages.SelectedIndexChanged += new System.EventHandler(this.Checkedlistbox_Stages_SelectedIndexChanged);
+            // 
+            // chk_RandomSeed
+            // 
+            this.chk_RandomSeed.AutoSize = true;
+            this.chk_RandomSeed.Location = new System.Drawing.Point(419, 22);
+            this.chk_RandomSeed.Name = "chk_RandomSeed";
+            this.chk_RandomSeed.Size = new System.Drawing.Size(180, 17);
+            this.chk_RandomSeed.TabIndex = 29;
+            this.chk_RandomSeed.Text = "Re-generate each randomization";
+            this.chk_RandomSeed.UseVisualStyleBackColor = true;
+            this.chk_RandomSeed.CheckedChanged += new System.EventHandler(this.Chk_RandomSeed_CheckedChanged);
+            // 
+            // btn_GenerateSeed
+            // 
+            this.btn_GenerateSeed.Location = new System.Drawing.Point(304, 18);
+            this.btn_GenerateSeed.Name = "btn_GenerateSeed";
+            this.btn_GenerateSeed.Size = new System.Drawing.Size(109, 23);
+            this.btn_GenerateSeed.TabIndex = 28;
+            this.btn_GenerateSeed.Text = "Generate new";
+            this.btn_GenerateSeed.UseVisualStyleBackColor = true;
+            this.btn_GenerateSeed.Click += new System.EventHandler(this.Btn_GenerateSeed_Click);
+            // 
+            // lbl_Random
+            // 
+            this.lbl_Random.AutoSize = true;
+            this.lbl_Random.Location = new System.Drawing.Point(13, 23);
+            this.lbl_Random.Name = "lbl_Random";
+            this.lbl_Random.Size = new System.Drawing.Size(106, 13);
+            this.lbl_Random.TabIndex = 27;
+            this.lbl_Random.Text = "Randomization seed:";
+            // 
+            // tx_Random
+            // 
+            this.tx_Random.Location = new System.Drawing.Point(125, 20);
+            this.tx_Random.Name = "tx_Random";
+            this.tx_Random.Size = new System.Drawing.Size(173, 20);
+            this.tx_Random.TabIndex = 6;
+            // 
+            // tx_Header1Unk
+            // 
+            this.tx_Header1Unk.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_Header1Unk.Location = new System.Drawing.Point(6, 338);
+            this.tx_Header1Unk.Name = "tx_Header1Unk";
+            this.tx_Header1Unk.Size = new System.Drawing.Size(297, 20);
+            this.tx_Header1Unk.TabIndex = 27;
+            this.tx_Header1Unk.Tag = "header1unk";
+            this.tx_Header1Unk.Visible = false;
+            this.tx_Header1Unk.TextChanged += new System.EventHandler(this.Bytetx_Changed);
+            // 
+            // tx_UnknownData
+            // 
+            this.tx_UnknownData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tx_UnknownData.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_UnknownData.Location = new System.Drawing.Point(6, 153);
+            this.tx_UnknownData.Multiline = true;
+            this.tx_UnknownData.Name = "tx_UnknownData";
+            this.tx_UnknownData.Size = new System.Drawing.Size(297, 166);
+            this.tx_UnknownData.TabIndex = 17;
+            this.tx_UnknownData.Tag = "unkd";
+            this.tx_UnknownData.TextChanged += new System.EventHandler(this.Bytetx_Changed);
+            // 
+            // tx_Setupheader
+            // 
+            this.tx_Setupheader.Enabled = false;
+            this.tx_Setupheader.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_Setupheader.Location = new System.Drawing.Point(6, 24);
+            this.tx_Setupheader.Name = "tx_Setupheader";
+            this.tx_Setupheader.Size = new System.Drawing.Size(181, 20);
+            this.tx_Setupheader.TabIndex = 20;
+            this.tx_Setupheader.Tag = "header";
+            this.tx_Setupheader.TextChanged += new System.EventHandler(this.Bytetx_Changed);
             // 
             // Form1
             // 
@@ -551,6 +595,7 @@
             this.container.Panel1.ResumeLayout(false);
             this.container.Panel1.PerformLayout();
             this.container.Panel2.ResumeLayout(false);
+            this.container.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.container)).EndInit();
             this.container.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -600,6 +645,10 @@
         private System.Windows.Forms.Label lbl_ActorID;
         private System.Windows.Forms.PictureBox picturebox_info;
         private System.Windows.Forms.ListBox lstbox_Stages;
+        private System.Windows.Forms.Label lbl_Random;
+        private System.Windows.Forms.TextBox tx_Random;
+        private System.Windows.Forms.Button btn_GenerateSeed;
+        private System.Windows.Forms.CheckBox chk_RandomSeed;
     }
 }
 

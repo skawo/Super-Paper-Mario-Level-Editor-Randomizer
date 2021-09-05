@@ -19,8 +19,7 @@ namespace Super_Paper_Mario_Randomizer
     public partial class Form1 : Form
     {
         private readonly SynchronizationContext synchronizationContext;
-
-        ToolTip Tip = new ToolTip();
+        readonly ToolTip Tip = new ToolTip();
 
         public Form1()
         {
@@ -30,6 +29,9 @@ namespace Super_Paper_Mario_Randomizer
             Tip.AutoPopDelay = 5000;
             Tip.InitialDelay = 500;
             Tip.ReshowDelay = 500;
+
+            chk_RandomSeed.Checked = true;
+            NewSeed();
 
             if (File.Exists(Globals.EnemyJsonPath))
             {
@@ -89,14 +91,14 @@ namespace Super_Paper_Mario_Randomizer
         {
             SetBusy(true);
             SetProgress(Resources.saving_iso, 0);
-            bool Res = await Task.Run(() => _PackISO(InPath, OutFile));
+            bool Res = await Task.Run(() => PackIsoImpl(InPath, OutFile));
             SetProgress(Resources.done, 100);
             SetBusy(false);
 
             return Res;
         }
 
-        private bool _PackISO(string InPath, string OutFile)
+        private bool PackIsoImpl(string InPath, string OutFile)
         {
             try
             {
@@ -136,14 +138,14 @@ namespace Super_Paper_Mario_Randomizer
         {
             SetBusy(true);
             SetProgress(Resources.extracting_iso, 0);
-            bool Res = await Task.Run(() => _ExtractISO(InFile, OutPath));
+            bool Res = await Task.Run(() => ExtractISOImpl(InFile, OutPath));
             SetProgress(Resources.done, 100);
             SetBusy(false);
 
             return Res;
         }
 
-        private bool _ExtractISO(string InFile, string OutPath)
+        private bool ExtractISOImpl(string InFile, string OutPath)
         {
             try
             {
@@ -305,7 +307,7 @@ namespace Super_Paper_Mario_Randomizer
 
         #endregion
 
-        private async void extractISOToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void ExtractISOToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string InFile = "";
             string OutPath = "";
@@ -325,7 +327,7 @@ namespace Super_Paper_Mario_Randomizer
                         if (MessageBox.Show(Resources.not_spm_iso, Resources.not_spm_iso_title, MessageBoxButtons.YesNo) == DialogResult.Yes)
                             InFile = fd.FileName;
                         else
-                        return;
+                            return;
                     }
                     else
                         InFile = fd.FileName;
@@ -350,7 +352,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private async void openSetupFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void OpenSetupFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -380,7 +382,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void checkedlistbox_Stages_SelectedIndexChanged(object sender, EventArgs e)
+        private void Checkedlistbox_Stages_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
@@ -435,7 +437,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void lst_EnemyEntries_SelectedIndexChanged(object sender, EventArgs e)
+        private void Lst_EnemyEntries_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
@@ -484,7 +486,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void bytetx_Changed(object sender, EventArgs e)
+        private void Bytetx_Changed(object sender, EventArgs e)
         {
             if (Globals.CurrentLevelSetupEntry == null)
                 return;
@@ -500,7 +502,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void numUp_X_ValueChanged(object sender, EventArgs e)
+        private void NumUp_X_ValueChanged(object sender, EventArgs e)
         {
             if (Globals.CurrentLevelSetupEntry == null)
                 return;
@@ -516,7 +518,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void combo_Actor_SelectedIndexChanged(object sender, EventArgs e)
+        private void Combo_Actor_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (Globals.CurrentLevelSetupEntry == null)
                 return;
@@ -565,17 +567,17 @@ namespace Super_Paper_Mario_Randomizer
                 e.Cancel = true;
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private async void saveAllToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void SaveAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
             await SaveAll();
         }
 
-        private void saveCurrentToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveCurrentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Globals.CurrentLevelSetupEntry == null)
                 return;
@@ -583,7 +585,7 @@ namespace Super_Paper_Mario_Randomizer
             SaveEntry(Globals.CurrentLevelSetupEntry);
         }
 
-        private void openSetupFileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpenSetupFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -616,12 +618,12 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Super Paper Mario Level Editor / Randomizer by Skawo.");
         }
 
-        private async void saveAsWBFSToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void SaveAsWBFSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string InPath = "";
             string OutFile = "";
@@ -661,7 +663,7 @@ namespace Super_Paper_Mario_Randomizer
                         return;
                     }
 
- 
+
                     using (SaveFileDialog sf = new SaveFileDialog())
                     {
                         sf.Title = Resources.select_outf;
@@ -683,21 +685,32 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void presetsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void PresetsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PresetEditor pe = new PresetEditor();
             pe.ShowDialog();
         }
 
-        private void container_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private async void randomizeWithPresetToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void RandomizeWithPresetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
+                int integerSeed = 0;
+
+                try
+                {
+                    if (chk_RandomSeed.Checked)
+                        NewSeed();
+
+                    integerSeed = Convert.ToInt32(tx_Random.Text.ToUpper(), 16);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(Resources.seed_wrong);
+                    return;
+                }
+
+
                 using (OpenFileDialog fd = new OpenFileDialog())
                 {
                     fd.Title = Resources.select_preset;
@@ -706,9 +719,10 @@ namespace Super_Paper_Mario_Randomizer
                     if (dr == DialogResult.OK)
                     {
                         Common.Preset pr = (Common.Preset)Helpers.DeserializeJsonFromFile(fd.FileName, typeof(Common.Preset));
-                        await Randomize(pr);
+                        await Randomize(pr, integerSeed);
                     }
                 }
+
             }
             catch (Exception ex)
             {
@@ -717,24 +731,26 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private async Task<bool> Randomize(Preset Pr)
+        private async Task<bool> Randomize(Preset Pr, int Seed)
         {
             SetBusy(true);
             SetProgress(Resources.randomizing, 0);
-            bool Res = await Task.Run(() => _Randomize(Pr));
+
+            Random r = new Random((int)Seed);
+
+            bool Res = await Task.Run(() => RandomizeImpl(Pr, r));
             SetProgress(Resources.done, 100);
             SetBusy(false);
 
             return Res;
         }
 
-        private bool _Randomize(Preset Pr)
+        private bool RandomizeImpl(Preset Pr, Random r)
         {
             try
             {
                 int NumStages = Globals.LevelSetups.Count();
                 int Num = -1;
-                Random r = new Random();
 
                 foreach (LevelSetupEntry Setup in Globals.LevelSetups)
                 {
@@ -768,6 +784,21 @@ namespace Super_Paper_Mario_Randomizer
                 MessageBox.Show(ex.Message);
                 return false;
             }
+        }
+
+        private void NewSeed()
+        {
+            tx_Random.Text = ((Environment.TickCount * Environment.TickCount) / 2).ToString("X");
+        }
+
+        private void Btn_GenerateSeed_Click(object sender, EventArgs e)
+        {
+            NewSeed();
+        }
+
+        private void Chk_RandomSeed_CheckedChanged(object sender, EventArgs e)
+        {
+            tx_Random.ReadOnly = chk_RandomSeed.Checked;
         }
     }
 }

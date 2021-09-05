@@ -211,4 +211,7 @@
   <data name="not_spm_iso_title" xml:space="preserve">
     <value>Titlecode mismatch</value>
   </data>
+  <data name="seed_wrong" xml:space="preserve">
+    <value>The seed was not in proper format.</value>
+  </data>
 </root>

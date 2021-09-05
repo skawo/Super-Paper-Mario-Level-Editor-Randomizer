@@ -79,7 +79,7 @@
             this.btnTglBosses.Tag = "t";
             this.btnTglBosses.Text = "Toggle bosses";
             this.btnTglBosses.UseVisualStyleBackColor = true;
-            this.btnTglBosses.Click += new System.EventHandler(this.btnTglBosses_Click);
+            this.btnTglBosses.Click += new System.EventHandler(this.BtnTglBosses_Click);
             // 
             // btnTglWeird
             // 
@@ -91,7 +91,7 @@
             this.btnTglWeird.Tag = "t";
             this.btnTglWeird.Text = "Toggle crashing / weird";
             this.btnTglWeird.UseVisualStyleBackColor = true;
-            this.btnTglWeird.Click += new System.EventHandler(this.btnTglWeird_Click);
+            this.btnTglWeird.Click += new System.EventHandler(this.BtnTglWeird_Click);
             // 
             // lbxChapterDifficultyChart
             // 
@@ -127,21 +127,21 @@
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsToolStripMenuItem.Text = "Save as...";
-            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.SaveAsToolStripMenuItem_Click);
             // 
             // tglAll
             // 
@@ -153,7 +153,7 @@
             this.tglAll.Tag = "t";
             this.tglAll.Text = "Toggle all";
             this.tglAll.UseVisualStyleBackColor = true;
-            this.tglAll.Click += new System.EventHandler(this.tglAll_Click);
+            this.tglAll.Click += new System.EventHandler(this.TglAll_Click);
             // 
             // tglObst
             // 
@@ -165,7 +165,7 @@
             this.tglObst.Tag = "t";
             this.tglObst.Text = "Toggle obstacles";
             this.tglObst.UseVisualStyleBackColor = true;
-            this.tglObst.Click += new System.EventHandler(this.tglObst_Click);
+            this.tglObst.Click += new System.EventHandler(this.TglObst_Click);
             // 
             // Chapter
             // 
@@ -193,7 +193,7 @@
             this.lstChapterDifficultyChart.TabIndex = 6;
             this.lstChapterDifficultyChart.UseCompatibleStateImageBehavior = false;
             this.lstChapterDifficultyChart.View = System.Windows.Forms.View.Details;
-            this.lstChapterDifficultyChart.SelectedIndexChanged += new System.EventHandler(this.lstChapterDifficultyChart_SelectedIndexChanged);
+            this.lstChapterDifficultyChart.SelectedIndexChanged += new System.EventHandler(this.LstChapterDifficultyChart_SelectedIndexChanged);
             // 
             // numMaxDif
             // 
@@ -207,7 +207,7 @@
             this.numMaxDif.Name = "numMaxDif";
             this.numMaxDif.Size = new System.Drawing.Size(69, 20);
             this.numMaxDif.TabIndex = 13;
-            this.numMaxDif.ValueChanged += new System.EventHandler(this.numMaxDif_ValueChanged);
+            this.numMaxDif.ValueChanged += new System.EventHandler(this.NumMaxDif_ValueChanged);
             // 
             // lbl_MaxDiff
             // 

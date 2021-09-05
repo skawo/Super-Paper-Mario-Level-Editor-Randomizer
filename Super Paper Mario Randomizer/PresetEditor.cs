@@ -30,7 +30,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void tglAll_Click(object sender, EventArgs e)
+        private void TglAll_Click(object sender, EventArgs e)
         {
             string t = (string)tglAll.Tag;
 
@@ -45,7 +45,7 @@ namespace Super_Paper_Mario_Randomizer
 
         }
 
-        private void btnTglBosses_Click(object sender, EventArgs e)
+        private void BtnTglBosses_Click(object sender, EventArgs e)
         {
             string t = (string)btnTglBosses.Tag;
 
@@ -60,7 +60,7 @@ namespace Super_Paper_Mario_Randomizer
             btnTglBosses.Tag = t == "t" ? "f" : "t";
         }
 
-        private void btnTglWeird_Click(object sender, EventArgs e)
+        private void BtnTglWeird_Click(object sender, EventArgs e)
         {
             string t = (string)btnTglWeird.Tag;
 
@@ -75,7 +75,7 @@ namespace Super_Paper_Mario_Randomizer
             btnTglWeird.Tag = t == "t" ? "f" : "t";
         }
 
-        private void tglObst_Click(object sender, EventArgs e)
+        private void TglObst_Click(object sender, EventArgs e)
         {
             string t = (string)tglObst.Tag;
 
@@ -90,7 +90,7 @@ namespace Super_Paper_Mario_Randomizer
             tglObst.Tag = t == "t" ? "f" : "t";
         }
 
-        private void lstChapterDifficultyChart_SelectedIndexChanged(object sender, EventArgs e)
+        private void LstChapterDifficultyChart_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lstChapterDifficultyChart.SelectedItems.Count == 0)
             {
@@ -104,7 +104,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void numMaxDif_ValueChanged(object sender, EventArgs e)
+        private void NumMaxDif_ValueChanged(object sender, EventArgs e)
         {
             if (lstChapterDifficultyChart.SelectedItems.Count == 0)
                 return;
@@ -119,7 +119,7 @@ namespace Super_Paper_Mario_Randomizer
             for (int i= 0; i < checkedlstbox_enemies.Items.Count; i++)
             {
                 CheckState ch = checkedlstbox_enemies.GetItemCheckState(i);
-                pr.Enemies[i] = (ch == CheckState.Checked) ? true : false;
+                pr.Enemies[i] = (ch == CheckState.Checked);
             }
 
             for (int i = 0; i < 8; i++)
@@ -128,7 +128,7 @@ namespace Super_Paper_Mario_Randomizer
             return pr;
         }
 
-        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (SaveFileDialog sf = new SaveFileDialog())
             {
@@ -144,7 +144,7 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
@@ -175,10 +175,10 @@ namespace Super_Paper_Mario_Randomizer
             }
         }
 
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Opened == "")
-                saveAsToolStripMenuItem_Click(null, null);
+                SaveAsToolStripMenuItem_Click(null, null);
             else
                 Helpers.SerializeJsonToFile(GetPresetFromCurrent(), Opened);
         }

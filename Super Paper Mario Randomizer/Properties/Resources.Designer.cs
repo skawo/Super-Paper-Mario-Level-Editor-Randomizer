@@ -251,6 +251,15 @@ namespace Super_Paper_Mario_Randomizer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The seed was not in proper format..
+        /// </summary>
+        internal static string seed_wrong {
+            get {
+                return ResourceManager.GetString("seed_wrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select exported Super Paper Mario ISO..
         /// </summary>
         internal static string select_exported {
