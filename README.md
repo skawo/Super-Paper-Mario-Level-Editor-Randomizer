@@ -16,6 +16,7 @@ On the left side, you can pick the level to edit. On the right, a list of enemie
 
 To randomize the game, select Randomization -> Randomize using preset, and choose one from the "Presets" folder.
 You can also customize how the game is randomized using the preset editor.
+Randomization seed can be set in the main window or the preset itself. If the seed in the preset is blank, the main windows' seed is used instead.
 
 After you're done, select "Save all". The filesystem can be loaded directly in Dolphin by opening "main.dol" from the DATA/sys folder,
 or you can rebuild the iso using the "Pack ISO" option.
