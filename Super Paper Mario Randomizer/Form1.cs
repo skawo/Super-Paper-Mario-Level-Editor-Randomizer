@@ -788,7 +788,7 @@ namespace Super_Paper_Mario_Randomizer
 
         private void NewSeed()
         {
-            tx_Random.Text = ((Environment.TickCount * Environment.TickCount) / 2).ToString("X");
+            tx_Random.Text = (Int32.MaxValue + (Environment.TickCount * Environment.TickCount) / 2).ToString("X");
         }
 
         private void Btn_GenerateSeed_Click(object sender, EventArgs e)
