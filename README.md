@@ -2,6 +2,9 @@
 
 A basic level editor for Super Paper Mario with enemy randomization capabilities.
 
+
+![Untitled](https://user-images.githubusercontent.com/43761362/168069321-0952a7e6-d92d-4701-a17c-25ad6055958b.png)
+
 Uses Wiims' WIT for Wii ISO extraction and repacking.
 
 # Usage
