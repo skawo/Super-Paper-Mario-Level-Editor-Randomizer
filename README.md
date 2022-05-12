@@ -1,4 +1,4 @@
-# Super-Paper-Mario-Level-Editor-Randomizer
+# Super Paper Mario Level Editor and Randomizer
 
 A basic level editor for Super Paper Mario with enemy randomization capabilities.
 
