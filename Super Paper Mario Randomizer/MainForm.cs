@@ -620,7 +620,7 @@ namespace Super_Paper_Mario_Randomizer
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Super Paper Mario Level Editor / Randomizer by Skawo.");
+            MessageBox.Show("Super Paper Mario Level Editor / Randomizer by Skawo. Version: 0.40");
         }
 
         private async void SaveAsWBFSToolStripMenuItem_Click(object sender, EventArgs e)
