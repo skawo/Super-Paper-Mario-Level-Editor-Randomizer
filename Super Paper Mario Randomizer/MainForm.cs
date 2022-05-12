@@ -728,6 +728,7 @@ namespace Super_Paper_Mario_Randomizer
                         }
 
                         await Randomize(pr, integerSeed);
+                        Checkedlistbox_Stages_SelectedIndexChanged(null, null);
                     }
                 }
 
@@ -774,14 +775,36 @@ namespace Super_Paper_Mario_Randomizer
                     int MaxDifficulty = Pr.ChapterDiffs[Chapter - 1];
 
                     List<Enemy> Enemies = Globals.EnemyList.Where(x => (x.Difficulty <= MaxDifficulty && Pr.Enemies[x.ID] == true)).ToList();
+                    
+                    
+                    List<int> SelectedEnemyIDs = Enemies.Select(x => x.ID).ToList();
+                    List<int> IDsBowserOnlyOnce = new List<int>() { 132, 285, 398, 430 };
+
+                    // Multiple Bowsers crash. This is some podge to make sure only one gets randomized in, unless Bowsers are the ONLY things supposed to be randomized
+                    bool SkipBowserCheck = (SelectedEnemyIDs.Except(IDsBowserOnlyOnce).Count() == 0);
+                    bool BowserIncluded = false;
 
                     foreach (LevelSetupEntryEntry Entry in Setup.Entries)
                     {
+                       
                         if (Entry.ID != 0)
                             if (Enemies.Count == 0)
                                 Entry.ID = 0;
                             else
+                            {
                                 Entry.ID = (uint)Enemies[r.Next(Enemies.Count)].ID;
+
+                                if (IDsBowserOnlyOnce.Contains((int)Entry.ID) && !SkipBowserCheck)
+                                {
+                                    if (!BowserIncluded)
+                                        BowserIncluded = true;
+                                    else
+                                    {
+                                        while (IDsBowserOnlyOnce.Contains((int)Entry.ID))
+                                            Entry.ID = (uint)Enemies[r.Next(Enemies.Count)].ID;
+                                    }
+                                }
+                            }
                     }
                 }
 
