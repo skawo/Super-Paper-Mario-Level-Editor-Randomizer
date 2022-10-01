@@ -9,7 +9,7 @@ Uses Wiims' WIT for Wii ISO extraction and repacking.
 
 # Usage
 
-Video tutorial: https://youtu.be/8Db83CWKIOk
+<a href="https://youtu.be/8Db83CWKIOk">Video tutorial</a>
 
 Unpack a Super Paper Mario Wii ISO using the File->Extract ISO command.
 
