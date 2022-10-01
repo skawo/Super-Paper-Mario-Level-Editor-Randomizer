@@ -9,6 +9,8 @@ Uses Wiims' WIT for Wii ISO extraction and repacking.
 
 # Usage
 
+Video tutorial: https://youtu.be/8Db83CWKIOk
+
 Unpack a Super Paper Mario Wii ISO using the File->Extract ISO command.
 
 Next click on "Open setup folder" and navigate to the DATA/files folder. Select the "setup" folder there.
