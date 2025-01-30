@@ -1,4 +1,5 @@
 {
+  "Seed": "",
   "Enemies": {
     "0": false,
     "1": false,
@@ -188,7 +189,7 @@
     "185": false,
     "186": false,
     "187": true,
-    "188": false,
+    "188": true,
     "189": true,
     "190": false,
     "191": false,
@@ -397,7 +398,7 @@
     "394": true,
     "395": false,
     "396": false,
-    "397": true,
+    "397": false,
     "398": true,
     "399": true,
     "400": true,
